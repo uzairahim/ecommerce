@@ -69,17 +69,9 @@ export const actions = {
     // Logs out the current user.
     logOut({commit}) {
         // eslint-disable-next-line no-unused-vars
-        return new Promise((resolve) => {
-            axios.post('/logout').then(res => {
                 commit('SET_CURRENT_USER', null);
                 localStorage.removeItem('auth_token');
                 localStorage.removeItem('user');
-                console.log(res)
-                resolve(res);
-            }).catch(error => {
-                reject(error.response)
-            });
-        })
     },
 
 
