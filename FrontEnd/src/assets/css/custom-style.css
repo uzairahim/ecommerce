@@ -1,0 +1,256 @@
+.w-lg-50, .w-xl-50 {
+    width: 50% !important;
+}
+
+.column-gap-1 {
+    column-gap: 5px;
+}
+
+.card-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subject-sorting.custom-select {
+    border: 1px solid rgba(158, 158, 158, 0.767) !important;
+    max-width: 300px;
+    width: 300px;
+}
+
+.fa-trash-alt {
+    color: rgba(246, 7, 7, 0.92);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.fa-share-alt {
+    color: rgba(97, 168, 17, 0.92);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fa-times {
+    color: rgba(231, 21, 21, 0.92);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.fa-heart {
+    color: rgb(250, 51, 51);
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.fa-pencil-alt {
+    color: rgba(153, 111, 4, 1);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.fa-plus-square {
+    color: rgba(153, 111, 4, 1);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.img-thumbnail {
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.b-custom-table .table thead th, .b-custom-table .table tbody td {
+    border-color: rgba(158, 158, 158, 0.767);
+    min-width: 8rem;
+}
+
+.show-entries.custom-select {
+    width: auto;
+    border-color: rgba(158, 158, 158, 0.767);
+}
+
+#tickets-table_filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#tickets-table_filter .search-wrapper {
+    width: 300px;
+    margin-bottom: 0;
+}
+
+.bg-dark-blue {
+    background-color: #33396e !important;
+    color: #cf1534 !important;
+}
+
+.bg-dark-blue:hover,
+.bg-dark-blue:active,
+.bg-dark-blue:focus {
+    color: #ffffff !important;
+    background-color: #27b3d4 !important;
+}
+
+.border-box {
+    border: 1px solid #EFE9F4;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 6px rgba(56, 46, 70, 0.1);
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* width */
+.pdfWraper::-webkit-scrollbar, .detailWraper::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+.pdfWraper::-webkit-scrollbar-track, .detailWraper::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.pdfWraper::-webkit-scrollbar-thumb, .detailWraper::-webkit-scrollbar-thumb {
+    background: #a8a8a8;
+    border-radius: 5px;
+}
+
+.pdfWraper, .detailWraper {
+    width: 100%;
+    max-height: 110px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1;
+    padding: 5px 2px 0;
+    left: 0;
+}
+p.description a, .subjects-title {
+    max-width: 75%;
+    display: inline-block;
+}
+.video-lectures {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.video-lectures .border-box {
+    flex: 0 0 calc(100% / 4 - 15px);
+    max-width: calc(100% / 4 - 15px);
+    width: calc(100% - 15px);
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.column-gap-2 {
+    column-gap: 10px;
+}
+.subject-add {
+    margin-top: 15px;
+}
+.webNavbar, .mobileNavbar {
+    background-color: #f8f9fa;
+    padding: 5px 1.25rem;
+}
+.mobileNavbar {
+    display: none;
+}
+
+@media only screen and (max-width: 1365px) {
+    .lectures-listing-wrapper, .video-lectures {
+        justify-content: flex-start;
+    }
+
+    .lecture-listing-card, .video-lectures .border-box {
+        flex: 0 0 calc(33% - 15px) !important;
+        max-width: calc(33% - 15px) !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .lectures-listing-wrapper, .video-lectures {
+        justify-content: flex-start;
+    }
+
+    .lecture-listing-card, .video-lectures .border-box {
+        flex: 0 0 calc(50% - 15px) !important;
+        max-width: calc(50% - 15px) !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .lectures-listing-wrapper, .video-lectures {
+        justify-content: space-between;
+    }
+
+    .lecture-listing-card, .video-lectures .border-box {
+        flex: 0 0 calc(50% - 15px) !important;
+        max-width: calc(50% - 15px) !important;
+    }
+
+    #tickets-table_filter .search-wrapper {
+        width: 100%;
+    }
+    .subject-add {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .lectures-listing-wrapper, .video-lectures {
+        flex-direction: row;
+    }
+
+    .lecture-listing-card, .video-lectures .border-box {
+        flex: 0 0 calc(100% - 0px) !important;
+        max-width: calc(100% - 0px) !important;
+    }
+
+    .card-header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .subject-sorting.custom-select {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .show-entries.custom-select {
+        margin-top: 0;
+    }
+
+    #tickets-table_filter .search-wrapper {
+        width: 100%;
+    }
+    .mobileNavbar {
+        display: block;
+    }
+    .webNavbar {
+        display: none;
+    }
+    .mobileListing {
+        display: none;
+    }
+    .mobileListing.toggleNavbar {
+        display: block;
+    }
+    .toggleNavbar{
+        position: absolute;
+        top: 61px;
+        left: 0;
+        right: 0;
+        background-color: #f8f8fa;
+        padding: 10px;
+        width: 100%;
+        z-index: 1;
+    }
+}
