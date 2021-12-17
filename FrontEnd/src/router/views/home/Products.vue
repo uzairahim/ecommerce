@@ -1,53 +1,53 @@
 <template>
-    <div class="promo-section">
-        <h3 class="text-center text-uppercase text">Our Feature Products</h3>
-        <b-container fluid>
-        <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" v-for="(product,index) in allProducts" :key="index">
-                    <img alt="promotion banner" :src="product['image']">
+    <div>
+        <div class="promo-section">
+            <h3 class="text-center text-uppercase text">Our Feature Products</h3>
+            <b-container fluid>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" v-for="(product,index) in allProducts"
+                         :key="index">
+                        <img alt="promotion banner" :src="product['image']">
+                    </div>
                 </div>
-            </div>
-        </b-container>
+            </b-container>
+        </div>
     </div>
 </template>
 
 <script>
-    import axios from "../../../axios"
-
+    import {productMethods} from "@/state/helpers";
     export default {
-        data() {
-            return {
-                allProducts:{},
+        computed: {
+            allProducts() {
+                return this.$store.state.product.products
             }
         },
-        methods:{
-            getProduct(){
-                axios.get('products').then((res) => {
-                    this.allProducts = res.data.data
-                }).catch((error) => {
-                    console.log(error)
-                })
-            }
+        methods: {
+            ...productMethods
         },
         created() {
-            this.getProduct();
+            this.getProducts()
         }
     }
 </script>
 
 <style>
     .promo-section {
+        background-color: white;
         overflow: hidden;
         width: 100%;
-        margin-top:45px
+        margin-top: 45px;
+        padding-top: 10px;
     }
+
     .promo-section img {
         width: 100%;
-        margin-bottom:20px
+        margin-bottom: 20px
     }
-    .text{
+
+    .text {
         color: #8b8b8b;
-        text:bold;
+        text: bold;
         font-family: revert;
     }
 </style>

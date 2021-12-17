@@ -39,6 +39,8 @@ Route::post('/add/user', 'User\UserController@addUser');
 Route::namespace('User')->group(function(){
     Route::post('/login', 'UserController@login');
     Route::post('/logout', 'UserController@logout');
+    Route::post('/sendinquery','UserController@sendInquery');
 });
+
 
 

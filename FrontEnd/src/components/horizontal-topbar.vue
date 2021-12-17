@@ -50,20 +50,18 @@ export default {
         <div class="navbar-brand-box">
           <a href="/" class="logo logo-dark">
             <span class="logo-sm">
-              <img src="@/assets/images/logo-sm.png" alt height="22" />
+              <img src="" alt height="22" />
             </span>
             <span class="logo-lg">
-              Full Pic Math
               <!--<img src="@/assets/images/logo-dark.png" alt height="17" />-->
             </span>
           </a>
 
           <a href="/" class="logo logo-light">
             <span class="logo-sm">
-              <img src="@/assets/images/logo-sm.png" alt height="22" />
+              <img src="" alt height="22" />
             </span>
             <span class="logo-lg">
-              Full Pic Math
               <!--<img src="@/assets/images/logo-light.png" alt height="18" />-->
             </span>
           </a>
@@ -91,7 +89,7 @@ export default {
           <template v-slot:button-content>
             <img
               class="mr-2"
-              src="@/assets/images/flags/us_flag.jpg"
+              src=""
               alt="Header Language"
               height="16"
             /> English
@@ -99,7 +97,7 @@ export default {
           </template>
           <a href="javascript:void(0);" class="dropdown-item notify-item">
             <img
-              src="@/assets/images/flags/germany_flag.jpg"
+              src=""
               alt="user-image"
               class="mr-1"
               height="12"
@@ -110,7 +108,7 @@ export default {
           <!-- item-->
           <a href="javascript:void(0);" class="dropdown-item notify-item">
             <img
-              src="@/assets/images/flags/italy_flag.jpg"
+              src=""
               alt="user-image"
               class="mr-1"
               height="12"
@@ -121,7 +119,7 @@ export default {
           <!-- item-->
           <a href="javascript:void(0);" class="dropdown-item notify-item">
             <img
-              src="@/assets/images/flags/french_flag.jpg"
+              src=""
               alt="user-image"
               class="mr-1"
               height="12"
@@ -132,7 +130,7 @@ export default {
           <!-- item-->
           <a href="javascript:void(0);" class="dropdown-item notify-item">
             <img
-              src="@/assets/images/flags/spain_flag.jpg"
+              src=""
               alt="user-image"
               class="mr-1"
               height="12"
@@ -143,7 +141,7 @@ export default {
           <!-- item-->
           <a href="javascript:void(0);" class="dropdown-item notify-item">
             <img
-              src="@/assets/images/flags/russia_flag.jpg"
+              src=""
               alt="user-image"
               class="mr-1"
               height="12"
@@ -263,7 +261,7 @@ export default {
           <template v-slot:button-content>
             <img
               class="rounded-circle header-profile-user"
-              src="@/assets/images/users/user-4.jpg"
+              src=""
               alt="Header Avatar"
             />
           </template>

@@ -5,7 +5,7 @@
                 <div class="bg-primary">
                     <div class="text-primary text-center p-4">
                         <h5 class="text-white font-size-20">Welcome Back!</h5>
-                        <p class="text-white-50">Sign in to continue to My Portal</p>
+                        <p class="text-white-50">Sign in to continue to Super Air Horns</p>
                         <!-- <a href="/" class="logo logo-admin">
                           <img src="@/assets/logo-white.png" height="60" alt="logo" />
                         </a> -->

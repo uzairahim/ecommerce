@@ -2,18 +2,22 @@
     <header id="page-topbar">
         <div class="navbar-header">
             <div class="d-flex">
-                <div class="navbar-brand-box">
 
-                    <router-link tag="a" to="/allsubjects" class="logo logo-light">
-            <span class="logo-lg">
-                My Portal
-            </span>
+                <div class="navbar-brand-box">
+                    <router-link tag="a" to="/" class="logo logo-light">
+                        <span class="logo-lg">
+                                    <img
+                                            class="logo-img"
+                                            src="@/assets/images/logo-1.png"
+                                            alt="Header Avatar"
+                                    />
+                        </span>
                     </router-link>
                 </div>
-
                 <button
                         type="button"
                         class="btn btn-sm px-3 font-size-24 header-item"
+                        style="margin-top: 20px;"
                         id="vertical-menu-btn"
                         @click="toggleMenu()"
                 >
@@ -83,3 +87,13 @@
         },
     };
 </script>
+
+<style>
+    .logo-img{
+        height: 70px;
+        width: 70px;
+        margin-top: 40px;
+        border-radius: 10px;
+        background-color: #fbfbfb;
+    }
+</style>

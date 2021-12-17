@@ -47,28 +47,19 @@ export default {
 
         <div class="p-4">
           <div class="mb-2">
-            <router-link tag="a" target="_blank" to="//veltrix.vuejs-light.themesbrand.com/">
-              <img src="@/assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt />
-            </router-link>
           </div>
 
           <div class="mb-2">
-            <router-link tag="a" target="_blank" to="//veltrix.vuejs-dark.themesbrand.com/">
-              <img src="@/assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt />
-            </router-link>
           </div>
 
           <div class="mb-2">
-            <router-link tag="a" target="_blank" to="//veltrix.vuejs-rtl.themesbrand.com/">
-              <img src="@/assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt />
-            </router-link>
           </div>
 
           <a
             href="https://1.envato.market/grNDB"
             class="btn btn-primary btn-block mt-3"
             target="_blank"
-          >
+            >
             <i class="mdi mdi-cart mr-1"></i> Purchase Now
           </a>
         </div>
@@ -80,5 +71,6 @@ export default {
     <div class="rightbar-overlay"></div>
   </div>
 </template>
+
 
 <style lang="scss"></style>

@@ -10,6 +10,7 @@ use App\Http\Requests\User\UserRequest;
 use App\Http\Resources\User\UserLoginResource;
 use App\Http\Resources\User\UserResource;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
@@ -48,7 +49,7 @@ class UserController extends Controller
     public function addUser(UserRequest $request)
     {
         try {
-            $user = $this->userRepository->getUserQuery(null,$request->email)->first();
+            $user = $this->userRepository->getUserQuery(null, $request->email)->first();
             if (!empty($user)) {
                 throw new \Exception('User already exist!!');
             }
@@ -99,11 +100,25 @@ class UserController extends Controller
     {
         try {
             $passwordReset = $this->userRepository->verifiyUserToken($request)->first();
-            if (empty($passwordReset))
-            {
+            if (empty($passwordReset)) {
                 throw new \Exception('Token Not Found/Expired! Reset Again');
             }
             return $this->responseGet('Token existed', null);
+        } catch (\Exception $e) {
+            return $this->error($e->getMessage(), null, $e->getCode());
+        }
+    }
+
+    public function sendInquery(Request $request)
+    {
+        try {
+            $data = $request->all();
+            $subject = $data['subject'];
+            Mail::send('email', ['data' => $data], function ($message) use ($subject) {
+                $message->from(config('mail.mailers.smtp.username'), 'Super Air Horns');
+                $message->to('hasssanali01998@gmail.com')->subject($subject);
+            });
+            return $this->responseGet('Your Message has been Received.Thank you', $data);
         } catch (\Exception $e) {
             return $this->error($e->getMessage(), null, $e->getCode());
         }
