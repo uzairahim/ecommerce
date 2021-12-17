@@ -118,7 +118,7 @@ class UserController extends Controller
                 $message->from(config('mail.mailers.smtp.username'), 'Super Air Horns');
                 $message->to(config('mail.mailers.smtp.mail_to'))->subject($subject);
             });
-            return $this->responseGet('Your Message has been Received.Thank you', $data);
+            return $this->responseGet('Your Message has been Received.Thank you', null);
         } catch (\Exception $e) {
             return $this->error($e->getMessage(), null, $e->getCode());
         }

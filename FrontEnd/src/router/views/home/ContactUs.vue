@@ -12,6 +12,7 @@
                                         id="input-1"
                                         v-model="form.name"
                                         :class="{ 'is-invalid': isValid && $v.form.name.$error }"
+                                        :disabled="disabled"
                                 ></b-form-input>
                             </b-form-group>
 
@@ -27,6 +28,7 @@
                                         v-model="form.email"
                                         type="email"
                                         :class="{ 'is-invalid': isValid && $v.form.email.$error }"
+                                        :disabled="disabled"
                                 ></b-form-input>
                             </b-form-group>
 
@@ -40,6 +42,7 @@
                                         id="input-3"
                                         v-model="form.subject"
                                         :class="{ 'is-invalid': isValid && $v.form.subject.$error }"
+                                        :disabled="disabled"
                                 ></b-form-input>
                             </b-form-group>
                         </div>
@@ -56,9 +59,12 @@
                                         v-model="form.message"
                                         :class="{ 'is-invalid': isValid && $v.form.message.$error }"
                                         rows="10"
+                                        :disabled="disabled"
                                 ></b-form-textarea>
                             </b-form-group>
-                            <b-button @click="sendInquery" variant="outline-warning" class="float-right">Submit
+                            <b-button @click="sendInquery" variant="outline-warning" class="float-right" :disabled="disabled">
+                                <b-spinner label="Spinning" small v-if="disabled"></b-spinner>
+                                Submit
                             </b-button>
                         </div>
                     </div>
@@ -116,6 +122,9 @@
                     subject: '',
                     message: ''
                 },
+                showDanger:false,
+                showSuccess:false,
+                disabled:false
             }
         },
         validations: {
@@ -136,13 +145,42 @@
             }
         },
         methods: {
+            reset(){
+                this.form.name = null
+                this.form.email = null
+                this.form.subject = null
+                this.form.message = null
+            },
             sendInquery() {
                 this.isValid = true
                 this.$v.form.$touch();
                 if (this.$v.form.$invalid) {
                     return;
                 }
-                axios.post('sendinquery', this.form).then().catch();
+                this.disabled = true
+                axios.post('sendinquery', this.form).then(res => {
+                    this.$swal({
+                        position: 'top-end',
+                        icon: 'success',
+                        toast: true,
+                        title: 'Your Message has been Received.Thank you',
+                        showConfirmButton: false,
+                        timer: 3000
+                    })
+                    this.disabled = false
+                    this.reset()
+                }).catch(error => {
+                    this.$swal({
+                        position: 'top-end',
+                        icon: 'error',
+                        toast: true,
+                        title: 'Network Issue.Please Try Again',
+                        showConfirmButton: false,
+                        timer: 3000
+                    })
+                    this.disabled = false
+                    this.reset()
+                });
             }
         }
     }
@@ -154,9 +192,11 @@
         text-align: center;
         margin: 25px;
     }
-    .section{
+
+    .section {
         background-color: white;
     }
+
     .columns {
         border: 2px solid #c4c4c4;
         border-radius: 10px;
