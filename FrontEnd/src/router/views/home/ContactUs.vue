@@ -2,7 +2,7 @@
     <section id="contact-us">
         <h1 class="text-uppercase">Contact Us</h1>
         <div class="row section">
-            <div class="col-md-8 mr-2">
+            <div class="col-md-9">
                 <b-form @submit="sendInquery" class="columns">
                     <div class="row header">
                         <div class="col-md-6">
