@@ -1,10 +1,10 @@
 <template>
     <section id="contact-us">
         <h1 class="text-uppercase">Contact Us</h1>
-        <div class="row">
-            <div class="col-md-8 columns mr-2">
-                <b-form @submit="sendInquery">
-                    <div class="row">
+        <div class="row section">
+            <div class="col-md-8 mr-2">
+                <b-form @submit="sendInquery" class="columns">
+                    <div class="row header">
                         <div class="col-md-6">
                             <b-form-group id="input-group-1" label="Your Name" label-for="input-1"
                                           invalid-feedback="Name is required">
@@ -154,14 +154,15 @@
         text-align: center;
         margin: 25px;
     }
-
+    .section{
+        background-color: white;
+    }
     .columns {
         border: 2px solid #c4c4c4;
         border-radius: 10px;
     }
 
     .row {
-        background-color: white;
         padding: 30px 50px 30px 50px;
     }
 
