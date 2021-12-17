@@ -5,19 +5,36 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <span class="mb-0 h3 text-uppercase">Carousel</span>
+                        <span class="mb-0 h3 text-uppercase text-warning">Carousel</span>
                         <button class="float-right btn btn-primary" v-b-modal.addCarouselModal @click="addCarouselModal">
                             Add
                         </button>
                     </div>
                     <div class="card-body">
-                        <div class="row">
-                            <div class="d-flex justify-content-between align-items-center mr-2"
+
+                        <b-row v-if="loaded">
+                            <b-col>
+                                <span class="skeleton">
+                                    <b-skeleton-img animation="fade"></b-skeleton-img>
+                                </span>
+                            </b-col>
+                            <b-col>
+                                <span class="skeleton">
+                                    <b-skeleton-img animation="fade"></b-skeleton-img>
+                                </span>
+                            </b-col>
+                            <b-col>
+                                <span class="skeleton">
+                                    <b-skeleton-img animation="fade"></b-skeleton-img>
+                                </span>
+                            </b-col>
+                        </b-row>
+
+                        <div class="row" v-if="!loaded">
+                            <div class="border-box mr-2 mb-3"
                                  v-for="(carousel,index) in carousel_data" :key="index">
-                                <div class="position-relative">
-                                    <h3 class="text-capitalize img-text text-info">{{carousel['title']}}</h3>
-                                    <img :src="carousel['image']" alt="" style="height: 250px;width: 300px;">
-                                </div>
+                                    <h3 class="text-capitalize img-text">{{carousel['title']}}</h3>
+                                    <img :src="carousel['image']" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -55,7 +72,8 @@
         },
         data() {
             return {
-                add_form: false
+                add_form: false,
+                loaded:false
             };
         },
         computed: {
@@ -73,7 +91,12 @@
             },
         },
         mounted() {
-            this.getCarousels()
+            this.loaded = true;
+            this.getCarousels().then(res => {
+                this.loaded = false
+            }).catch(error => {
+                this.loaded = false
+            });
         }
     };
 </script>
@@ -96,11 +119,22 @@
     }
 
     .card-heading {
-        color: #27b3d4;
+        color: #c89e1e;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
-
+    .border-box {
+        border: 1px solid #EFE9F4;
+        box-sizing: border-box;
+        box-shadow: 3px 3px 6px rgba(56, 46, 70, 0.1);
+        padding: 5px;
+        border-radius: 8px;
+        position: relative;
+    }
+    .img-fluid{
+        max-width: 328px;
+        height: 250px;
+    }
 </style>

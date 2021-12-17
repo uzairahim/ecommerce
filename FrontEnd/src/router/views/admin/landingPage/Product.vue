@@ -5,21 +5,46 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
-                        <span class="mb-0 h3 text-uppercase">Products</span>
+                        <span class="mb-0 h3 text-uppercase text-warning">Products</span>
                         <button class="float-right btn btn-primary" v-b-modal.addProductModal @click="addProductModal">
                             Add
                         </button>
                     </div>
                     <div class="card-body">
-                        <div class="row">
-                            <div class="d-flex justify-content-between align-items-center mr-2"
+
+                        <b-row v-if="loaded">
+                            <b-col>
+                                <span class="skeleton">
+                                    <b-skeleton-img animation="fade"></b-skeleton-img>
+                                </span>
+                            </b-col>
+                            <b-col>
+                                <span class="skeleton">
+                                    <b-skeleton-img animation="fade"></b-skeleton-img>
+                                </span>
+                            </b-col>
+                            <b-col>
+                                <span class="skeleton">
+                                    <b-skeleton-img animation="fade"></b-skeleton-img>
+                                </span>
+                            </b-col>
+                        </b-row>
+
+
+                        <div class="row" v-if="!loaded">
+                            <div class="border-box mr-2 mb-3"
                                  v-for="(product,index) in product_data" :key="index">
-                                <div class="position-relative">
-                                    <h3 class="text-capitalize img-text text-info">{{product['title']}}</h3>
-                                    <img :src="product['image']" alt="" style="height: 250px;width: 300px;">
-                                </div>
+                                    <h3 class="text-capitalize img-text">{{product['title']}}</h3>
+                                    <img :src="product['image']" alt=""
+                                         @click="openGallery(index)" class="img-fluid">
                             </div>
                         </div>
+                        <LightBox
+                                ref="lightbox"
+                                :media="media"
+                                :show-caption="true"
+                                :show-light-box="popup"
+                        />
                     </div>
                 </div>
                 <div class="row">
@@ -44,7 +69,9 @@
     import addProductModal from "./add/Product";
     import appConfig from "@/app.config";
     import {productMethods} from "@/state/helpers";
+    import LightBox from 'vue-it-bigger';
 
+    import('vue-it-bigger/dist/vue-it-bigger.min.css');
     /**
      * Advanced table component
      */
@@ -55,25 +82,49 @@
         },
         data() {
             return {
-                add_form: false
+                add_form: false,
+                popup: false,
+                loaded: false,
+                lastBool: false
             };
         },
         computed: {
             product_data() {
                 return this.$store.state.product.products
+            },
+            media() {
+                return this.$store.state.product.products.map((product) => {
+                    return {
+                        id: product.id,
+                        src: product.image,
+                        type: 'image',
+                        thumb: product.image,
+                        caption: product.title
+                    }
+                })
             }
         },
         components: {
-            Layout, addProductModal
+            Layout, addProductModal, LightBox
         },
         methods: {
             ...productMethods,
             addProductModal() {
                 this.add_form = true;
             },
+            openGallery(index) {
+                this.popup = true;
+                this.$refs.lightbox.showImage(index);
+            },
+
         },
         mounted() {
-            this.getProducts()
+            this.loaded = true;
+            this.getProducts().then(res => {
+                this.loaded = false
+            }).catch(error => {
+                this.loaded = false
+            });
         }
     };
 </script>
@@ -83,24 +134,17 @@
         color: white;
     }
 
-    .badge-danger {
-        background-color: rgba(255, 14, 14, 0.815);
+    .border-box {
+        border: 1px solid #EFE9F4;
+        box-sizing: border-box;
+        box-shadow: 3px 3px 6px rgba(56, 46, 70, 0.1);
+        padding: 5px;
+        border-radius: 8px;
+        position: relative;
+        cursor: pointer;
     }
-
-    .btn-width {
-        width: 35px;
-        height: 30px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+    .img-fluid{
+        max-width: 328px;
+        height: 250px;
     }
-
-    .card-heading {
-        color: #27b3d4;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-
 </style>

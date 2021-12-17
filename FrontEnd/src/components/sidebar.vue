@@ -7,6 +7,7 @@ f<template>
                 <!-- Left Menu Start -->
                 <ul class="metismenu list-unstyled" id="side-menu">
                     <li class="menu-title"></li>
+                    <li class="menu-title"></li>
                     <li>
                         <router-link tag="a" to="/carousel-data" class="side-nav-link">
                             <i class="fas fa-images"></i>

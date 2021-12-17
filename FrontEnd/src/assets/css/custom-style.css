@@ -5,6 +5,9 @@
 .column-gap-1 {
     column-gap: 5px;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .card-header-wrapper {
     display: flex;
@@ -80,7 +83,7 @@
 }
 
 .bg-dark-blue {
-    background-color: #33396e !important;
+    background-color: #303030 !important;
     color: #cf1534 !important;
 }
 
@@ -88,7 +91,7 @@
 .bg-dark-blue:active,
 .bg-dark-blue:focus {
     color: #ffffff !important;
-    background-color: #27b3d4 !important;
+    background-color: #c89e1e !important;
 }
 
 .border-box {
