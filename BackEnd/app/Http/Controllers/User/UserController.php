@@ -116,7 +116,7 @@ class UserController extends Controller
             $subject = $data['subject'];
             Mail::send('email', ['data' => $data], function ($message) use ($subject) {
                 $message->from(config('mail.mailers.smtp.username'), 'Super Air Horns');
-                $message->to('hasssanali01998@gmail.com')->subject($subject);
+                $message->to(config('mail.mailers.smtp.mail_to'))->subject($subject);
             });
             return $this->responseGet('Your Message has been Received.Thank you', $data);
         } catch (\Exception $e) {
