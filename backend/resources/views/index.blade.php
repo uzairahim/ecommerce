@@ -481,8 +481,7 @@
 
                                  data-elementdelay="0.05"
 
-                                 style="z-index: 6; white-space: nowrap;">Mega Sale
-                            </div>
+                                 style="z-index: 6; white-space: nowrap;">Mega Sale</div>
 
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
@@ -504,7 +503,7 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 7; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur
+                                 style="z-index: 7; white-space: nowrap;">6 Trumpet Air Horn
                             </div>
                         </li>
                         <!-- SLIDE  -->
@@ -579,7 +578,7 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 7; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur
+                                 style="z-index: 7; white-space: nowrap;">3 Trumpet Air Horn
                             </div>
 
                             <!-- LAYER NR. 4 -->
