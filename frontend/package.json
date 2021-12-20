@@ -25,7 +25,7 @@
     "bootstrap-vue": "^2.1.0",
     "chart.js": "^2.9.3",
     "chartist": "^0.11.4",
-    "core-js": "^3.16.3",
+    "core-js": "^3.20.0",
     "echarts": "^5.2.2",
     "firebase": "^9.4.1",
     "laravel-vue-pagination": "^2.3.1",
