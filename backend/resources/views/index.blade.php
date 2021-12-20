@@ -10,8 +10,8 @@
     <meta name="author" content="">
 
     <!-- Favicons Icon -->
-
-    <title>Superb premium HTML5 &amp; CSS3 template</title>
+    <link rel="icon" href="{{asset('assets/images/logo.png')}}" type="image/gif" sizes="16x16">
+    <title>Super Air Horns</title>
 
     <!-- Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -24,13 +24,16 @@
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/owl.theme.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/jquery.bxslider.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/jquery.mobile-menu.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/revslider.css')}}" >
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/revslider.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/style.css')}}" media="all">
 
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
+          type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,600italic,400italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,600italic,400italic,700,700italic,800,800italic'
+        rel='stylesheet' type='text/css'>
 </head>
 
 <body class="cms-index-index index">
@@ -43,113 +46,9 @@
                     <div class="row">
                         <!-- Header Language -->
                         <div class="col-xs-7 col-sm-6">
-                            <div class="dropdown block-language-wrapper hidden-xs"> <a role="button" data-toggle="dropdown" data-target="#" class="block-language dropdown-toggle" href="#"> <img src="{{asset('assets/images/english.png')}}" alt="language"> English <span class="caret"></span> </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="{{asset('assets/images/english.png')}}" alt="language"> English </a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="{{asset('assets/images/francais.png')}}" alt="language"> French </a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="{{asset('assets/images/german.png')}}" alt="language"> German </a></li>
-                                </ul>
-                            </div>
-                            <!-- End Header Language -->
-
-                            <!-- Header Currency -->
-                            <div class="dropdown block-currency-wrapper hidden-xs"> <a role="button" data-toggle="dropdown" data-target="#" class="block-currency dropdown-toggle" href="#"> USD <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> $ - Dollar </a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> £ - Pound </a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> € - Euro </a></li>
-                                </ul>
-                            </div>
-                            <!-- End Header Currency -->
-
-                            <div class="welcome-msg hidden-xs"> Default welcome msg! </div>
+                            <div class="welcome-msg hidden-xs">Welcome to SuperAirHorns Website - Established 1972</div>
                         </div>
                         <div class="col-xs-5 col-sm-6">
-
-                            <div class="top-cart-contain pull-right">
-                                <!-- Top Cart -->
-                                <div class="mini-cart">
-                                    <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"><a href="#">  My Cart <span class="cart_count">2</span></a></div>
-                                    <div>
-                                        <div class="top-cart-content" style="display: none;">
-                                            <div class="actions">
-                                                <button class="btn-checkout" title="Checkout" type="button"><span>Checkout</span></button>
-                                                <a href="#" class="view-cart" ><span>View Cart</span></a> </div>
-                                            <!--block-subtitle-->
-                                            <ul class="mini-products-list" id="cart-sidebar">
-                                                <li class="item first">
-                                                    <div class="item-inner"><a class="product-image" title="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White" href="#l"><img alt="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White" src="{{asset('assets/products-images/product.jpg')}}"></a>
-                                                        <div class="product-details">
-                                                            <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
-                                                            <!--access--> <strong>1</strong> x <span class="price">$179.99</span>
-                                                            <p class="product-name"><a href="#">timi &amp; leslie Sophia Diaper Bag...</a></p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="item last">
-                                                    <div class="item-inner"><a class="product-image" title="JP Lizzy Satchel Designer Diaper Bag - Slate Citron" href="#"><img alt="JP Lizzy Satchel Designer Diaper Bag - Slate Citron" src="{{asset('assets/products-images/product.jpg')}}"></a>
-                                                        <div class="product-details">
-                                                            <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
-                                                            <!--access--> <strong>1</strong> x <span class="price">$80.00</span>
-                                                            <p class="product-name"><a href="#">JP Lizzy Satchel Designer Diaper Ba...</a></p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <!--actions-->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Top Cart -->
-                                <div id="ajaxconfig_info" style="display:none"><a href="#/"></a>
-                                    <input value="" type="hidden">
-                                    <input id="enable_module" value="1" type="hidden">
-                                    <input class="effect_to_cart" value="1" type="hidden">
-                                    <input class="title_shopping_cart" value="Go to shopping cart" type="hidden">
-                                </div>
-                            </div>
-
-                            <div class="top-search">
-                                <div class="block-icon pull-right"> <a data-target=".bs-example-modal-lg" data-toggle="modal" class="search-focus dropdown-toggle links"> <i class="fa fa-search"></i> </a>
-                                    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button aria-label="Close" data-dismiss="modal" class="close" type="button"><img src="{{asset('assets/images/interstitial-close')}}.png" alt="close"> </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form class="navbar-form">
-                                                        <div id="search">
-                                                            <div class="input-group">
-                                                                <input name="search" placeholder="Search" class="form-control" type="text">
-                                                                <button type="button" class="btn-search"><i class="fa fa-search"></i></button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Header Top Links -->
-                            <div class="toplinks">
-                                <div class="links">
-
-                                    <div class="myaccount"><a title="My Account" href="login.html"><span class="hidden-xs">My Account</span></a></div>
-                                    <div class="check"><a title="Checkout" href="checkout.html"><span class="hidden-xs">Checkout</span></a></div>
-                                    <div class="demo"><a title="Blog" href="blog.html"><span class="hidden-xs">Blog</span></a></div>
-                                    <!-- Header Company -->
-
-                                    <!-- End Header Company -->
-                                    <div class="login"><a href="login.html"><span class="hidden-xs">Log In</span></a></div>
-
-                                </div>
-
-                            </div>
-                            <!-- End Header Top Links -->
 
                         </div>
                     </div>
@@ -163,256 +62,255 @@
     <nav>
         <div class="container">
             <!-- Header Logo -->
-            <div class="logo"><a title="MSK" href="index.blade.php"><img alt="MSK" src="{{asset('assets/images/logo.png')}}"></a></div>
+            <div class="logo"><a title="MSK" href="index.blade.php"><img alt="MSK"
+                                                                         src="{{asset('assets/images/logo.png')}}"></a>
+            </div>
             <!-- End Header Logo -->
 
             <div class="mm-toggle-wrap">
-                <div class="mm-toggle"><i class="fa fa-reorder"></i><span class="mm-label">Menu</span> </div>
+                <div class="mm-toggle"><i class="fa fa-reorder"></i><span class="mm-label">Menu</span></div>
             </div>
 
             <ul class="nav hidden-xs menu-item menu-item-left">
-                <li class="level0 parent drop-menu active"><a href="index.blade.php"><span>Home</span></a>
+                {{--                <li class="level0 parent drop-menu active"><a href="index.blade.php"><span>Home</span></a></li>--}}
+                {{--                <li class="level0 parent drop-menu"><a href="#"><span>Pages</span> </a>--}}
+                {{--                    <ul class="level1" style="display: none;">--}}
+                {{--                        <li class="level1 first"><a href="grid.html"><span>Grid</span></a></li>--}}
+                {{--                        <li class="level1 nav-10-2"> <a href="list.html"> <span>List</span> </a> </li>--}}
+                {{--                        <li class="level1 nav-10-3"> <a href="product_detail.html"> <span>Product Detail</span> </a> </li>--}}
+                {{--                        <li class="level1 nav-10-4"> <a href="shopping_cart.html"> <span>Shopping Cart</span> </a> </li>--}}
+                {{--                        <li class="level1 first parent"><a href="checkout.html"><span>Checkout</span></a>--}}
+                {{--                            <!--sub sub category-->--}}
+                {{--                            <ul class="level2 right-sub" style="top: 0px; left: 165px; display: none;">--}}
+                {{--                                <li class="level2 nav-2-1-1 first"><a href="checkout_method.html"><span>Checkout Method</span></a></li>--}}
+                {{--                                <li class="level2 nav-2-1-5 last"><a href="checkout_billing_info.html"><span>Checkout Billing Info</span></a></li>--}}
+                {{--                            </ul>--}}
+                {{--                            <!--sub sub category-->--}}
+                {{--                        </li>--}}
+                {{--                        <li class="level1 nav-10-4"> <a href="wishlist.html"> <span>Wishlist</span> </a> </li>--}}
+                {{--                        <li class="level1 first parent"><a href="dashboard.html"><span>Dashboard</span></a>--}}
+                {{--                            <!--sub sub category-->--}}
+                {{--                            <ul class="level2 right-sub" style="top: 0px; left: 165px; display: none;">--}}
+                {{--                                <li class="level2 nav-2-1-1 first"><a href="account_information.html"><span>Account Information</span></a></li>--}}
+                {{--                                <li class="level2 nav-2-1-5 last"><a href="address_book.html"><span>Address Book</span></a></li>--}}
+                {{--                                <li class="level2 nav-2-1-1 first"><a href="contact_information.html"><span>Contact Information</span></a></li>--}}
+                {{--                            </ul>--}}
+                {{--                            <!--sub sub category-->--}}
+                {{--                        </li>--}}
+                {{--                        <li class="level1"> <a href="multiple_addresses.html"> <span>Multiple Addresses</span> </a> </li>--}}
+                {{--                        <li class="level1"> <a href="about_us.html"> <span>About us</span> </a> </li>--}}
 
-                </li>
-                <li class="level0 parent drop-menu"><a href="#"><span>Pages</span> </a>
-                    <ul class="level1" style="display: none;">
-                        <li class="level1 first"><a href="grid.html"><span>Grid</span></a></li>
-                        <li class="level1 nav-10-2"> <a href="list.html"> <span>List</span> </a> </li>
-                        <li class="level1 nav-10-3"> <a href="product_detail.html"> <span>Product Detail</span> </a> </li>
-                        <li class="level1 nav-10-4"> <a href="shopping_cart.html"> <span>Shopping Cart</span> </a> </li>
-                        <li class="level1 first parent"><a href="checkout.html"><span>Checkout</span></a>
-                            <!--sub sub category-->
-                            <ul class="level2 right-sub" style="top: 0px; left: 165px; display: none;">
-                                <li class="level2 nav-2-1-1 first"><a href="checkout_method.html"><span>Checkout Method</span></a></li>
-                                <li class="level2 nav-2-1-5 last"><a href="checkout_billing_info.html"><span>Checkout Billing Info</span></a></li>
-                            </ul>
-                            <!--sub sub category-->
-                        </li>
-                        <li class="level1 nav-10-4"> <a href="wishlist.html"> <span>Wishlist</span> </a> </li>
-                        <li class="level1 first parent"><a href="dashboard.html"><span>Dashboard</span></a>
-                            <!--sub sub category-->
-                            <ul class="level2 right-sub" style="top: 0px; left: 165px; display: none;">
-                                <li class="level2 nav-2-1-1 first"><a href="account_information.html"><span>Account Information</span></a></li>
-                                <li class="level2 nav-2-1-5 last"><a href="address_book.html"><span>Address Book</span></a></li>
-                                <li class="level2 nav-2-1-1 first"><a href="contact_information.html"><span>Contact Information</span></a></li>
-                            </ul>
-                            <!--sub sub category-->
-                        </li>
-                        <li class="level1"> <a href="multiple_addresses.html"> <span>Multiple Addresses</span> </a> </li>
-                        <li class="level1"> <a href="about_us.html"> <span>About us</span> </a> </li>
+                {{--                        <li class="level1"> <a href="faq.html"> <span>FAQ</span> </a> </li>--}}
+                {{--                        <li class="level1"> <a href="login.html"> <span>Login</span> </a> </li>--}}
+                {{--                        <li class="level1"> <a href="forgot_password.html"> <span>Forgot Password</span> </a> </li>--}}
+                {{--                        <li class="level1"> <a href="quick_view.html"> <span>Quick view </span> </a> </li>--}}
+                {{--                        <li class="level1 first parent"><a href="blog.html"><span>Blog</span></a>--}}
+                {{--                            <ul class="level2 right-sub" style="top: 0px; left: 165px; display: none;">--}}
+                {{--                                <li class="level2 nav-2-1-1 first"><a href="blog_detail.html"><span>Blog Detail</span></a></li>--}}
+                {{--                            </ul>--}}
+                {{--                        </li>--}}
+                {{--                        <li class="level1"><a href="contact_us.html"><span>Contact us</span></a> </li>--}}
+                {{--                        <li class="level1"><a href="404error.html"><span>404 Error Page</span></a> </li>--}}
+                {{--                    </ul>--}}
+                {{--                </li>--}}
+                {{--                <li class="mega-menu"><a href="grid.html" class="level-top"><span>Women</span></a>--}}
+                {{--                    <div style="left: 0px; display: none;" class="level0-wrapper dropdown-6col">--}}
+                {{--                        <div class="container">--}}
+                {{--                            <div class="level0-wrapper2">--}}
+                {{--                                <div class="col-1">--}}
+                {{--                                    <div class="nav-block nav-block-center">--}}
+                {{--                                        <ul class="level0">--}}
+                {{--                                            <li class="level1 nav-6-1 parent item"><a href="#.html" class=""><span>Handbags</span></a>--}}
+                {{--                                                <ul class="level1">--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#" class=""><span>Clutch Handbags</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/diaper-bags.html" class=""><span>Diaper Bags</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/bags.html" class=""><span>Bags</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/hobo-handbags.html" class=""><span>Hobo handbags</span></a></li>--}}
+                {{--                                                </ul>--}}
+                {{--                                            </li>--}}
+                {{--                                            <li class="level1 nav-6-1 parent item"><a href="#.html"><span>JACKETS</span></a>--}}
+                {{--                                                <ul class="level1">--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/beaded-handbags.html"><span>Bathtime Goods </span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/fabric-handbags.html"><span>Bedding</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/handbags.html"><span>Blankets</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/leather-handbags.html"><span>Shower Curtains</span></a></li>--}}
+                {{--                                                </ul>--}}
+                {{--                                            </li>--}}
+                {{--                                            <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Shoes</span></a>--}}
+                {{--                                                <ul class="level1">--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/flat-shoes.html"><span>Flat Shoes</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/flat-sandals.html"><span>Flat Sandals</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/boots.html"><span>Boots</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/heels.html"><span>Heels</span></a></li>--}}
+                {{--                                                </ul>--}}
+                {{--                                            </li>--}}
+                {{--                                            <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Jwellery</span></a>--}}
+                {{--                                                <ul class="level1">--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/bracelets.html"><span>Bracelets</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#"><span>Necklaces &amp; Pendent</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/pendants.html"><span>Pendants</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/pins-brooches.html"><span>Pins &amp; Brooches</span></a></li>--}}
+                {{--                                                </ul>--}}
+                {{--                                            </li>--}}
+                {{--                                            <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Dresses</span></a>--}}
+                {{--                                                <ul class="level1">--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/casual-dresses.html"><span>Casual Dresses</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/evening.html"><span>Evening</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/designer.html"><span>Designer</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/party.html"><span>Party</span></a></li>--}}
+                {{--                                                </ul>--}}
+                {{--                                            </li>--}}
+                {{--                                            <li class="level1 nav-6-1 parent item"><a href="#/swimwear.html"><span>Swimwear</span></a>--}}
+                {{--                                                <ul class="level1">--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/swimwear/swimsuits.html"><span>Swimsuits</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/swimwear/beach-clothing.html"><span>Beach Clothing</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/swimwear/clothing.html"><span>Clothing</span></a></li>--}}
+                {{--                                                    <li class="level2 nav-6-1-1"><a href="#/swimwear/bikinis.html"><span>Bikinis</span></a></li>--}}
+                {{--                                                </ul>--}}
+                {{--                                            </li>--}}
+                {{--                                        </ul>--}}
+                {{--                                    </div>--}}
+                {{--                                </div>--}}
+                {{--                                <!--nav-block nav-block-center-->--}}
+                {{--                                <div class="col-2">--}}
+                {{--                                    <div class="menu_image"><a href="#" title=""><img src="{{asset('assets/images/menu_image.png')}}" alt="menu_image"></a></div>--}}
+                {{--                                </div>--}}
+                {{--                            </div>--}}
+                {{--                            <!--level0-wrapper2--> </div>--}}
+                {{--                    </div>--}}
+                {{--                </li>--}}
+                {{--                <li class="mega-menu"><a href="grid.html" class="level-top"><span>Men</span></a>--}}
+                {{--                    <div  style="left: 0px; display: none;" class="level0-wrapper dropdown-6col">--}}
+                {{--                        <div class="container">--}}
+                {{--                            <div class="level0-wrapper2">--}}
+                {{--                                <div class="nav-block nav-block-center">--}}
+                {{--                                    <ul class="level0">--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#.html" class=""><span>Shoes</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/sport-shoes.html"><span>Sport Shoes</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/casual-shoes.html"><span>Casual Shoes</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/leather-shoes.html"><span>Leather Shoes</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/canvas-shoes.html"><span>canvas shoes</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Dresses</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/casual-dresses.html"><span>Casual Dresses</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/evening.html"><span>Evening</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/designer.html"><span>Designer</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/party.html"><span>Party</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Jackets</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/coats.html"><span>Coats</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/formal-jackets.html"><span>Formal Jackets</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/leather-jackets.html"><span>Leather Jackets</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/blazers.html"><span>Blazers</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Watches</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/fasttrack.html"><span>Fasttrack</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/casio.html"><span>Casio</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/titan.html"><span>Titan</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/tommy-hilfiger.html"><span>Tommy-Hilfiger</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#/sunglasses.html"><span>Sunglasses</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/sunglasses/ray-ban.html"><span>Ray Ban</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/sunglasses/fasttrack.html"><span>Fasttrack</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/sunglasses/police.html"><span>Police</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/sunglasses/oakley.html"><span>Oakley</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#/accesories.html"><span>Accesories</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/accesories/backpacks.html"><span>Backpacks</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/accesories/wallets.html"><span>Wallets</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/accesories/laptops-bags.html"><span>Laptops Bags</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/accesories/belts.html"><span>Belts</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                    </ul>--}}
+                {{--                                </div>--}}
+                {{--                                <!--level0-wrapper2-->--}}
 
-                        <li class="level1"> <a href="faq.html"> <span>FAQ</span> </a> </li>
-                        <li class="level1"> <a href="login.html"> <span>Login</span> </a> </li>
-                        <li class="level1"> <a href="forgot_password.html"> <span>Forgot Password</span> </a> </li>
-                        <li class="level1"> <a href="quick_view.html"> <span>Quick view </span> </a> </li>
-                        <li class="level1 first parent"><a href="blog.html"><span>Blog</span></a>
-                            <ul class="level2 right-sub" style="top: 0px; left: 165px; display: none;">
-                                <li class="level2 nav-2-1-1 first"><a href="blog_detail.html"><span>Blog Detail</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="level1"><a href="contact_us.html"><span>Contact us</span></a> </li>
-                        <li class="level1"><a href="404error.html"><span>404 Error Page</span></a> </li>
-                    </ul>
-                </li>
-                <li class="mega-menu"><a href="grid.html" class="level-top"><span>Women</span></a>
-                    <div style="left: 0px; display: none;" class="level0-wrapper dropdown-6col">
-                        <div class="container">
-                            <div class="level0-wrapper2">
-                                <div class="col-1">
-                                    <div class="nav-block nav-block-center">
-                                        <ul class="level0">
-                                            <li class="level1 nav-6-1 parent item"><a href="#.html" class=""><span>Handbags</span></a>
-                                                <ul class="level1">
-                                                    <li class="level2 nav-6-1-1"><a href="#" class=""><span>Clutch Handbags</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/diaper-bags.html" class=""><span>Diaper Bags</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/bags.html" class=""><span>Bags</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/hobo-handbags.html" class=""><span>Hobo handbags</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 nav-6-1 parent item"><a href="#.html"><span>JACKETS</span></a>
-                                                <ul class="level1">
-                                                    <li class="level2 nav-6-1-1"><a href="#/beaded-handbags.html"><span>Bathtime Goods </span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/fabric-handbags.html"><span>Bedding</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/handbags.html"><span>Blankets</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/leather-handbags.html"><span>Shower Curtains</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Shoes</span></a>
-                                                <ul class="level1">
-                                                    <li class="level2 nav-6-1-1"><a href="#/flat-shoes.html"><span>Flat Shoes</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/flat-sandals.html"><span>Flat Sandals</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/boots.html"><span>Boots</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/heels.html"><span>Heels</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Jwellery</span></a>
-                                                <ul class="level1">
-                                                    <li class="level2 nav-6-1-1"><a href="#/bracelets.html"><span>Bracelets</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#"><span>Necklaces &amp; Pendent</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/pendants.html"><span>Pendants</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/pins-brooches.html"><span>Pins &amp; Brooches</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Dresses</span></a>
-                                                <ul class="level1">
-                                                    <li class="level2 nav-6-1-1"><a href="#/casual-dresses.html"><span>Casual Dresses</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/evening.html"><span>Evening</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/designer.html"><span>Designer</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/party.html"><span>Party</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="level1 nav-6-1 parent item"><a href="#/swimwear.html"><span>Swimwear</span></a>
-                                                <ul class="level1">
-                                                    <li class="level2 nav-6-1-1"><a href="#/swimwear/swimsuits.html"><span>Swimsuits</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/swimwear/beach-clothing.html"><span>Beach Clothing</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/swimwear/clothing.html"><span>Clothing</span></a></li>
-                                                    <li class="level2 nav-6-1-1"><a href="#/swimwear/bikinis.html"><span>Bikinis</span></a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!--nav-block nav-block-center-->
-                                <div class="col-2">
-                                    <div class="menu_image"><a href="#" title=""><img src="{{asset('assets/images/menu_image.png')}}" alt="menu_image"></a></div>
-                                </div>
-                            </div>
-                            <!--level0-wrapper2--> </div>
-                    </div>
-                </li>
-                <li class="mega-menu"><a href="grid.html" class="level-top"><span>Men</span></a>
-                    <div  style="left: 0px; display: none;" class="level0-wrapper dropdown-6col">
-                        <div class="container">
-                            <div class="level0-wrapper2">
-                                <div class="nav-block nav-block-center">
-                                    <ul class="level0">
-                                        <li class="level1 nav-6-1 parent item"><a href="#.html" class=""><span>Shoes</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/sport-shoes.html"><span>Sport Shoes</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/casual-shoes.html"><span>Casual Shoes</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/leather-shoes.html"><span>Leather Shoes</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/canvas-shoes.html"><span>canvas shoes</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Dresses</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/casual-dresses.html"><span>Casual Dresses</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/evening.html"><span>Evening</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/designer.html"><span>Designer</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/party.html"><span>Party</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Jackets</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/coats.html"><span>Coats</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/formal-jackets.html"><span>Formal Jackets</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/leather-jackets.html"><span>Leather Jackets</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/blazers.html"><span>Blazers</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Watches</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/fasttrack.html"><span>Fasttrack</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/casio.html"><span>Casio</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/titan.html"><span>Titan</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/tommy-hilfiger.html"><span>Tommy-Hilfiger</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#/sunglasses.html"><span>Sunglasses</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/sunglasses/ray-ban.html"><span>Ray Ban</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/sunglasses/fasttrack.html"><span>Fasttrack</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/sunglasses/police.html"><span>Police</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/sunglasses/oakley.html"><span>Oakley</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#/accesories.html"><span>Accesories</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/accesories/backpacks.html"><span>Backpacks</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/accesories/wallets.html"><span>Wallets</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/accesories/laptops-bags.html"><span>Laptops Bags</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/accesories/belts.html"><span>Belts</span></a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--level0-wrapper2-->
-
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                {{--                            </div>--}}
+                {{--                        </div>--}}
+                {{--                    </div>--}}
+                {{--                </li>--}}
             </ul>
             <ul class="nav hidden-xs menu-item menu-item-right">
-                <li class="mega-menu"><a href="grid.html" class="level-top"><span>Electronics</span></a>
-                    <div style="left: 0px; display: none;" class="level0-wrapper dropdown-6col">
-                        <div class="container">
-                            <div class="level0-wrapper2">
-                                <div class="nav-block nav-block-center">
-                                    <ul class="level0">
-                                        <li class="level1 nav-6-1 parent item"><a href="#/mobiles.html"><span>Mobiles</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/mobiles/samsung.html"><span>Samsung</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/mobiles/nokia.html"><span>Nokia</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/mobiles/iphone.html"><span>IPhone</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/mobiles/sony.html"><span>Sony</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#.html" class=""><span>Accesories</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/mobile-memory-cards.html"><span>Mobile Memory Cards</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/cases-covers.html"><span>Cases &amp; Covers</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/mobile-haedphones.html"><span>Mobile Headphones</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/bluetooth-headsets.html"><span>Bluetooth Headsets</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#/cameras.html"><span>Cameras</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/cameras/camcorders.html"><span>Camcorders</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/cameras/point-shoot.html"><span>Point &amp; Shoot</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/cameras/digital-slr.html"><span>Digital SLR</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#camera-accesories.html"><span>Camera Accesories</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#/audio-video.html"><span>Audio &amp; Video</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/audio-video/mp3-players.html"><span>MP3 Players</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/audio-video/ipods.html"><span>IPods</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/audio-video/speakers.html"><span>Speakers</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/audio-video/video-players.html"><span>Video Players</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#/computer.html"><span>Computer</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/external-hard-disk.html"><span>External Hard Disk</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/computer/pendrives.html"><span>Pendrives</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/computer/headphones.html"><span>Headphones</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/computer/pc-components.html"><span>PC Components</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 nav-6-1 parent item"><a href="#/home-appliances.html"><span>Appliances</span></a>
-                                            <ul class="level1">
-                                                <li class="level2 nav-6-1-1"><a href="#/vaccum-cleaners.html"><span>Vaccum Cleaners</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/indoor-lighting.html"><span>Indoor Lighting</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/kitchen-tools.html"><span>Kitchen Tools</span></a></li>
-                                                <li class="level2 nav-6-1-1"><a href="#/water-purifier.html"><span>Water Purifier</span></a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!--level0-wrapper2-->
+                {{--                <li class="mega-menu"><a href="grid.html" class="level-top"><span>Electronics</span></a>--}}
+                {{--                    <div style="left: 0px; display: none;" class="level0-wrapper dropdown-6col">--}}
+                {{--                        <div class="container">--}}
+                {{--                            <div class="level0-wrapper2">--}}
+                {{--                                <div class="nav-block nav-block-center">--}}
+                {{--                                    <ul class="level0">--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#/mobiles.html"><span>Mobiles</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/mobiles/samsung.html"><span>Samsung</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/mobiles/nokia.html"><span>Nokia</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/mobiles/iphone.html"><span>IPhone</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/mobiles/sony.html"><span>Sony</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#.html" class=""><span>Accesories</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/mobile-memory-cards.html"><span>Mobile Memory Cards</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/cases-covers.html"><span>Cases &amp; Covers</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/mobile-haedphones.html"><span>Mobile Headphones</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/bluetooth-headsets.html"><span>Bluetooth Headsets</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#/cameras.html"><span>Cameras</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/cameras/camcorders.html"><span>Camcorders</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/cameras/point-shoot.html"><span>Point &amp; Shoot</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/cameras/digital-slr.html"><span>Digital SLR</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#camera-accesories.html"><span>Camera Accesories</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#/audio-video.html"><span>Audio &amp; Video</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/audio-video/mp3-players.html"><span>MP3 Players</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/audio-video/ipods.html"><span>IPods</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/audio-video/speakers.html"><span>Speakers</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/audio-video/video-players.html"><span>Video Players</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#/computer.html"><span>Computer</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/external-hard-disk.html"><span>External Hard Disk</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/computer/pendrives.html"><span>Pendrives</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/computer/headphones.html"><span>Headphones</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/computer/pc-components.html"><span>PC Components</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                        <li class="level1 nav-6-1 parent item"><a href="#/home-appliances.html"><span>Appliances</span></a>--}}
+                {{--                                            <ul class="level1">--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/vaccum-cleaners.html"><span>Vaccum Cleaners</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/indoor-lighting.html"><span>Indoor Lighting</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/kitchen-tools.html"><span>Kitchen Tools</span></a></li>--}}
+                {{--                                                <li class="level2 nav-6-1-1"><a href="#/water-purifier.html"><span>Water Purifier</span></a></li>--}}
+                {{--                                            </ul>--}}
+                {{--                                        </li>--}}
+                {{--                                    </ul>--}}
+                {{--                                </div>--}}
+                {{--                            </div>--}}
+                {{--                            <!--level0-wrapper2-->--}}
 
-                        </div>
-                    </div>
-                </li>
-                <li class="mega-menu"><a class="level-top" href="grid.html"><span>Furniture</span></a>
+                {{--                        </div>--}}
+                {{--                    </div>--}}
+                {{--                </li>--}}
+                {{--                <li class="mega-menu"><a class="level-top" href="grid.html"><span>Furniture</span></a>--}}
 
-                </li>
-                <li class="level0 nav-8 level-top"><a href="grid.html" class="level-top"><span>Kids</span></a></li>
+                {{--                </li>--}}
+                {{--                <li class="level0 nav-8 level-top"><a href="grid.html" class="level-top"><span>Kids</span></a></li>--}}
 
             </ul>
-
 
 
         </div>
@@ -421,12 +319,18 @@
     <!-- Slider -->
     <div id="thm-slideshow" class="thm-slideshow">
         <div class="container">
-            <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classicslider1" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+            <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+                 data-alias="classicslider1"
+                 style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
                 <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
                 <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
                     <ul>
                         <!-- SLIDE  -->
-                        <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="{{asset('assets/images/banner-1.png')}}"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-description="">
+                        <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
+                            data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                            data-thumb="{{asset('assets/images/banner-1.png')}}" data-rotate="0"
+                            data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
+                            data-saveperformance="off" data-title="Intro" data-description="">
                             <!-- MAIN IMAGE -->
                             <img src="{{asset('assets/images/banner-1.png')}}" alt="">
                             <!-- LAYERS -->
@@ -453,7 +357,8 @@
 
                                  data-elementdelay="0.05"
 
-                                 style="z-index: 5; white-space: nowrap;">Product N0: RC 1100</div>
+                                 style="z-index: 5; white-space: nowrap;">Product N0: RC 1100
+                            </div>
 
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
@@ -475,7 +380,8 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 6; white-space: nowrap;">Train Sound Air Horns for All Heavy Vehicles </div>
+                                 style="z-index: 6; white-space: nowrap;">Train Sound Air Horns for All Heavy Vehicles
+                            </div>
 
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0"
@@ -498,7 +404,7 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i> </div>
+                                 style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i></div>
 
 
                             <!-- LAYER NR. 3 -->
@@ -525,9 +431,12 @@
                                  style="z-index: 7; white-space: nowrap;"><a href="#">Learn More</a></div>
                         </li>
                         <!-- SLIDE  -->
-                        <li data-index="rs-18" data-transition="zoomin" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="{{asset('assets/images/banner-2.png')}}"  data-rotate="0"  data-saveperformance="off"  data-title="Ken Burns" data-description="">
+                        <li data-index="rs-18" data-transition="zoomin" data-slotamount="7"
+                            data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                            data-thumb="{{asset('assets/images/banner-2.png')}}" data-rotate="0"
+                            data-saveperformance="off" data-title="Ken Burns" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="{{asset('assets/images/banner-2.png')}}"  alt="">
+                            <img src="{{asset('assets/images/banner-2.png')}}" alt="">
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
@@ -548,7 +457,7 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 5;background-color:rgba(0, 0, 0, 0.75);border-color:rgba(0, 0, 0, 0.50);"> </div>
+                                 style="z-index: 5;background-color:rgba(0, 0, 0, 0.75);border-color:rgba(0, 0, 0, 0.50);"></div>
 
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0"
@@ -572,7 +481,8 @@
 
                                  data-elementdelay="0.05"
 
-                                 style="z-index: 6; white-space: nowrap;">Mega Sale </div>
+                                 style="z-index: 6; white-space: nowrap;">Mega Sale
+                            </div>
 
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
@@ -594,12 +504,16 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 7; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur </div>
+                                 style="z-index: 7; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur
+                            </div>
                         </li>
                         <!-- SLIDE  -->
-                        <li data-index="rs-19" data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="{{asset('assets/images/banner-3.png')}}"  data-rotate="0"  data-saveperformance="off"  data-title="" data-description="">
+                        <li data-index="rs-19" data-transition="zoomout" data-slotamount="default"
+                            data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
+                            data-thumb="{{asset('assets/images/banner-3.png')}}" data-rotate="0"
+                            data-saveperformance="off" data-title="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="{{asset('assets/images/banner-3.png')}}"  alt="">
+                            <img src="{{asset('assets/images/banner-3.png')}}" alt="">
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
@@ -619,7 +533,7 @@
                                  data-responsive_offset="on"
                                  data-responsive="off"
 
-                                 style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0);"> </div>
+                                 style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 0);"></div>
 
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0"
@@ -642,7 +556,8 @@
 
                                  data-elementdelay="0.05"
 
-                                 style="z-index: 6; white-space: nowrap;">Hot deals</div>
+                                 style="z-index: 6; white-space: nowrap;">Hot deals
+                            </div>
 
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
@@ -664,7 +579,8 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 7; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur </div>
+                                 style="z-index: 7; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur
+                            </div>
 
                             <!-- LAYER NR. 4 -->
                             <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-0"
@@ -687,7 +603,7 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 8; white-space: nowrap;"><i class="pe-7s-ball"></i> </div>
+                                 style="z-index: 8; white-space: nowrap;"><i class="pe-7s-ball"></i></div>
                         </li>
                         <!-- SLIDE  -->
                     </ul>
@@ -703,8 +619,12 @@
     <div class="promo-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img alt="promotion banner" src="{{asset('assets/images/feature-product-1.png')}}"></div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img alt="promotion banner" src="{{asset('assets/images/feature-product-2.png')}}"></div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img alt="promotion banner"
+                                                                       src="{{asset('assets/images/feature-product-1.png')}}">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img alt="promotion banner"
+                                                                       src="{{asset('assets/images/feature-product-2.png')}}">
+                </div>
             </div>
         </div>
     </div>
@@ -721,33 +641,48 @@
                     <div class="item">
                         <div class="item-inner">
                             <div class="item-img">
-                                <div class="item-img-info"> <a class="product-image" title="Retis lapen casen" href="#"> <img alt="Retis lapen casen" src="{{asset('assets/images/horn-1.png')}}"> </a>
+                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">
+                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-1.png')}}"> </a>
                                     <div class="new-label new-top-left">new</div>
                                     <div class="box-timer">
                                         <div class="countbox_2 timer-grid"></div>
                                     </div>
                                     <div class="actions">
-                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                        <p data-original-title="Out of Stock" title="" data-placement="right" data-toggle="tooltip" class="availability out-of-stock"><span class="ava-out-of-stock">Out of stock</span></p>
+                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
+                                                                       data-placement="right" title=""
+                                                                       data-original-title="Quick View"> <span>Quick View</span></a>
+                                        </div>
+                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"
+                                                                      data-placement="right" title=""
+                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                        </div>
+                                        <div class="link-compare"><a href="#" data-toggle="tooltip"
+                                                                     data-placement="right" title=""
+                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
+                                        </div>
+                                        <p data-original-title="Out of Stock" title="" data-placement="right"
+                                           data-toggle="tooltip" class="availability out-of-stock"><span
+                                                class="ava-out-of-stock">Out of stock</span></p>
                                     </div>
                                     <div class="rating">
                                         <div class="ratings">
                                             <div class="rating-box">
                                                 <div style="width:80%" class="rating"></div>
                                             </div>
-                                            <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>
+                                                <a href="#">Add Review</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item-info">
                                 <div class="info-inner">
-                                    <div class="item-title"> <a title="Retis lapen casen" href="#"> Retis lapen casen </a> </div>
+                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen
+                                            casen </a></div>
                                     <div class="item-content">
                                         <div class="item-price">
-                                            <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -759,13 +694,25 @@
                     <div class="item">
                         <div class="item-inner">
                             <div class="item-img">
-                                <div class="item-img-info"> <a class="product-image" title="Retis lapen casen" href="#"> <img alt="Retis lapen casen" src="{{asset('assets/images/horn-2.png')}}"> </a>
+                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">
+                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-2.png')}}"> </a>
                                     <div class="actions">
-                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
+                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
+                                                                       data-placement="right" title=""
+                                                                       data-original-title="Quick View"> <span>Quick View</span></a>
+                                        </div>
+                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"
+                                                                      data-placement="right" title=""
+                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                        </div>
+                                        <div class="link-compare"><a href="#" data-toggle="tooltip"
+                                                                     data-placement="right" title=""
+                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
+                                        </div>
                                         <div class="add_cart">
-                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
+                                            <button class="button btn-cart" type="button" data-toggle="tooltip"
+                                                    data-placement="right" title="" data-original-title="Add to Cart">
+                                                <span>Add to Cart</span></button>
                                         </div>
                                     </div>
                                     <div class="rating">
@@ -773,17 +720,20 @@
                                             <div class="rating-box">
                                                 <div style="width:80%" class="rating"></div>
                                             </div>
-                                            <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>
+                                                <a href="#">Add Review</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item-info">
                                 <div class="info-inner">
-                                    <div class="item-title"> <a title="Retis lapen casen" href="#"> Retis lapen casen </a> </div>
+                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen
+                                            casen </a></div>
                                     <div class="item-content">
                                         <div class="item-price">
-                                            <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -796,14 +746,26 @@
                     <div class="item">
                         <div class="item-inner">
                             <div class="item-img">
-                                <div class="item-img-info"> <a class="product-image" title="Retis lapen casen" href="#"> <img alt="Retis lapen casen" src="{{asset('assets/images/horn-3.png')}}"> </a>
+                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">
+                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-3.png')}}"> </a>
                                     <div class="sale-label new-top-left">Sale</div>
                                     <div class="actions">
-                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
+                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
+                                                                       data-placement="right" title=""
+                                                                       data-original-title="Quick View"> <span>Quick View</span></a>
+                                        </div>
+                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"
+                                                                      data-placement="right" title=""
+                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                        </div>
+                                        <div class="link-compare"><a href="#" data-toggle="tooltip"
+                                                                     data-placement="right" title=""
+                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
+                                        </div>
                                         <div class="add_cart">
-                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
+                                            <button class="button btn-cart" type="button" data-toggle="tooltip"
+                                                    data-placement="right" title="" data-original-title="Add to Cart">
+                                                <span>Add to Cart</span></button>
                                         </div>
                                     </div>
                                     <div class="rating">
@@ -811,17 +773,20 @@
                                             <div class="rating-box">
                                                 <div style="width:80%" class="rating"></div>
                                             </div>
-                                            <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>
+                                                <a href="#">Add Review</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item-info">
                                 <div class="info-inner">
-                                    <div class="item-title"> <a title="Retis lapen casen" href="#"> Retis lapen casen </a> </div>
+                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen
+                                            casen </a></div>
                                     <div class="item-content">
                                         <div class="item-price">
-                                            <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -833,13 +798,25 @@
                     <div class="item">
                         <div class="item-inner">
                             <div class="item-img">
-                                <div class="item-img-info"> <a class="product-image" title="Retis lapen casen" href="#"> <img alt="Retis lapen casen" src="{{asset('assets/images/horn-4.png')}}"> </a>
+                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">
+                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-4.png')}}"> </a>
                                     <div class="actions">
-                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
+                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
+                                                                       data-placement="right" title=""
+                                                                       data-original-title="Quick View"> <span>Quick View</span></a>
+                                        </div>
+                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"
+                                                                      data-placement="right" title=""
+                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                        </div>
+                                        <div class="link-compare"><a href="#" data-toggle="tooltip"
+                                                                     data-placement="right" title=""
+                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
+                                        </div>
                                         <div class="add_cart">
-                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
+                                            <button class="button btn-cart" type="button" data-toggle="tooltip"
+                                                    data-placement="right" title="" data-original-title="Add to Cart">
+                                                <span>Add to Cart</span></button>
                                         </div>
                                     </div>
                                     <div class="rating">
@@ -847,17 +824,20 @@
                                             <div class="rating-box">
                                                 <div style="width:80%" class="rating"></div>
                                             </div>
-                                            <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>
+                                                <a href="#">Add Review</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="item-info">
                                 <div class="info-inner">
-                                    <div class="item-title"> <a title="Retis lapen casen" href="#"> Retis lapen casen </a> </div>
+                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen
+                                            casen </a></div>
                                     <div class="item-content">
                                         <div class="item-price">
-                                            <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>
+                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -917,7 +897,7 @@
             <div class="box-timer">
                 <div class="countbox_1 timer-grid"></div>
             </div>
-            <a href="#" class="shop-now">Shop Now</a> </div>
+            <a href="#" class="shop-now">Shop Now</a></div>
     </div>
     <!--Promotion Banner End-->
 
@@ -934,188 +914,78 @@
                                         <!--Begin Tab Nav -->
                                         <div class="thm-pdt-nav">
                                             <ul class="pdt-nav">
-                                                <li class="item-nav" data-type="order" data-catid="" data-orderby="best_sales" data-href="pdt_best_sales"><span class="title-navi">Best Seller</span></li>
-                                                <li class="item-nav tab-loaded tab-nav-actived" data-type="order" data-catid="" data-orderby="new_arrivals" data-href="pdt_new_arrivals"><span class="title-navi">New Arrivals</span></li>
-                                                <li class="item-nav" data-type="order" data-catid="" data-orderby="featured" data-href="pdt_featured"><span class="title-navi">Featured</span></li>
+                                                <li class="item-nav tab-loaded tab-nav-actived" data-type="order"
+                                                    data-catid="" data-orderby="new_arrivals"
+                                                    data-href="pdt_new_arrivals"><span
+                                                        class="title-navi">Best Seller</span></li>
                                             </ul>
                                         </div>
                                         <!-- End Tab Nav -->
                                         <!--Begin Tab Content -->
                                         <div class="thm-pdt-content wide-5">
-                                            <div class="pdt-content is-loaded pdt_best_sales">
-                                                <ul class="pdt-list products-grid zoomOut play">
-                                                    <li class="item item-animate wide-first">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}'" alt="Retis lapen casen"></a>
-
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item item-animate">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
-
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item item-animate">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
-
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item last item-animate">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
-
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
                                             <div class="pdt-content pdt_new_arrivals is-loaded  tab-content-actived">
                                                 <ul class="pdt-list products-grid zoomOut play">
                                                     <li class="item item-animate wide-first">
                                                         <div class="item-inner">
                                                             <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
+                                                                <div class="item-img-info"><a href="#"
+                                                                                              title="Road Master 6 Pipe Air Horn for Train, Truck, Bus (New Melodies)"
+                                                                                              class="product-image"><img
+                                                                            src="{{asset('assets/images/best_seller1.png')}}"
+                                                                            alt="Retis lapen casen"></a>
                                                                     <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
+                                                                        <div class="quick-view-btn"><a href="#"
+                                                                                                       data-toggle="tooltip"
+                                                                                                       data-placement="right"
+                                                                                                       title=""
+                                                                                                       data-original-title="Quick View">
+                                                                                <span>Quick View</span></a></div>
+                                                                        <div class="link-wishlist"><a href="#"
+                                                                                                      data-toggle="tooltip"
+                                                                                                      data-placement="right"
+                                                                                                      title=""
+                                                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                                                        </div>
+                                                                        <div class="link-compare"><a href="#"
+                                                                                                     data-toggle="tooltip"
+                                                                                                     data-placement="right"
+                                                                                                     title=""
+                                                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
+                                                                        </div>
                                                                         <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
+                                                                            <button class="button btn-cart"
+                                                                                    type="button" data-toggle="tooltip"
+                                                                                    data-placement="right" title=""
+                                                                                    data-original-title="Add to Cart">
+                                                                                <span>Add to Cart</span></button>
                                                                         </div>
                                                                     </div>
                                                                     <div class="rating">
                                                                         <div class="ratings">
                                                                             <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
+                                                                                <div class="rating"
+                                                                                     style="width:80%"></div>
                                                                             </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                                                            <p class="rating-links"><a href="#">1
+                                                                                    Review(s)</a> <span
+                                                                                    class="separator">|</span> <a
+                                                                                    href="#">Add Review</a></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="item-info">
                                                                 <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
+                                                                    <div class="item-title"><a href="#"
+                                                                                               title="Road Master 6 Pipe Air Horn for Train, Truck, Bus (New Melodies)">Road
+                                                                            Master 6 Pipe Air Horn for Train, Truck, Bus
+                                                                            (New Melodies)</a></div>
                                                                     <div class="item-content">
                                                                         <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
+                                                                            <div class="price-box"><span
+                                                                                    class="regular-price"><span
+                                                                                        class="price">$160.00</span> </span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1125,31 +995,64 @@
                                                     <li class="item item-animate">
                                                         <div class="item-inner">
                                                             <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
+                                                                <div class="item-img-info"><a href="#"
+                                                                                              title="MSK-1300 Whistle Air Horn, 3 different sounds, sound like whistle"
+                                                                                              class="product-image"><img
+                                                                            src="{{asset('assets/images/best_seller2.png')}}"
+                                                                            alt="Retis lapen casen"></a>
                                                                     <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
+                                                                        <div class="quick-view-btn"><a href="#"
+                                                                                                       data-toggle="tooltip"
+                                                                                                       data-placement="right"
+                                                                                                       title=""
+                                                                                                       data-original-title="Quick View">
+                                                                                <span>Quick View</span></a></div>
+                                                                        <div class="link-wishlist"><a href="#"
+                                                                                                      data-toggle="tooltip"
+                                                                                                      data-placement="right"
+                                                                                                      title=""
+                                                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                                                        </div>
+                                                                        <div class="link-compare"><a href="#"
+                                                                                                     data-toggle="tooltip"
+                                                                                                     data-placement="right"
+                                                                                                     title=""
+                                                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
+                                                                        </div>
                                                                         <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
+                                                                            <button class="button btn-cart"
+                                                                                    type="button" data-toggle="tooltip"
+                                                                                    data-placement="right" title=""
+                                                                                    data-original-title="Add to Cart">
+                                                                                <span>Add to Cart</span></button>
                                                                         </div>
                                                                     </div>
                                                                     <div class="rating">
                                                                         <div class="ratings">
                                                                             <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
+                                                                                <div class="rating"
+                                                                                     style="width:80%"></div>
                                                                             </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                                                            <p class="rating-links"><a href="#">1
+                                                                                    Review(s)</a> <span
+                                                                                    class="separator">|</span> <a
+                                                                                    href="#">Add Review</a></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="item-info">
                                                                 <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
+                                                                    <div class="item-title"><a href="#"
+                                                                                               title="MSK-1300 Whistle Air Horn, 3 different sounds, sound like whistle">MSK-1300
+                                                                            Whistle Air Horn, 3 different sounds, sound
+                                                                            like whistle</a></div>
                                                                     <div class="item-content">
                                                                         <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
+                                                                            <div class="price-box"><span
+                                                                                    class="regular-price"><span
+                                                                                        class="price">$60.00</span> </span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1159,32 +1062,65 @@
                                                     <li class="item item-animate">
                                                         <div class="item-inner">
                                                             <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
+                                                                <div class="item-img-info"><a href="#"
+                                                                                              title="MSK-6800C (Motor Sound) 6 Trumpet Air Horn 8 Different Sounds"
+                                                                                              class="product-image"><img
+                                                                            src="{{asset('assets/images/best_seller3.png')}}"
+                                                                            alt="Retis lapen casen"></a>
 
                                                                     <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
+                                                                        <div class="quick-view-btn"><a href="#"
+                                                                                                       data-toggle="tooltip"
+                                                                                                       data-placement="right"
+                                                                                                       title=""
+                                                                                                       data-original-title="Quick View">
+                                                                                <span>Quick View</span></a></div>
+                                                                        <div class="link-wishlist"><a href="#"
+                                                                                                      data-toggle="tooltip"
+                                                                                                      data-placement="right"
+                                                                                                      title=""
+                                                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                                                        </div>
+                                                                        <div class="link-compare"><a href="#"
+                                                                                                     data-toggle="tooltip"
+                                                                                                     data-placement="right"
+                                                                                                     title=""
+                                                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
+                                                                        </div>
                                                                         <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
+                                                                            <button class="button btn-cart"
+                                                                                    type="button" data-toggle="tooltip"
+                                                                                    data-placement="right" title=""
+                                                                                    data-original-title="Add to Cart">
+                                                                                <span>Add to Cart</span></button>
                                                                         </div>
                                                                     </div>
                                                                     <div class="rating">
                                                                         <div class="ratings">
                                                                             <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
+                                                                                <div class="rating"
+                                                                                     style="width:80%"></div>
                                                                             </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                                                            <p class="rating-links"><a href="#">1
+                                                                                    Review(s)</a> <span
+                                                                                    class="separator">|</span> <a
+                                                                                    href="#">Add Review</a></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="item-info">
                                                                 <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
+                                                                    <div class="item-title"><a href="#"
+                                                                                               title="MSK-6800C (Motor Sound) 6 Trumpet Air Horn 8 Different Sounds">MSK-6800C
+                                                                            (Motor Sound) 6 Trumpet Air Horn 8 Different
+                                                                            Sounds</a></div>
                                                                     <div class="item-content">
                                                                         <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
+                                                                            <div class="price-box"><span
+                                                                                    class="regular-price"><span
+                                                                                        class="price">$160.00</span> </span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1194,171 +1130,65 @@
                                                     <li class="item item-animate last">
                                                         <div class="item-inner">
                                                             <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
+                                                                <div class="item-img-info"><a href="#"
+                                                                                              title="MSK 12V Single Trumpet Air Horn with Compressor 150db Loud Sound for Trucks, Boats, SUV, Train, Lorrys, Cars"
+                                                                                              class="product-image"><img
+                                                                            src="{{asset('assets/images/best_seller4.png')}}"
+                                                                            alt="Retis lapen casen"></a>
                                                                     <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
+                                                                        <div class="quick-view-btn"><a href="#"
+                                                                                                       data-toggle="tooltip"
+                                                                                                       data-placement="right"
+                                                                                                       title=""
+                                                                                                       data-original-title="Quick View">
+                                                                                <span>Quick View</span></a></div>
+                                                                        <div class="link-wishlist"><a href="#"
+                                                                                                      data-toggle="tooltip"
+                                                                                                      data-placement="right"
+                                                                                                      title=""
+                                                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                                                        </div>
+                                                                        <div class="link-compare"><a href="#"
+                                                                                                     data-toggle="tooltip"
+                                                                                                     data-placement="right"
+                                                                                                     title=""
+                                                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
+                                                                        </div>
                                                                         <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
+                                                                            <button class="button btn-cart"
+                                                                                    type="button" data-toggle="tooltip"
+                                                                                    data-placement="right" title=""
+                                                                                    data-original-title="Add to Cart">
+                                                                                <span>Add to Cart</span></button>
                                                                         </div>
                                                                     </div>
                                                                     <div class="rating">
                                                                         <div class="ratings">
                                                                             <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
+                                                                                <div class="rating"
+                                                                                     style="width:80%"></div>
                                                                             </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
+                                                                            <p class="rating-links"><a href="#">1
+                                                                                    Review(s)</a> <span
+                                                                                    class="separator">|</span> <a
+                                                                                    href="#">Add Review</a></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="item-info">
                                                                 <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
+                                                                    <div class="item-title"><a href="#"
+                                                                                               title="MSK 12V Single Trumpet Air Horn with Compressor 150db Loud Sound for Trucks, Boats, SUV, Train, Lorrys, Cars">MSK
+                                                                            12V Single Trumpet Air Horn with Compressor
+                                                                            150db Loud Sound for Trucks, Boats, SUV,
+                                                                            Train, Lorrys, Cars</a></div>
                                                                     <div class="item-content">
                                                                         <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="pdt-content pdt_featured is-loaded">
-                                                <ul class="pdt-list products-grid zoomOut play">
-                                                    <li class="item item-animate wide-first">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
+                                                                            <div class="price-box"><span
+                                                                                    class="regular-price"><span
+                                                                                        class="price">$60.00</span> </span>
                                                                             </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item item-animate">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item item-animate">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item item-animate last">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#" title="Retis lapen casen" class="product-image"><img src="{{asset('assets/products-images/product.jpg')}}" alt="Retis lapen casen"></a>
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>
-                                                                        <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating" style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#" title="Retis lapen casen">Retis lapen casen</a> </div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span class="regular-price"><span class="price">$125.00</span> </span> </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1379,62 +1209,61 @@
     </div>
 
 
-
     <!-- Latest Blog -->
     <section class="latest-blog wow bounceInUp animated">
         <div class="container">
             <div class="new_title center">
-                <h1>Latest Blog</h1>
+                <h1>About Us</h1>
                 <div class="starSeparator"></div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                    <div class="blog_post">
-                        <div class="thumbnail">
-                            <h2> <a href="#">Lorem ipsum dolor sit amet, consect adipiscing elit</a> </h2>
-                            <div class="featured-img">
-                                <span class="gradient-overlay"></span>
-                                <img src="{{asset('assets/images/blog-img1')}}'.jpg" alt="blog post">
-
-                            </div>
-
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+                    <div class="text-center"><img src="{{asset('assets/images/buyer1.jpg')}}" alt=""
+                                                  style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
+                    </div>
+                    <div class="">
+                        <em>Super Air Horns
+                            Great horn with simple setup to stock wiring of my vehicle. it is as loud as expected. its
+                            150db +
+                            &nbsp;</em>
+                        <br>
+                        <div class="text-center">
+                            <span class="h4 text-uppercase text-center"
+                                  style="color:#ffbc00"><b>Renat William Denkha</b></span>
                         </div>
-                        <div class="entry-meta">
-                            <a href="#">
-                                <span class="author-avatar byline"><img alt="" src="{{asset('assets/images/admin-photo')}}.jpg" class="avatar avatar-96 photo">By John Doe</span> <span class="timestamp">January 26, 2016</span>
-                            </a>
-
-
-
-                        </div>
-                        <p> Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu dictum nec, condimentum sed sapien.</p>
-                        <p> Nullam lobortis nunc semper ipsum luctus ut viverra ante eleifend... </p>
-                        <a href="#" class="continue-btn">Continue Reading <span>›</span></a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                    <div class="blog_post">
-                        <div class="thumbnail">
-                            <h2> <a href="#"> Pellentesque aliquet, sem eget laoreet ultrices</a> </h2>
-                            <div class="featured-img">
-                                <span class="gradient-overlay"></span>
-                                <img src="{{asset('assets/images/blog-img2')}}.jpg"  alt="blog post 2">
-
-                            </div>
-
-                        </div>
-                        <div class="entry-meta">
-                            <a href="#">
-                                <span class="author-avatar byline"><img alt="" src="{{asset('assets/images/admin-photo1')}}.jpg"  class="avatar avatar-96 photo">By Saraha Smith</span>
-                            </a>
-                            <span class="timestamp">January 20, 2016</span>
-
-
-                        </div>
-                        <p>Aliquam laoreet consequat malesuada. Integer vitae diam sed dolor euismod laoreet eget ac felis. Donec non erat sed elit bibendum sodales.</p>
-                        <p> Donec eu cursus velit. Proin nunc lacus, gravida mollis dictum ut, vulputate eu turpis... </p>
-                        <a href="#" class="continue-btn">Continue Reading <span>›</span></a>
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+                    <div class="text-center"><img src="{{asset('assets/images/buyer2.jpg')}}" alt=""
+                                                  style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
+                    <div><em>Super Air Horns
+                            Super Air Horn electric air horns does what it says. Loud, Musical type sound. Hooking it
+                            up? Wasn't that easy. i ordered 1000 pieces, delivered on time, amazing service, very good
+                            quality</em>
+                        <div class="text-center">
+                            <span class="h4 text-uppercase" style="color:#ffbc00"><b>Arisfian Mega Perdana</b></span>
+                            <br><span class="text-secondary">Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+                    <div class="text-center"><img src="{{asset('assets/images/buyer3.jpg')}}" alt=""
+                                                  style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
+                    </div>
+                    <div><em>Super Air Horns
+
+                            MH-6800 This horn is great, it sounds great. Love the attention it demands when someone is
+                            not paying attention and drifts into my lane. I did not receive a discount on this
+                            purchase</em>
+                        <br>
+                        <div class="text-center">
+                            <span class="h4 text-uppercase text-center"
+                                  style="color:#ffbc00"><b>Nabil William</b></span><br>
+                            <span class="text-secondary">Egypt</span>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -1449,35 +1278,43 @@
                     <div class="slider-items slider-width-col6">
 
                         <!-- Item -->
-                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo3')}}.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo3')}}.png" alt="Image"></a>
+                        </div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo2')}}.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo2')}}.png" alt="Image"></a>
+                        </div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png" alt="Image"></a>
+                        </div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png" alt="Image"></a>
+                        </div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo5')}}.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo5')}}.png" alt="Image"></a>
+                        </div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo6')}}.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo6')}}.png" alt="Image"></a>
+                        </div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png" alt="Image"></a>
+                        </div>
                         <!-- End Item -->
 
                         <!-- Item -->
-                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png" alt="Image"></a> </div>
+                        <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png" alt="Image"></a>
+                        </div>
                         <!-- End Item -->
 
                     </div>
@@ -1487,26 +1324,25 @@
     </div>
 
 
-
     <div class="our-features-box">
         <div class="container">
             <ul>
                 <li>
-                    <div class="feature-box red_bg"> <span class="icon-globe-alt"></span>
+                    <div class="feature-box red_bg"><span class="icon-globe-alt"></span>
                         <div class="content">
                             <h3>FREE SHIPPING WORLDWIDE</h3>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="feature-box yellow_bg"> <span class="icon-support"></span>
+                    <div class="feature-box yellow_bg"><span class="icon-support"></span>
                         <div class="content">
                             <h3>24/7 CUSTOMER SUPPORT</h3>
                         </div>
                     </div>
                 </li>
                 <li class="last">
-                    <div class="feature-box brown_bg"> <span class="icon-share-alt"></span>
+                    <div class="feature-box brown_bg"><span class="icon-share-alt"></span>
                         <div class="content">
                             <h3>RETURNS AND EXCHANGES</h3>
                         </div>
@@ -1562,8 +1398,11 @@
                                 <form id="newsletter-validate-detail" method="post" action="#">
                                     <div id="container_form_news">
                                         <div id="container_form_news2">
-                                            <input type="text" class="input-text required-entry validate-email" value="Enter your email address" onFocus=" this.value='' " title="Sign up for our newsletter" id="newsletter" name="email">
-                                            <button class="button subscribe" title="Subscribe" type="submit"><span>Subscribe</span></button>
+                                            <input type="text" class="input-text required-entry validate-email"
+                                                   value="Enter your email address" onFocus=" this.value='' "
+                                                   title="Sign up for our newsletter" id="newsletter" name="email">
+                                            <button class="button subscribe" title="Subscribe" type="submit"><span>Subscribe</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
@@ -1587,9 +1426,12 @@
                 </div>
             </div>
             <div class="container">
-                <div class="col-sm-12 col-xs-12 footer-logo"><img alt="Datson" src="{{asset('assets/images/logo.png')}}"></div>
+                <div class="col-sm-12 col-xs-12 footer-logo"><img alt="Datson"
+                                                                  src="{{asset('assets/images/logo.png')}}"></div>
                 <address>
-                    <i class="fa fa-map-marker"></i>ThemesGround, 789 Main rd, Anytown, CA 12345  USA <i class="fa fa-mobile"></i><span> +(888) 123-4567</span> <i class="fa fa-envelope"></i><span> superb@themesground.com</span>
+                    <i class="fa fa-map-marker"></i>Office # 2, 1st Floor 37 Civic Center M Block Model Town, Lahore,
+                    Pakistan <i class="fa fa-mobile"></i><span> +92 314 4102534</span> <i class="fa fa-envelope"></i><a
+                        href="mailto:superairhorns@gmail.com"> superairhorns@gmail.com</a>
                 </address>
             </div>
         </div>
@@ -1611,206 +1453,210 @@
                 <form id="search_mob" name="search">
                     <div class="input-group">
                         <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i> </button>
+                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
                         </div>
-                        <input type="text" class="form-control simple" placeholder="Search ..." name="srch-term" id="srch-term">
+                        <input type="text" class="form-control simple" placeholder="Search ..." name="srch-term"
+                               id="srch-term">
                     </div>
                 </form>
             </div>
         </li>
         <li>
-            <div class="home"><a href="#"><i class="icon-home"></i>Home</a> </div>
+            <div class="home"><a href="#"><i class="icon-home"></i>Home</a></div>
         </li>
         <li><a href="#">Pages</a>
             <ul>
-                <li><a href="grid.html">Grid</a> </li>
-                <li> <a href="list.html">List</a> </li>
-                <li> <a href="product_detail.html">Product Detail</a> </li>
-                <li> <a href="shopping_cart.html">Shopping Cart</a> </li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="list.html">List</a></li>
+                <li><a href="product_detail.html">Product Detail</a></li>
+                <li><a href="shopping_cart.html">Shopping Cart</a></li>
                 <li><a href="checkout.html">Checkout</a>
                     <ul>
-                        <li><a href="checkout_method.html">Checkout Method</a> </li>
-                        <li><a href="checkout_billing_info.html">Checkout Billing Info</a> </li>
+                        <li><a href="checkout_method.html">Checkout Method</a></li>
+                        <li><a href="checkout_billing_info.html">Checkout Billing Info</a></li>
                     </ul>
                 </li>
-                <li> <a href="wishlist.html">Wishlist</a> </li>
-                <li> <a href="dashboard.html">Dashboard</a> </li>
-                <li> <a href="multiple_addresses.html">Multiple Addresses</a> </li>
-                <li> <a href="about_us.html">About us</a> </li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="multiple_addresses.html">Multiple Addresses</a></li>
+                <li><a href="about_us.html">About us</a></li>
                 <li><a href="blog.html">Blog</a>
                     <ul>
-                        <li><a href="blog-detail.html">Blog Detail</a> </li>
+                        <li><a href="blog-detail.html">Blog Detail</a></li>
                     </ul>
                 </li>
-                <li><a href="contact_us.html">Contact us</a> </li>
-                <li><a href="404error.html">404 Error Page</a> </li>
+                <li><a href="contact_us.html">Contact us</a></li>
+                <li><a href="404error.html">404 Error Page</a></li>
             </ul>
         </li>
         <li><a href="#">Women</a>
             <ul>
-                <li> <a href="#" class="">Stylish Bag</a>
+                <li><a href="#" class="">Stylish Bag</a>
                     <ul>
-                        <li> <a href="#" class="">Clutch Handbags</a> </li>
-                        <li> <a href="#l" class="">Diaper Bags</a> </li>
-                        <li> <a href="#" class="">Bags</a> </li>
-                        <li> <a href="#" class="">Hobo handbags</a> </li>
+                        <li><a href="#" class="">Clutch Handbags</a></li>
+                        <li><a href="#l" class="">Diaper Bags</a></li>
+                        <li><a href="#" class="">Bags</a></li>
+                        <li><a href="#" class="">Hobo handbags</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Material Bag</a>
+                <li><a href="#">Material Bag</a>
                     <ul>
-                        <li> <a href="#">Beaded Handbags</a> </li>
-                        <li> <a href="#">Fabric Handbags</a> </li>
-                        <li> <a href="#">Handbags</a> </li>
-                        <li> <a href="#">Leather Handbags</a> </li>
+                        <li><a href="#">Beaded Handbags</a></li>
+                        <li><a href="#">Fabric Handbags</a></li>
+                        <li><a href="#">Handbags</a></li>
+                        <li><a href="#">Leather Handbags</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Shoes</a>
+                <li><a href="#">Shoes</a>
                     <ul>
-                        <li> <a href="#">Flat Shoes</a> </li>
-                        <li> <a href="#">Flat Sandals</a> </li>
-                        <li> <a href="#">Boots</a> </li>
-                        <li> <a href="#">Heels</a> </li>
+                        <li><a href="#">Flat Shoes</a></li>
+                        <li><a href="#">Flat Sandals</a></li>
+                        <li><a href="#">Boots</a></li>
+                        <li><a href="#">Heels</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Jwellery</a>
+                <li><a href="#">Jwellery</a>
                     <ul>
-                        <li> <a href="#">Bracelets</a> </li>
-                        <li> <a href="#">Necklaces &amp; Pendent</a> </li>
-                        <li> <a href="#l">Pendants</a> </li>
-                        <li> <a href="#">Pins &amp; Brooches</a> </li>
+                        <li><a href="#">Bracelets</a></li>
+                        <li><a href="#">Necklaces &amp; Pendent</a></li>
+                        <li><a href="#l">Pendants</a></li>
+                        <li><a href="#">Pins &amp; Brooches</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Dresses</a>
+                <li><a href="#">Dresses</a>
                     <ul>
-                        <li> <a href="#">Casual Dresses</a> </li>
-                        <li> <a href="#">Evening</a> </li>
-                        <li> <a href="#">Designer</a> </li>
-                        <li> <a href="#">Party</a> </li>
+                        <li><a href="#">Casual Dresses</a></li>
+                        <li><a href="#">Evening</a></li>
+                        <li><a href="#">Designer</a></li>
+                        <li><a href="#">Party</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Swimwear</a>
+                <li><a href="#">Swimwear</a>
                     <ul>
-                        <li> <a href="#">Swimsuits</a> </li>
-                        <li> <a href="#">Beach Clothing</a> </li>
-                        <li> <a href="#">Clothing</a> </li>
-                        <li> <a href="#">Bikinis</a> </li>
+                        <li><a href="#">Swimsuits</a></li>
+                        <li><a href="#">Beach Clothing</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Bikinis</a></li>
                     </ul>
                 </li>
             </ul>
         </li>
         <li><a href="#">Men</a>
             <ul>
-                <li> <a href="#" class="">Shoes</a>
+                <li><a href="#" class="">Shoes</a>
                     <ul class="level1">
-                        <li class="level2 nav-6-1-1"><a href="#">Sport Shoes</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Casual Shoes</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Leather Shoes</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">canvas shoes</a> </li>
+                        <li class="level2 nav-6-1-1"><a href="#">Sport Shoes</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Casual Shoes</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Leather Shoes</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">canvas shoes</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Dresses</a>
+                <li><a href="#">Dresses</a>
                     <ul class="level1">
-                        <li class="level2 nav-6-1-1"><a href="#">Casual Dresses</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Evening</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Designer</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Party</a> </li>
+                        <li class="level2 nav-6-1-1"><a href="#">Casual Dresses</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Evening</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Designer</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Party</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Jackets</a>
+                <li><a href="#">Jackets</a>
                     <ul class="level1">
-                        <li class="level2 nav-6-1-1"><a href="#">Coats</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Formal Jackets</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Leather Jackets</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Blazers</a> </li>
+                        <li class="level2 nav-6-1-1"><a href="#">Coats</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Formal Jackets</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Leather Jackets</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Blazers</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Watches</a>
+                <li><a href="#">Watches</a>
                     <ul class="level1">
-                        <li class="level2 nav-6-1-1"><a href="#">Fasttrack</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Casio</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Titan</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Tommy-Hilfiger</a> </li>
+                        <li class="level2 nav-6-1-1"><a href="#">Fasttrack</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Casio</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Titan</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Tommy-Hilfiger</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Sunglasses</a>
+                <li><a href="#">Sunglasses</a>
                     <ul class="level1">
-                        <li class="level2 nav-6-1-1"><a href="#">Ray Ban</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Fasttrack</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Police</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Oakley</a> </li>
+                        <li class="level2 nav-6-1-1"><a href="#">Ray Ban</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Fasttrack</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Police</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Oakley</a></li>
                     </ul>
                 </li>
-                <li> <a href="#">Accesories</a>
+                <li><a href="#">Accesories</a>
                     <ul class="level1">
-                        <li class="level2 nav-6-1-1"><a href="#">Backpacks</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Wallets</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Laptops Bags</a> </li>
-                        <li class="level2 nav-6-1-1"><a href="#">Belts</a> </li>
+                        <li class="level2 nav-6-1-1"><a href="#">Backpacks</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Wallets</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Laptops Bags</a></li>
+                        <li class="level2 nav-6-1-1"><a href="#">Belts</a></li>
                     </ul>
                 </li>
             </ul>
         </li>
         <li><a href="#">Electronics</a>
             <ul>
-                <li> <a href="#"><span>Mobiles</span></a>
+                <li><a href="#"><span>Mobiles</span></a>
                     <ul>
-                        <li> <a href="#"><span>Samsung</span></a> </li>
-                        <li> <a href="#"><span>Nokia</span></a> </li>
-                        <li> <a href="#"><span>IPhone</span></a> </li>
-                        <li> <a href="#"><span>Sony</span></a> </li>
+                        <li><a href="#"><span>Samsung</span></a></li>
+                        <li><a href="#"><span>Nokia</span></a></li>
+                        <li><a href="#"><span>IPhone</span></a></li>
+                        <li><a href="#"><span>Sony</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="#" class=""><span>Accesories</span></a>
+                <li><a href="#" class=""><span>Accesories</span></a>
                     <ul>
-                        <li> <a href="#"><span>Mobile Memory Cards</span></a> </li>
-                        <li> <a href="#"><span>Cases &amp; Covers</span></a> </li>
-                        <li> <a href="#"><span>Mobile Headphones</span></a> </li>
-                        <li> <a href="#"><span>Bluetooth Headsets</span></a> </li>
+                        <li><a href="#"><span>Mobile Memory Cards</span></a></li>
+                        <li><a href="#"><span>Cases &amp; Covers</span></a></li>
+                        <li><a href="#"><span>Mobile Headphones</span></a></li>
+                        <li><a href="#"><span>Bluetooth Headsets</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="#"><span>Cameras</span></a>
+                <li><a href="#"><span>Cameras</span></a>
                     <ul>
-                        <li> <a href="#"><span>Camcorders</span></a> </li>
-                        <li> <a href="#"><span>Point &amp; Shoot</span></a> </li>
-                        <li> <a href="#"><span>Digital SLR</span></a> </li>
-                        <li> <a href="#"><span>Camera Accesories</span></a> </li>
+                        <li><a href="#"><span>Camcorders</span></a></li>
+                        <li><a href="#"><span>Point &amp; Shoot</span></a></li>
+                        <li><a href="#"><span>Digital SLR</span></a></li>
+                        <li><a href="#"><span>Camera Accesories</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="#"><span>Audio &amp; Video</span></a>
+                <li><a href="#"><span>Audio &amp; Video</span></a>
                     <ul>
-                        <li> <a href="#"><span>MP3 Players</span></a> </li>
-                        <li> <a href="#"><span>IPods</span></a> </li>
-                        <li> <a href="#"><span>Speakers</span></a> </li>
-                        <li> <a href="#"><span>Video Players</span></a> </li>
+                        <li><a href="#"><span>MP3 Players</span></a></li>
+                        <li><a href="#"><span>IPods</span></a></li>
+                        <li><a href="#"><span>Speakers</span></a></li>
+                        <li><a href="#"><span>Video Players</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="#"><span>Computer</span></a>
+                <li><a href="#"><span>Computer</span></a>
                     <ul>
-                        <li> <a href="#"><span>External Hard Disk</span></a> </li>
-                        <li> <a href="#"><span>Pendrives</span></a> </li>
-                        <li> <a href="#"><span>Headphones</span></a> </li>
-                        <li> <a href="#"><span>PC Components</span></a> </li>
+                        <li><a href="#"><span>External Hard Disk</span></a></li>
+                        <li><a href="#"><span>Pendrives</span></a></li>
+                        <li><a href="#"><span>Headphones</span></a></li>
+                        <li><a href="#"><span>PC Components</span></a></li>
                     </ul>
                 </li>
-                <li> <a href="#"><span>Appliances</span></a>
+                <li><a href="#"><span>Appliances</span></a>
                     <ul>
-                        <li> <a href="#"><span>Vaccum Cleaners</span></a> </li>
-                        <li> <a href="#"><span>Indoor Lighting</span></a> </li>
-                        <li> <a href="#"><span>Kitchen Tools</span></a> </li>
-                        <li> <a href="#"><span>Water Purifier</span></a> </li>
+                        <li><a href="#"><span>Vaccum Cleaners</span></a></li>
+                        <li><a href="#"><span>Indoor Lighting</span></a></li>
+                        <li><a href="#"><span>Kitchen Tools</span></a></li>
+                        <li><a href="#"><span>Water Purifier</span></a></li>
                     </ul>
                 </li>
             </ul>
         </li>
-        <li><a href="#">Furniture</a> </li>
-        <li><a href="#">Kids</a> </li>
-        <li><a href="contact-us.html">Contact Us</a> </li>
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
     </ul>
     <div class="dropdown block-language-wrapper">
         <ul>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="{{asset('assets/images/english.png')}}" alt="language"> English </a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="{{asset('assets/images/francais.png')}}" alt="language"> French </a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="{{asset('assets/images/german.png')}}" alt="language"> German </a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img
+                        src="{{asset('assets/images/english.png')}}" alt="language"> English </a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img
+                        src="{{asset('assets/images/francais.png')}}" alt="language"> French </a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img
+                        src="{{asset('assets/images/german.png')}}" alt="language"> German </a></li>
         </ul>
     </div>
     <div class="dropdown block-currency-wrapper">
@@ -1862,24 +1708,24 @@
 </script>
 
 <script type="text/javascript">
-    var tpj=jQuery;
+    var tpj = jQuery;
     var revapi4;
-    tpj(document).ready(function() {
-        if(tpj("#rev_slider_4_1").revolution == undefined){
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_4_1").revolution == undefined) {
             revslider_showDoubleJqueryError("#rev_slider_4_1");
-        }else{
+        } else {
             revapi4 = tpj("#rev_slider_4_1").show().revolution({
-                sliderType:"standard",
-                sliderLayout:"fullwidth",
-                dottedOverlay:"none",
-                delay:9000,
+                sliderType: "standard",
+                sliderLayout: "fullwidth",
+                dottedOverlay: "none",
+                delay: 9000,
                 navigation: {
-                    keyboardNavigation:"off",
+                    keyboardNavigation: "off",
                     keyboard_direction: "horizontal",
-                    mouseScrollNavigation:"off",
-                    onHoverStop:"off",
-                    touch:{
-                        touchenabled:"on",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
                         swipe_threshold: 75,
                         swipe_min_touches: 1,
                         swipe_direction: "horizontal",
@@ -1887,76 +1733,76 @@
                     }
                     ,
                     arrows: {
-                        style:"zeus",
-                        enable:true,
-                        hide_onmobile:true,
-                        hide_under:750,
-                        hide_onleave:true,
-                        hide_delay:200,
-                        hide_delay_mobile:1200,
-                        tmp:'<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div> </div>',
+                        style: "zeus",
+                        enable: true,
+                        hide_onmobile: true,
+                        hide_under: 750,
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        tmp: '<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div> </div>',
                         left: {
-                            h_align:"left",
-                            v_align:"center",
-                            h_offset:30,
-                            v_offset:0
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 30,
+                            v_offset: 0
                         },
                         right: {
-                            h_align:"right",
-                            v_align:"center",
-                            h_offset:30,
-                            v_offset:0
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 30,
+                            v_offset: 0
                         }
                     }
                     ,
                     bullets: {
-                        enable:true,
-                        hide_onmobile:true,
-                        hide_under:600,
-                        style:"metis",
-                        hide_onleave:true,
-                        hide_delay:200,
-                        hide_delay_mobile:1200,
-                        direction:"horizontal",
-                        h_align:"center",
-                        v_align:"bottom",
-                        h_offset:0,
-                        v_offset:30,
-                        space:5,
-                        tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title"></span>'
+                        enable: true,
+                        hide_onmobile: true,
+                        hide_under: 600,
+                        style: "metis",
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        direction: "horizontal",
+                        h_align: "center",
+                        v_align: "bottom",
+                        h_offset: 0,
+                        v_offset: 30,
+                        space: 5,
+                        tmp: '<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title"></span>'
                     }
                 },
                 viewPort: {
-                    enable:true,
-                    outof:"pause",
-                    visible_area:"80%"
+                    enable: true,
+                    outof: "pause",
+                    visible_area: "80%"
                 },
-                responsiveLevels:[1240,1024,778,480],
-                gridwidth:[768,1024,778,480],
-                gridheight:[890,600,500,400],
-                lazyType:"none",
+                responsiveLevels: [1240, 1024, 778, 480],
+                gridwidth: [768, 1024, 778, 480],
+                gridheight: [890, 600, 500, 400],
+                lazyType: "none",
                 parallax: {
-                    type:"mouse",
-                    origo:"slidercenter",
-                    speed:2000,
-                    levels:[2,3,4,5,6,7,12,16,10,50],
+                    type: "mouse",
+                    origo: "slidercenter",
+                    speed: 2000,
+                    levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
                 },
-                shadow:0,
-                spinner:"off",
-                stopLoop:"off",
-                stopAfterLoops:-1,
-                stopAtSlide:-1,
-                shuffle:"off",
-                autoHeight:"off",
-                hideThumbsOnMobile:"off",
-                hideSliderAtLimit:0,
-                hideCaptionAtLimit:0,
-                hideAllCaptionAtLilmit:0,
-                debugMode:false,
+                shadow: 0,
+                spinner: "off",
+                stopLoop: "off",
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
                 fallbacks: {
-                    simplifyAll:"off",
-                    nextSlideOnWindowFocus:"off",
-                    disableFocusListener:false,
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
                 }
             });
         }
