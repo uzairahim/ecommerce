@@ -417,6 +417,7 @@
 
     </div>
   </nav>
+  <!-- end nav -->
 
   <!-- Slider -->
   <div id="thm-slideshow" class="thm-slideshow">
