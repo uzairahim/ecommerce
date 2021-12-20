@@ -1,13 +1,15 @@
 jQuery(document).ready(function() {
 	"use strict";
-$("#nav > li").hover(function() {
+    new WOW().init();
+
+    $("#nav > li").hover(function() {
 	var el = $(this).find(".level0-wrapper");
 	el.hide();
 	el.css("left", "0");
 	el.stop(true, true).delay(150).fadeIn(300, "easeOutCubic");
 	}, function() {
 	$(this).find(".level0-wrapper").stop(true, true).delay(300).fadeOut(300, "easeInCubic");
-	});	
+	});
 	var scrolled = false;
 
 jQuery("#nav li.level0.drop-menu").mouseover(function(){
@@ -39,7 +41,7 @@ jQuery("#nav li.level0.drop-menu li").mouseover(function(){
 	if(jQuery(window).width() >= 740){
 	jQuery(this).children('ul').fadeOut(100);
 }
-});	
+});
 
 $(".nav > li").hover(function() {
 	var el = $(this).find(".level0-wrapper");
@@ -48,7 +50,7 @@ $(".nav > li").hover(function() {
 	el.stop(true, true).delay(150).fadeIn(300, "easeOutCubic");
 	}, function() {
 	$(this).find(".level0-wrapper").stop(true, true).delay(300).fadeOut(300, "easeInCubic");
-	});	
+	});
 	var scrolled = false;
 
 jQuery(".nav li.level0.drop-menu").mouseover(function(){
@@ -80,7 +82,7 @@ jQuery(".nav li.level0.drop-menu li").mouseover(function(){
 	if(jQuery(window).width() >= 740){
 	jQuery(this).children('ul').fadeOut(100);
 }
-});			
+});
 
 jQuery("#best-seller-slider .slider-items").owlCarousel({
 	items : 4, //10 items above 1000px browser width
@@ -149,7 +151,7 @@ jQuery("#brand-logo-slider .slider-items").owlCarousel({
 	navigation : true,
 	navigationText : ["<a class=\"flex-prev\"></a>","<a class=\"flex-next\"></a>"],
 	slideSpeed : 500,
-	pagination : false			
+	pagination : false
 });
 jQuery("#category-desc-slider .slider-items").owlCarousel({
 	autoplay : true,
@@ -161,7 +163,7 @@ jQuery("#category-desc-slider .slider-items").owlCarousel({
 	navigation : true,
 	navigationText : ["<a class=\"flex-prev\"></a>","<a class=\"flex-next\"></a>"],
 	slideSpeed : 500,
-	pagination : false			
+	pagination : false
 });
 jQuery("#more-views-slider .slider-items").owlCarousel({
 	autoplay : true,
@@ -237,7 +239,7 @@ jQuery("#more-views-slider .slider-items").owlCarousel({
 	slideSpeed : 500,
 	pagination : false
 });
-jQuery(document).ready(function($){		
+jQuery(document).ready(function($){
 $("#mobile-menu").mobileMenu({
 MenuWidth: 250,
 SlideSpeed : 300,
@@ -250,9 +252,9 @@ ClassName : "mobile-menu"
 });
 });
  /*========== Left Nav ===========*/
- 
-jQuery(document).ready(function(){      
-                   
+
+jQuery(document).ready(function(){
+
         //increase/ decrease product qunatity buttons +/- in cart.html table
         if(jQuery('.subDropdown')[0]){
                 jQuery('.subDropdown').click(function(){
@@ -261,7 +263,7 @@ jQuery(document).ready(function(){
                         jQuery(this).parent().find('ul').slideToggle();
                 });
         }
-        
+
 });
 
 /*=============End Left Nav=============*/
@@ -296,7 +298,7 @@ jQuery()
 	});
 	}
 	setAnimate($('.tab-content-actived',$element));
-	
+
 	itemNav.click(function(){
 	var $this = $(this);
 	if($this.hasClass('tab-nav-actived')) return false;
@@ -307,7 +309,7 @@ jQuery()
 	$(".pdt-list").removeClass("play");$(".pdt-list .item").removeAttr('style');
 	$('.item',$(itemActive, $element)).addClass('item-animate').removeClass('animated');
 	$(itemActive, $element).addClass('tab-content-actived');
-	
+
 	contentLoading = $('.content-loading',$(itemActive, $element));
 	isLoaded = $(itemActive, $element).hasClass('is-loaded');
 	if(!isLoaded && !$(itemActive, $element).hasClass('is-loading')){
@@ -414,7 +416,7 @@ $parent = $t.parent();
 if ($parent.hasClass('parent'))
 {
 if ( !$t.hasClass('menu-ready'))
-{                    
+{
 jQuery('#nav a.level-top').removeClass('menu-ready');
 $t.addClass('menu-ready');
 return false;
@@ -465,7 +467,7 @@ return false;
 jQuery(containerHoverIDHash, this).stop().animate({
 'opacity': 1
 }, 600, 'linear');
-}, function() { 
+}, function() {
 jQuery(containerHoverIDHash, this).stop().animate({
 'opacity': 0
 }, 700, 'linear');
@@ -479,9 +481,9 @@ jQuery(containerIDhash).css({
 'top': $(window).scrollTop() + $(window).height() - 50
 });
 }
-if ( sd > settings.min ) 
+if ( sd > settings.min )
 jQuery(containerIDhash).fadeIn(settings.inDelay);
-else 
+else
 jQuery(containerIDhash).fadeOut(settings.Outdelay);
 });
 
@@ -492,13 +494,13 @@ jQuery(containerIDhash).fadeOut(settings.Outdelay);
 /*--------| End UItoTop -------------------*/
 
 
-function deleteCartInCheckoutPage(){ 	
+function deleteCartInCheckoutPage(){
 $(".checkout-cart-index a.btn-remove2,.checkout-cart-index a.btn-remove").click(function(event) {
 event.preventDefault();
 if(!confirm(confirm_content)){
 return false;
-}	
-});	
+}
+});
 return false;
 }
 function slideEffectAjax() {
@@ -513,7 +515,7 @@ $(this).find(".top-cart-content").stop(true, true).slideUp();
 function deleteCartInSidebar() {
 if(is_checkout_page>0) return false;
 $('#cart-sidebar a.btn-remove, #mini_cart_block a.btn-remove').each(function(){});
-}  
+}
 
 $(document).ready(function(){
 slideEffectAjax();
@@ -524,32 +526,32 @@ slideEffectAjax();
 
 
 jQuery.extend( jQuery.easing,
-{	
+{
 easeInCubic: function (x, t, b, c, d) {
 return c*(t/=d)*t*t + b;
 },
 easeOutCubic: function (x, t, b, c, d) {
 return c*((t=t/d-1)*t*t + 1) + b;
-},	
+},
 });
 
 (function(jQuery){
 jQuery.fn.extend({
-accordion: function() {       
+accordion: function() {
 return this.each(function() {
 
-function activate(el,effect){	
+function activate(el,effect){
 jQuery(el).siblings( panelSelector )[(effect || activationEffect)](((effect == "show")?activationEffectSpeed:false),function(){
-jQuery(el).parents().show();	
-});	
-}	
+jQuery(el).parents().show();
 });
 }
-}); 
+});
+}
+});
 })(jQuery);
 
 jQuery(function($) {
-$('.accordion').accordion();	
+$('.accordion').accordion();
 $('.accordion').each(function(index){
 var activeItems = $(this).find('li.active');
 activeItems.each(function(i){
@@ -565,59 +567,59 @@ $(this).addClass("current");
 
 
 
-/*-------- End Nav js -------------------*/	
+/*-------- End Nav js -------------------*/
 
 (function(jQuery){
 jQuery.fn.extend({
-accordionNew: function() {       
-return this.each(function() {	
+accordionNew: function() {
+return this.each(function() {
 var jQueryul			= jQuery(this),
 elementDataKey			= 'accordiated',
 activeClassName			= 'active',
 activationEffect 		= 'slideToggle',
 panelSelector			= 'ul, div',
 activationEffectSpeed 	= 'fast',
-itemSelector			= 'li';	
+itemSelector			= 'li';
 if(jQueryul.data(elementDataKey))
-return false;							
+return false;
 jQuery.each(jQueryul.find('ul, li>div'), function(){
 jQuery(this).data(elementDataKey, true);
 jQuery(this).hide();
-});	
+});
 jQuery.each(jQueryul.find('em.open-close'), function(){
 jQuery(this).click(function(e){
 activate(this, activationEffect);
 return void(0);
-});	
+});
 jQuery(this).bind('activate-node', function(){
 jQueryul.find( panelSelector ).not(jQuery(this).parents()).not(jQuery(this).siblings()).slideUp( activationEffectSpeed );
 activate(this,'slideDown');
 });
-});	
-var active = (location.hash)?jQueryul.find('a[href=' + location.hash + ']')[0]:jQueryul.find('li.current a')[0];	
+});
+var active = (location.hash)?jQueryul.find('a[href=' + location.hash + ']')[0]:jQueryul.find('li.current a')[0];
 if(active){
 activate(active, false);
-}	
-function activate(el,effect){	
-jQuery(el).parent( itemSelector ).siblings().removeClass(activeClassName).children( panelSelector ).slideUp( activationEffectSpeed );	
-jQuery(el).siblings( panelSelector )[(effect || activationEffect)](((effect == "show")?activationEffectSpeed:false),function(){	
+}
+function activate(el,effect){
+jQuery(el).parent( itemSelector ).siblings().removeClass(activeClassName).children( panelSelector ).slideUp( activationEffectSpeed );
+jQuery(el).siblings( panelSelector )[(effect || activationEffect)](((effect == "show")?activationEffectSpeed:false),function(){
 if(jQuery(el).siblings( panelSelector ).is(':visible')){
 jQuery(el).parents( itemSelector ).not(jQueryul.parents()).addClass(activeClassName);
 } else {
 jQuery(el).parent( itemSelector ).removeClass(activeClassName);
-}	
+}
 if(effect == 'show'){
 jQuery(el).parents( itemSelector ).not(jQueryul.parents()).addClass(activeClassName);
-}	
-jQuery(el).parents().show();	
-});	
-}	
+}
+jQuery(el).parents().show();
 });
 }
-}); 
+});
+}
+});
 })(jQuery);
 jQuery(function($) {
-	$('.accordion').accordion();	
+	$('.accordion').accordion();
 	$('.accordion').each(function(index){
 	var activeItems = $(this).find('li.active');
 	activeItems.each(function(i){
@@ -633,57 +635,57 @@ jQuery(function($) {
 
 
 
-/*-------- End Nav js -------------------*/	
+/*-------- End Nav js -------------------*/
 
 
 (function(jQuery){
 	jQuery.fn.extend({
-	accordionNew: function() {       
-	return this.each(function() {	
+	accordionNew: function() {
+	return this.each(function() {
 	var jQueryul			= jQuery(this),
 	elementDataKey			= 'accordiated',
 	activeClassName			= 'active',
 	activationEffect 		= 'slideToggle',
 	panelSelector			= 'ul, div',
 	activationEffectSpeed 	= 'fast',
-	itemSelector			= 'li';	
+	itemSelector			= 'li';
 	if(jQueryul.data(elementDataKey))
-	return false;							
+	return false;
 	jQuery.each(jQueryul.find('ul, li>div'), function(){
 	jQuery(this).data(elementDataKey, true);
 	jQuery(this).hide();
-	});	
+	});
 	jQuery.each(jQueryul.find('em.open-close'), function(){
 	jQuery(this).click(function(e){
 	activate(this, activationEffect);
 	return void(0);
-	});	
+	});
 	jQuery(this).bind('activate-node', function(){
 	jQueryul.find( panelSelector ).not(jQuery(this).parents()).not(jQuery(this).siblings()).slideUp( activationEffectSpeed );
 	activate(this,'slideDown');
 	});
-	});	
-	var active = (location.hash)?jQueryul.find('a[href=' + location.hash + ']')[0]:jQueryul.find('li.current a')[0];	
+	});
+	var active = (location.hash)?jQueryul.find('a[href=' + location.hash + ']')[0]:jQueryul.find('li.current a')[0];
 	if(active){
 	activate(active, false);
-	}	
-	function activate(el,effect){	
-	jQuery(el).parent( itemSelector ).siblings().removeClass(activeClassName).children( panelSelector ).slideUp( activationEffectSpeed );	
-	jQuery(el).siblings( panelSelector )[(effect || activationEffect)](((effect == "show")?activationEffectSpeed:false),function(){	
+	}
+	function activate(el,effect){
+	jQuery(el).parent( itemSelector ).siblings().removeClass(activeClassName).children( panelSelector ).slideUp( activationEffectSpeed );
+	jQuery(el).siblings( panelSelector )[(effect || activationEffect)](((effect == "show")?activationEffectSpeed:false),function(){
 	if(jQuery(el).siblings( panelSelector ).is(':visible')){
 	jQuery(el).parents( itemSelector ).not(jQueryul.parents()).addClass(activeClassName);
 	} else {
 	jQuery(el).parent( itemSelector ).removeClass(activeClassName);
-	}	
+	}
 	if(effect == 'show'){
 	jQuery(el).parents( itemSelector ).not(jQueryul.parents()).addClass(activeClassName);
-	}	
-	jQuery(el).parents().show();	
-	});	
-	}	
+	}
+	jQuery(el).parents().show();
 	});
 	}
-	}); 
+	});
+	}
+	});
 jQuery(function() {
                 function e() {
                     var e = jQuery('.navbar-collapse form[role="search"].active');
@@ -704,7 +706,7 @@ jQuery(function() {
                 })
             })
 
-/*-------- tooltip js -------------------*/	
+/*-------- tooltip js -------------------*/
 jQuery(document).ready(function() {
     jQuery('[data-toggle="tooltip"]').tooltip();
 });

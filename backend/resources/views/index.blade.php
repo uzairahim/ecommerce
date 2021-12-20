@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/jquery.bxslider.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/jquery.mobile-menu.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/revslider.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/animate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/style.css')}}" media="all">
 
     <!-- Google Fonts -->
@@ -42,16 +43,8 @@
     <header>
         <div class="header-container">
             <div class="header-top">
-                <div class="container">
-                    <div class="row">
-                        <!-- Header Language -->
-                        <div class="col-xs-7 col-sm-6">
+                <div class="container text-center">
                             <div class="welcome-msg hidden-xs">Welcome to SuperAirHorns Website - Established 1972</div>
-                        </div>
-                        <div class="col-xs-5 col-sm-6">
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -905,7 +898,7 @@
             <div class="products-grid">
                 <div class="col-md-12">
                     <div class="std">
-                        <div class="home-tabs wow bounceInUp animated">
+                        <div class="home-tabs">
                             <div class="producttabs">
                                 <div id="thm_producttabs1" class="thm-producttabs">
                                     <!--<h3></h3>-->
@@ -923,8 +916,8 @@
                                         <!--Begin Tab Content -->
                                         <div class="thm-pdt-content wide-5">
                                             <div class="pdt-content pdt_new_arrivals is-loaded  tab-content-actived">
-                                                <ul class="pdt-list products-grid zoomOut play">
-                                                    <li class="item item-animate wide-first">
+                                                <ul class="pdt-list products-grid">
+                                                    <li class="item item-animate wide-first wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".5s">
                                                         <div class="item-inner">
                                                             <div class="item-img">
                                                                 <div class="item-img-info"><a href="#"
@@ -991,7 +984,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li class="item item-animate">
+                                                    <li class="item item-animate wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
                                                         <div class="item-inner">
                                                             <div class="item-img">
                                                                 <div class="item-img-info"><a href="#"
@@ -1058,7 +1051,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li class="item item-animate">
+                                                    <li class="item item-animate wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.5s">
                                                         <div class="item-inner">
                                                             <div class="item-img">
                                                                 <div class="item-img-info"><a href="#"
@@ -1126,7 +1119,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li class="item item-animate last">
+                                                    <li class="item item-animate last wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="2s">
                                                         <div class="item-inner">
                                                             <div class="item-img">
                                                                 <div class="item-img-info"><a href="#"
@@ -1209,14 +1202,14 @@
 
 
     <!-- Latest Blog -->
-    <section class="latest-blog wow bounceInUp animated">
+    <section class="latest-blog">
         <div class="container">
             <div class="new_title center">
-                <h1>About Us</h1>
+                <h1 class="text-uppercase">testimonials</h1>
                 <div class="starSeparator"></div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer1.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
@@ -1232,7 +1225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer2.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
@@ -1246,7 +1239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.5s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer3.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
@@ -1270,8 +1263,12 @@
     </section>
     <!-- End Latest Blog -->
 
-    <div class="brand-logo wow bounceInUp animated">
+    <div class="brand-logo">
         <div class="container">
+            <div class="new_title center">
+                <h1 class="text-uppercase">Our Partners</h1>
+                <div class="starSeparator"></div>
+            </div>
             <div class="slider-items-products">
                 <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
                     <div class="slider-items slider-width-col6">
@@ -1677,6 +1674,7 @@
 <script type="text/javascript" src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/jquery.mobile-menu.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/revolution-slider.js')}}"></script>
+<script type="text/javascript" src="{{asset('assets/js/wow.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/revolution.extension.js')}}"></script>
 <script type="text/javascript">
     var dthen1 = new Date("12/25/17 11:59:00 PM");
@@ -1807,7 +1805,5 @@
         }
     });	/*ready*/
 </script>
-
-
 </body>
 </html>
