@@ -1391,13 +1391,13 @@
                         <div class="footer-column-last">
                             <div class="newsletter-wrap">
                                 <h4>Sign up for emails</h4>
-                                <form id="newsletter-validate-detail" method="post" action="#">
+                                <form id="newsletter-validate-detail" method="post" action="javascript:void(0)">
                                     <div id="container_form_news">
                                         <div id="container_form_news2">
                                             <input type="text" class="input-text required-entry validate-email"
                                                    value="Enter your email address" onFocus=" this.value='' "
                                                    title="Sign up for our newsletter" id="newsletter" name="email">
-                                            <button class="button subscribe" title="Subscribe" type="submit"><span>Subscribe</span>
+                                            <button class="button subscribe" title="Subscribe"><span>Subscribe</span>
                                             </button>
                                         </div>
                                     </div>
