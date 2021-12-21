@@ -917,7 +917,7 @@
                                         <div class="thm-pdt-content wide-5">
                                             <div class="pdt-content pdt_new_arrivals is-loaded  tab-content-actived">
                                                 <ul class="pdt-list products-grid">
-                                                    <li class="item item-animate wide-first wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".5s">
+                                                    <li class="item item-animate wide-first wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                                                         <div class="item-inner">
                                                             <div class="item-img">
                                                                 <div class="item-img-info"><a href="#"
@@ -984,7 +984,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li class="item item-animate wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
+                                                    <li class="item item-animate wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                                                         <div class="item-inner">
                                                             <div class="item-img">
                                                                 <div class="item-img-info"><a href="#"
@@ -1051,7 +1051,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li class="item item-animate wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.5s">
+                                                    <li class="item item-animate wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
                                                         <div class="item-inner">
                                                             <div class="item-img">
                                                                 <div class="item-img-info"><a href="#"
@@ -1119,7 +1119,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li class="item item-animate last wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="2s">
+                                                    <li class="item item-animate last wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
                                                         <div class="item-inner">
                                                             <div class="item-img">
                                                                 <div class="item-img-info"><a href="#"
@@ -1209,7 +1209,7 @@
                 <div class="starSeparator"></div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer1.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
@@ -1225,7 +1225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer2.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
@@ -1239,7 +1239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1.5s">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer3.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
