@@ -14,16 +14,16 @@ Text Domain:  Superb
 3.   Header
 4.   Navigation
 5.   Features Box
-6.   Top Banner Section	
+6.   Top Banner Section
 7.   Home page Sliders
 8.   Home Products Tab
-9.   Products Grid 
+9.   Products Grid
 10.  Products List
 11.  Rating and Price
 12.  Latest-Blog
 13.  Breadcrumbs
 14.  Sidebar
-15.  Product Sorting Toolbar  
+15.  Product Sorting Toolbar
 16.  Product View
 17.  Global Messages
 18.  Footer
@@ -218,11 +218,11 @@ button.button:hover {
 }
 /* Base Columns */
 
-/* 2 Column Layout -Left */ 
+/* 2 Column Layout -Left */
 .col-left {
 	margin-bottom: 0px;
 }
-/* 2 Column Layout -Right */ 
+/* 2 Column Layout -Right */
 .col-right {
 	margin-bottom: 0px;
 }
@@ -265,11 +265,11 @@ header {height:40px}
     left: 50%;
     margin:25px 0 0 -90px;
 	z-index:100
-	
+
 }
 .header-top {
 	padding: 0px 0px 0px 0px;
-	
+
 
 }
 
@@ -293,7 +293,7 @@ header .header-top-links {
 }
 .toplinks .links div {
 	display: inline-block;
-	
+
 }
 .toplinks div.links div a {
 	color: black;
@@ -664,7 +664,7 @@ ul.currencies_list li a:hover {
 	float: left;
 	padding: 0;
 	width: 64px;
-	
+
 }
 .mini-products-list .product-image img {
 	width: 60px;
@@ -683,7 +683,7 @@ ul.currencies_list li a:hover {
 .top-cart-content .product-name a:hover {
 	font-size: 13px;
 	color: #000;
-	
+
 }
 .top-cart-contain .price {
 	color: #C2A476;
@@ -832,7 +832,7 @@ ul#cart-sidebar {
 	right: 30px;
 	top: -2px;
 	color:#333!important;
-	
+
 }
 .top-cart-content .product-details .btn-edit:hover {
 	color: #339bold;
@@ -945,11 +945,11 @@ nav {
 	margin: auto;
 	width: 100%;
 	height: 100px;
-	
+
 }
 
 .inner-page nav {background:url('../images/slide-img1.jpg') repeat top left ;
-	height: 170px;  
+	height: 170px;
 }
 
 .menu-item {
@@ -1004,13 +1004,13 @@ nav {
 }
 .nav > li.active > a, .vertnav-top li.current > a:hover {
 	color: #fff;
-	
+
 }
 
 .index .nav > li > a {color:#fff;
     -webkit-transition: color 200ms ease-in-out;
     transition: color 200ms ease-in-out;}
-	
+
 .index .nav > li > a:after {
     height: 1px;
     font-size: 0;
@@ -1023,14 +1023,14 @@ nav {
     top: 100%;
     content: " ";
     opacity: 0;
-   
+
 }
 .index .nav > li > a:hover:after {
     opacity: 1;
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
-    transform: translateY(-3px);	
-	
+    transform: translateY(-3px);
+
 }
 
 .nav > li.active > a:after {
@@ -1719,7 +1719,7 @@ ul.level1 {
 	-webkit-transition: all 200ms ease-in-out;
 	-moz-transition: all 200ms ease-in-out;
 	-o-transition: all 200ms ease-in-out;
-	  
+
 }
 .nav li.drop-menu ul li:hover > a {
 	color: #fff;
@@ -2264,7 +2264,7 @@ ul.level1 {
 .slider-items-products .owl-buttons .owl-prev a {
 	background-position: 0 100%;
 	border: 1px #eaeaea solid;
-	
+
 }
 .recommend {
 	margin: 20px auto;
@@ -2279,7 +2279,7 @@ ul.level1 {
 /*  parallax bg  */
 
 .parallax {
-	
+
 }
 .parallax-2 {
 	background-image: url("../images/parralax-bg2.jpg");
@@ -2366,7 +2366,7 @@ ul.level1 {
 	display: block;
 	text-align: left;
 	height: 55px;
-	
+
 
 }
 .thm-producttabs .thm-pdt-container .thm-pdt-nav .pdt-nav > li {
@@ -2403,7 +2403,7 @@ ul.level1 {
 	color: #d04e2e;
 	position: relative;
 
-	
+
 
 }
 .thm-producttabs .thm-pdt-container .pre-text {
@@ -2633,6 +2633,9 @@ ul.level1 {
 }
 .thm-producttabs .pdt-list .wide-first {
 	margin-left: 0px;
+}
+.thm-producttabs .pdt-list .wide-products {
+    margin-left: 10px !important;
 }
 .pdt-list .item {
 	margin-left: 2.4%;
@@ -3326,7 +3329,7 @@ color: #000;
     text-transform: uppercase;
     margin-bottom: 0px;
     padding-left: 0px;
-	
+
 }
 .cross-sell-pro .new_title h2 {
 	padding: 8px 20px 8px 0px;
@@ -3704,7 +3707,7 @@ margin:
 	font-size: 16px;
 	letter-spacing:1px;
 	font-weight:300
-	
+
 }
 .products-grid .item .item-inner .item-info .info-inner .item-title a:hover {
 	color: #C2A476;
@@ -4290,7 +4293,7 @@ a.button.detail-bnt span {
 	border-top:1px #e5e5e5 solid;
 	margin-top:10px;
 	padding-bottom:0px
-	
+
 
 }
 
@@ -4786,7 +4789,7 @@ font-size: 13px;
 .block .empty {
 	color: #666666;
 }
-.sidebar .custom-slider { 
+.sidebar .custom-slider {
         display:none;
 }
 /*	Category boxes */
@@ -7323,7 +7326,7 @@ button.button.submit:before {
 .accordion-faq .arrow-down, .accordion-faq .collapsed .arrow-up {
   display: none;
 }
-/*---------- 18. Footer ------------ */	
+/*---------- 18. Footer ------------ */
 
 /* newsletter */
 .newsletter {
@@ -7599,7 +7602,7 @@ footer address {
 	padding-bottom:0px
 }
 footer address i {
-	
+
 	width: 25px!important;
 	line-height: 32px!important;
 	display: inline-block!important;
@@ -8921,7 +8924,7 @@ footer .footer-inner {
 .mm-toggle-wrap {
 	    display: inline-block;
     vertical-align: top;
- 
+
 }
 
 .tp-caption.NotGeneric-Title, .NotGeneric-Title {font-size:42px!important}
@@ -9273,7 +9276,7 @@ header .header-top-links {
 }
 
 .mm-toggle {
-	
+
 
 }
 .toplinks div.links div a {
@@ -10827,7 +10830,7 @@ ol#compare-items li a.product-name {
  border:1px rgba(255,255,255,0.5) solid;
  text-align:center;
 
- 
+
 }
 .newsletter-sign-box {
     border-radius: 0;
@@ -10873,7 +10876,7 @@ ol#compare-items li a.product-name {
  line-height:1.5em;
  margin-top: 0px;
  font-family:'Montserrat', sans-serif
- 
+
 }
 
 #popup-newsletter {
@@ -10952,7 +10955,7 @@ ol#compare-items li a.product-name {
  margin-bottom: 40px;
  border-bottom:#fff double;
  border-width:6px
- 
+
 }
 
 /* Newsletter POPUP END***************/
@@ -10979,7 +10982,7 @@ ol#compare-items li a.product-name {
 	padding-top:20px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:normal;
-	
+
 }
 .timer-grid .day.box-time-date {
 	background: #fff;
@@ -10987,7 +10990,7 @@ ol#compare-items li a.product-name {
 
 }
 .timer-grid .day.box-time-date span {
-	
+
 }
 .timer-grid .box-time-date span {
 	display: block;
@@ -11022,7 +11025,7 @@ ol#compare-items li a.product-name {
 	font-weight:normal;
 	border-radius:0px
 
-	
+
 }
 
 .countbox_2.timer-grid .box-time-date span {

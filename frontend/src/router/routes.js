@@ -3,7 +3,7 @@ import store from '@/state/store'
 export default [
 
     {
-        path:'/',
+        path:'/home',
         name:'home',
         component: () => import('./views/home/Main'),
         meta: {
@@ -21,14 +21,14 @@ export default [
     {
         path: '/products',
         name: 'products',
-        component: () => import('./views/admin/landingPage/Product'),
+        component: () => import('./views/admin/landingPage/ratedProducts/ratedProduct'),
         meta: {
             authRequired: false,
         }
     },
     // user login page
     {
-        path: '/login',
+        path: '/',
         name: 'login',
         component: () => import('./views/admin/account/login'),
         meta: {

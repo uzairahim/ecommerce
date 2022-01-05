@@ -11,7 +11,6 @@
                         </button>
                     </div>
                     <div class="card-body">
-
                         <b-row v-if="loaded">
                             <b-col>
                                 <span class="skeleton">
@@ -29,22 +28,12 @@
                                 </span>
                             </b-col>
                         </b-row>
-
-
-                        <div class="row" v-if="!loaded">
-                            <div class="border-box mr-2 mb-3"
-                                 v-for="(product,index) in product_data" :key="index">
-                                    <h3 class="text-capitalize img-text">{{product['title']}}</h3>
-                                    <img :src="product['image']" alt=""
-                                         @click="openGallery(index)" class="img-fluid">
+                        <div class="row" v-if="!loaded" v-for="(type,index) in product_data">
+                            <div class="card-header" style="width: 1024px">
+                                <p class="mb-0 h3 text-uppercase text-warning">{{index.replace('_',' ')}}</p>
                             </div>
+                                <viewProduct :products="type"></viewProduct>
                         </div>
-                        <LightBox
-                                ref="lightbox"
-                                :media="media"
-                                :show-caption="true"
-                                :show-light-box="popup"
-                        />
                     </div>
                 </div>
                 <div class="row">
@@ -65,16 +54,12 @@
 </template>
 
 <script>
-    import Layout from "../../../layouts/main";
-    import addProductModal from "./add/Product";
+    import Layout from "../../../../layouts/main";
+    import addProductModal from "../add/ratedProduct";
     import appConfig from "@/app.config";
-    import {productMethods} from "@/state/helpers";
-    import LightBox from 'vue-it-bigger';
+    import {ratedProductMethods} from "@/state/helpers";
+    import viewProduct from "./viewProduct";
 
-    import('vue-it-bigger/dist/vue-it-bigger.min.css');
-    /**
-     * Advanced table component
-     */
     export default {
         page: {
             title: "Products",
@@ -90,37 +75,21 @@
         },
         computed: {
             product_data() {
-                return this.$store.state.product.products
-            },
-            media() {
-                return this.$store.state.product.products.map((product) => {
-                    return {
-                        id: product.id,
-                        src: product.image,
-                        type: 'image',
-                        thumb: product.image,
-                        caption: product.title
-                    }
-                })
+                return this.$store.state.ratedProduct.rated_products
             }
         },
         components: {
-            Layout, addProductModal, LightBox
+            Layout, addProductModal,viewProduct
         },
         methods: {
-            ...productMethods,
+            ...ratedProductMethods,
             addProductModal() {
                 this.add_form = true;
-            },
-            openGallery(index) {
-                this.popup = true;
-                this.$refs.lightbox.showImage(index);
-            },
-
+            }
         },
         mounted() {
             this.loaded = true;
-            this.getProducts().then(res => {
+            this.getRatedProducts().then(res => {
                 this.loaded = false
             }).catch(error => {
                 this.loaded = false

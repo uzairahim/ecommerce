@@ -29,3 +29,5 @@ export const layoutMethods = mapActions('layout', ['changeLayoutType'])
 export const carouselMethods = mapActions('carousel', ['getCarousels','addCarousel'])
 
 export const productMethods = mapActions('product', ['getProducts','addProduct'])
+
+export const ratedProductMethods = mapActions('ratedProduct', ['getRatedProducts','addRatedProduct'])

@@ -3,6 +3,7 @@
 /public/storage
 /public/products
 /public/carousel
+/public/rated_product
 /storage/*.key
 /vendor
 .env

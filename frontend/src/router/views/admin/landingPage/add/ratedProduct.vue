@@ -18,6 +18,12 @@
         </template>
         <form ref="form" @submit.prevent="add_product">
 
+            <b-form-group label="Type" label-for="type">
+                <b-form-select v-model="selected_type" :options="options" class="form-control" :class="{ 'is-invalid': isValid && $v.selected_type.$error }"></b-form-select>
+                <label class="text-danger" style="font-size: 13px;font-weight: normal" v-if="isValid && $v.selected_type.$error">
+                    Type is Required</label>
+            </b-form-group>
+
             <b-form-group label="Title" label-for="title-input" invalid-feedback="Title is required">
                 <b-form-input
                         id="name-input" v-model="title"
@@ -46,7 +52,8 @@
 
 <script>
     import {required} from "vuelidate/lib/validators";
-    import {productMethods} from "@/state/helpers";
+    import {ratedProductMethods} from "@/state/helpers";
+
     export default {
         data() {
             return {
@@ -58,50 +65,59 @@
                 lecture_description: '',
                 image: null,
                 submitted: false,
+                selected_type: null,
+                options: [
+                    {value: null, text: 'Please select type', disabled: true},
+                    {value: 'best_seller', text: 'Best Seller'},
+                    {value: 'superb_products', text: 'Superb Product'}
+                ]
             };
         },
 
         validations: {
-            title:{
+            title: {
                 required
             },
-            image:{
+            image: {
+                required
+            },
+            selected_type: {
                 required
             }
         },
         methods: {
-            ...productMethods,
-            resetModal(){
+            ...ratedProductMethods,
+            resetModal() {
                 this.msg = "",
-                    this.error = false,
-                    this.isValid = false,
-                    this.image_error = false,
-                    this.title = '',
-                    this.lecture_description = '',
-                    this.image = null,
-                    this.submitted = false
-
+                this.error = false,
+                this.isValid = false,
+                this.image_error = false,
+                this.title = '',
+                this.lecture_description = '',
+                this.image = null,
+                this.selected_type = null,
+                this.submitted = false
             },
-
-            add_product(){
+            add_product() {
                 this.msg = '';
                 this.isValid = true;
                 this.$v.$touch();
                 if (this.$v.$invalid) {
                     return;
                 }
-                if (this.image != null){
-                    if ((this.image['type'] == "image/jpeg") || (this.image['type'] == "image/jpg") || (this.image['type'] == "image/png")){
-                        this.image_error=false
-                    }else{
-                        this.image_error=true
+                if (this.image != null) {
+                    if ((this.image['type'] === "image/jpeg") || (this.image['type'] === "image/jpg") || (this.image['type'] === "image/png")) {
+                        this.image_error = false
+                    } else {
+                        this.image_error = true
                     }
                 }
                 this.submitted = true;
                 let form_data = new FormData;
-                form_data.append('title',this.title);
-                form_data.append('image',this.image);
-                this.addProduct({data:form_data}).then((res) => {
+                form_data.append('title', this.title);
+                form_data.append('type', this.selected_type);
+                form_data.append('image', this.image);
+                this.addRatedProduct({data: form_data}).then((res) => {
                     this.$refs.modal.hide()
                     this.msg = "image added successfully"
                     this.$swal({
@@ -115,9 +131,10 @@
                     })
                 }).catch((error) => {
                     console.log(error)
+                    this.msg = error
                     this.$swal({
                         position: 'top-end',
-                        icon: 'success',
+                        icon: 'error',
                         background: 'rgba(63, 63, 63, 1)',
                         toast: true,
                         title: '<span id="toast">' + this.msg + '</span>',

@@ -17,7 +17,7 @@ f<template>
                     <li>
                         <router-link tag="a" to="/products" class="side-nav-link">
                             <i class="fas fa-shopping-bag"></i>
-                            <span>Products</span>
+                            <span>Rated Products</span>
                         </router-link>
                     </li>
                 </ul>

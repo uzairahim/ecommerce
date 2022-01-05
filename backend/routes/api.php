@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +26,10 @@ Route::get('/carousel-images','Carousel\CarouselController@getCarouselImages');
 Route::post('/upload-product','Product\ProductController@uploadProductImages');
 
 Route::get('/products','Product\ProductController@getProductImages');
+
+Route::post('/upload-rated-product','Product\ProductController@uploadRatedProductImages');
+
+Route::get('/rated-products','Product\ProductController@getRatedProductImages');
 
 Route::post('/sendresetpasswordemail', 'User\UserController@sendResetPasswordEmail');
 

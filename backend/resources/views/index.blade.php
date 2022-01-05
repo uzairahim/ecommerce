@@ -44,7 +44,7 @@
         <div class="header-container">
             <div class="header-top">
                 <div class="container text-center">
-                            <div class="welcome-msg hidden-xs">Welcome to SuperAirHorns Website - Established 1972</div>
+                    <div class="welcome-msg hidden-xs">Welcome to SuperAirHorns Website - Established 1972</div>
                 </div>
             </div>
         </div>
@@ -474,7 +474,8 @@
 
                                  data-elementdelay="0.05"
 
-                                 style="z-index: 6; white-space: nowrap;">Mega Sale</div>
+                                 style="z-index: 6; white-space: nowrap;">Mega Sale
+                            </div>
 
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0"
@@ -682,12 +683,64 @@
                         </div>
                     </div>
 
-                    <!-- Item -->
+{{--                    <!-- Item -->--}}
+{{--                    <div class="item">--}}
+{{--                        <div class="item-inner">--}}
+{{--                            <div class="item-img">--}}
+{{--                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">--}}
+{{--                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-3.png')}}"> </a>--}}
+{{--                                    <div class="sale-label new-top-left">Sale</div>--}}
+{{--                                    <div class="actions">--}}
+{{--                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"--}}
+{{--                                                                       data-placement="right" title=""--}}
+{{--                                                                       data-original-title="Quick View"> <span>Quick View</span></a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"--}}
+{{--                                                                      data-placement="right" title=""--}}
+{{--                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="link-compare"><a href="#" data-toggle="tooltip"--}}
+{{--                                                                     data-placement="right" title=""--}}
+{{--                                                                     data-original-title="Compare"><span>Add to Compare</span></a>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="add_cart">--}}
+{{--                                            <button class="button btn-cart" type="button" data-toggle="tooltip"--}}
+{{--                                                    data-placement="right" title="" data-original-title="Add to Cart">--}}
+{{--                                                <span>Add to Cart</span></button>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="rating">--}}
+{{--                                        <div class="ratings">--}}
+{{--                                            <div class="rating-box">--}}
+{{--                                                <div style="width:80%" class="rating"></div>--}}
+{{--                                            </div>--}}
+{{--                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>--}}
+{{--                                                <a href="#">Add Review</a></p>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="item-info">--}}
+{{--                                <div class="info-inner">--}}
+{{--                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen--}}
+{{--                                            casen </a></div>--}}
+{{--                                    <div class="item-content">--}}
+{{--                                        <div class="item-price">--}}
+{{--                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- End Item -->--}}
+                    @foreach($data['superb_products'] as $product)
                     <div class="item">
                         <div class="item-inner">
                             <div class="item-img">
-                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">
-                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-2.png')}}"> </a>
+                                <div class="item-img-info"><a class="product-image" title="{{$product->title}}" href="#">
+                                        <img alt="Retis lapen casen" src="{{url('rated_products').'/'.$product->image}}"> </a>
                                     <div class="actions">
                                         <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
                                                                        data-placement="right" title=""
@@ -720,8 +773,7 @@
                             </div>
                             <div class="item-info">
                                 <div class="info-inner">
-                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen
-                                            casen </a></div>
+                                    <div class="item-title"><a title="{{$product->title}}" href="#">{{$product->title}}</a></div>
                                     <div class="item-content">
                                         <div class="item-price">
                                             <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>
@@ -732,148 +784,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- End Item -->
-
-                    <!-- Item -->
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="item-img">
-                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">
-                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-3.png')}}"> </a>
-                                    <div class="sale-label new-top-left">Sale</div>
-                                    <div class="actions">
-                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
-                                                                       data-placement="right" title=""
-                                                                       data-original-title="Quick View"> <span>Quick View</span></a>
-                                        </div>
-                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"
-                                                                      data-placement="right" title=""
-                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                        </div>
-                                        <div class="link-compare"><a href="#" data-toggle="tooltip"
-                                                                     data-placement="right" title=""
-                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
-                                        </div>
-                                        <div class="add_cart">
-                                            <button class="button btn-cart" type="button" data-toggle="tooltip"
-                                                    data-placement="right" title="" data-original-title="Add to Cart">
-                                                <span>Add to Cart</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="rating">
-                                        <div class="ratings">
-                                            <div class="rating-box">
-                                                <div style="width:80%" class="rating"></div>
-                                            </div>
-                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>
-                                                <a href="#">Add Review</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-info">
-                                <div class="info-inner">
-                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen
-                                            casen </a></div>
-                                    <div class="item-content">
-                                        <div class="item-price">
-                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Item -->
-
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="item-img">
-                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">
-                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-4.png')}}"> </a>
-                                    <div class="actions">
-                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
-                                                                       data-placement="right" title=""
-                                                                       data-original-title="Quick View"> <span>Quick View</span></a>
-                                        </div>
-                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"
-                                                                      data-placement="right" title=""
-                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                        </div>
-                                        <div class="link-compare"><a href="#" data-toggle="tooltip"
-                                                                     data-placement="right" title=""
-                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
-                                        </div>
-                                        <div class="add_cart">
-                                            <button class="button btn-cart" type="button" data-toggle="tooltip"
-                                                    data-placement="right" title="" data-original-title="Add to Cart">
-                                                <span>Add to Cart</span></button>
-                                        </div>
-                                    </div>
-                                    <div class="rating">
-                                        <div class="ratings">
-                                            <div class="rating-box">
-                                                <div style="width:80%" class="rating"></div>
-                                            </div>
-                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>
-                                                <a href="#">Add Review</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-info">
-                                <div class="info-inner">
-                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen
-                                            casen </a></div>
-                                    <div class="item-content">
-                                        <div class="item-price">
-                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item -->
-                {{--          <div class="item">--}}
-                {{--            <div class="item-inner">--}}
-                {{--              <div class="item-img">--}}
-                {{--                <div class="item-img-info"> <a class="product-image" title="Retis lapen casen" href="#"> <img alt="Retis lapen casen" src="{{asset('assets/products-images/product.jpg')}}"> </a>--}}
-                {{--                     <div class="actions">--}}
-                {{--                    <div class="quick-view-btn"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick View"> <span>Quick View</span></a></div>--}}
-                {{--                    <div class="link-wishlist"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Wishlist"><span>Add to Wishlist</span></a></div>--}}
-                {{--                    <div class="link-compare"><a href="#" data-toggle="tooltip" data-placement="right" title="" data-original-title="Compare"><span>Add to Compare</span></a></div>--}}
-                {{--                    <div class="add_cart">--}}
-                {{--                      <button class="button btn-cart" type="button" data-toggle="tooltip" data-placement="right" title="" data-original-title="Add to Cart"><span>Add to Cart</span></button>--}}
-                {{--                    </div>--}}
-                {{--                  </div>--}}
-                {{--                  <div class="rating">--}}
-                {{--                    <div class="ratings">--}}
-                {{--                      <div class="rating-box">--}}
-                {{--                        <div style="width:80%" class="rating"></div>--}}
-                {{--                      </div>--}}
-                {{--                      <p class="rating-links"> <a href="#">1 Review(s)</a> <span class="separator">|</span> <a href="#">Add Review</a> </p>--}}
-                {{--                    </div>--}}
-                {{--                  </div>--}}
-                {{--                </div>--}}
-                {{--              </div>--}}
-                {{--              <div class="item-info">--}}
-                {{--                <div class="info-inner">--}}
-                {{--                  <div class="item-title"> <a title="Retis lapen casen" href="#"> Retis lapen casen </a> </div>--}}
-                {{--                  <div class="item-content">--}}
-                {{--                    <div class="item-price">--}}
-                {{--                      <div class="price-box"> <span class="regular-price"> <span class="price">$125.00</span> </span> </div>--}}
-                {{--                    </div>--}}
-                {{--                  </div>--}}
-                {{--                </div>--}}
-                {{--              </div>--}}
-                {{--            </div>--}}
-                {{--          </div>--}}
-                <!-- End Item -->
-
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -917,276 +828,80 @@
                                         <div class="thm-pdt-content wide-5">
                                             <div class="pdt-content pdt_new_arrivals is-loaded  tab-content-actived">
                                                 <ul class="pdt-list products-grid">
-                                                    <li class="item item-animate wide-first wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#"
-                                                                                              title="Road Master 6 Pipe Air Horn for Train, Truck, Bus (New Melodies)"
-                                                                                              class="product-image"><img
-                                                                            src="{{asset('assets/images/best_seller1.png')}}"
-                                                                            alt="Retis lapen casen"></a>
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#"
-                                                                                                       data-toggle="tooltip"
-                                                                                                       data-placement="right"
-                                                                                                       title=""
-                                                                                                       data-original-title="Quick View">
-                                                                                <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#"
-                                                                                                      data-toggle="tooltip"
-                                                                                                      data-placement="right"
-                                                                                                      title=""
-                                                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                                                        </div>
-                                                                        <div class="link-compare"><a href="#"
-                                                                                                     data-toggle="tooltip"
-                                                                                                     data-placement="right"
-                                                                                                     title=""
-                                                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
-                                                                        </div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart"
-                                                                                    type="button" data-toggle="tooltip"
-                                                                                    data-placement="right" title=""
-                                                                                    data-original-title="Add to Cart">
-                                                                                <span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating"
-                                                                                     style="width:80%"></div>
+                                                    @php
+                                                        $counter = 0.5;
+                                                    @endphp
+                                                    @foreach($data['best_seller'] as $product)
+                                                        @php
+                                                            $counter+=0.5;
+                                                        @endphp
+                                                        <li class="item item-animate wide-products wow fadeInUp" data-wow-duration="1s" data-wow-delay="{{$counter.'s'}}">
+                                                            <div class="item-inner">
+                                                                <div class="item-img">
+                                                                    <div class="item-img-info"><a href="#"
+                                                                                                  title="{{$product->title}}"
+                                                                                                  class="product-image"><img
+                                                                                src="{{url('rated_products').'/'.$product->image}}"
+                                                                                alt="Retis lapen casen"></a>
+                                                                        <div class="actions">
+                                                                            <div class="quick-view-btn"><a href="#"
+                                                                                                           data-toggle="tooltip"
+                                                                                                           data-placement="right"
+                                                                                                           title=""
+                                                                                                           data-original-title="Quick View">
+                                                                                    <span>Quick View</span></a></div>
+                                                                            <div class="link-wishlist"><a href="#"
+                                                                                                          data-toggle="tooltip"
+                                                                                                          data-placement="right"
+                                                                                                          title=""
+                                                                                                          data-original-title="Wishlist"><span>Add to Wishlist</span></a>
                                                                             </div>
-                                                                            <p class="rating-links"><a href="#">1
-                                                                                    Review(s)</a> <span
-                                                                                    class="separator">|</span> <a
-                                                                                    href="#">Add Review</a></p>
+                                                                            <div class="link-compare"><a href="#"
+                                                                                                         data-toggle="tooltip"
+                                                                                                         data-placement="right"
+                                                                                                         title=""
+                                                                                                         data-original-title="Compare"><span>Add to Compare</span></a>
+                                                                            </div>
+                                                                            <div class="add_cart">
+                                                                                <button class="button btn-cart"
+                                                                                        type="button"
+                                                                                        data-toggle="tooltip"
+                                                                                        data-placement="right" title=""
+                                                                                        data-original-title="Add to Cart">
+                                                                                    <span>Add to Cart</span></button>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#"
-                                                                                               title="Road Master 6 Pipe Air Horn for Train, Truck, Bus (New Melodies)">Road
-                                                                            Master 6 Pipe Air Horn for Train, Truck, Bus
-                                                                            (New Melodies)</a></div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span
-                                                                                    class="regular-price"><span
-                                                                                        class="price">$160.00</span> </span>
+                                                                        <div class="rating">
+                                                                            <div class="ratings">
+                                                                                <div class="rating-box">
+                                                                                    <div class="rating"
+                                                                                         style="width:80%"></div>
+                                                                                </div>
+                                                                                <p class="rating-links"><a href="#">1
+                                                                                        Review(s)</a> <span
+                                                                                        class="separator">|</span> <a
+                                                                                        href="#">Add Review</a></p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item item-animate wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#"
-                                                                                              title="MSK-1300 Whistle Air Horn, 3 different sounds, sound like whistle"
-                                                                                              class="product-image"><img
-                                                                            src="{{asset('assets/images/best_seller2.png')}}"
-                                                                            alt="Retis lapen casen"></a>
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#"
-                                                                                                       data-toggle="tooltip"
-                                                                                                       data-placement="right"
-                                                                                                       title=""
-                                                                                                       data-original-title="Quick View">
-                                                                                <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#"
-                                                                                                      data-toggle="tooltip"
-                                                                                                      data-placement="right"
-                                                                                                      title=""
-                                                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                                                        </div>
-                                                                        <div class="link-compare"><a href="#"
-                                                                                                     data-toggle="tooltip"
-                                                                                                     data-placement="right"
-                                                                                                     title=""
-                                                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
-                                                                        </div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart"
-                                                                                    type="button" data-toggle="tooltip"
-                                                                                    data-placement="right" title=""
-                                                                                    data-original-title="Add to Cart">
-                                                                                <span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating"
-                                                                                     style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1
-                                                                                    Review(s)</a> <span
-                                                                                    class="separator">|</span> <a
-                                                                                    href="#">Add Review</a></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#"
-                                                                                               title="MSK-1300 Whistle Air Horn, 3 different sounds, sound like whistle">MSK-1300
-                                                                            Whistle Air Horn, 3 different sounds, sound
-                                                                            like whistle</a></div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span
-                                                                                    class="regular-price"><span
-                                                                                        class="price">$60.00</span> </span>
+                                                                <div class="item-info">
+                                                                    <div class="info-inner">
+                                                                        <div class="item-title"><a href="#" title="{{$product->title}}">
+                                                                                {{$product->title}}</a></div>
+                                                                        <div class="item-content">
+                                                                            <div class="item-price">
+                                                                                <div class="price-box"><span
+                                                                                        class="regular-price"><span
+                                                                                            class="price">$160.00</span> </span>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item item-animate wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#"
-                                                                                              title="MSK-6800C (Motor Sound) 6 Trumpet Air Horn 8 Different Sounds"
-                                                                                              class="product-image"><img
-                                                                            src="{{asset('assets/images/best_seller3.png')}}"
-                                                                            alt="Retis lapen casen"></a>
-
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#"
-                                                                                                       data-toggle="tooltip"
-                                                                                                       data-placement="right"
-                                                                                                       title=""
-                                                                                                       data-original-title="Quick View">
-                                                                                <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#"
-                                                                                                      data-toggle="tooltip"
-                                                                                                      data-placement="right"
-                                                                                                      title=""
-                                                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                                                        </div>
-                                                                        <div class="link-compare"><a href="#"
-                                                                                                     data-toggle="tooltip"
-                                                                                                     data-placement="right"
-                                                                                                     title=""
-                                                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
-                                                                        </div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart"
-                                                                                    type="button" data-toggle="tooltip"
-                                                                                    data-placement="right" title=""
-                                                                                    data-original-title="Add to Cart">
-                                                                                <span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating"
-                                                                                     style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1
-                                                                                    Review(s)</a> <span
-                                                                                    class="separator">|</span> <a
-                                                                                    href="#">Add Review</a></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#"
-                                                                                               title="MSK-6800C (Motor Sound) 6 Trumpet Air Horn 8 Different Sounds">MSK-6800C
-                                                                            (Motor Sound) 6 Trumpet Air Horn 8 Different
-                                                                            Sounds</a></div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span
-                                                                                    class="regular-price"><span
-                                                                                        class="price">$160.00</span> </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="item item-animate last wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
-                                                        <div class="item-inner">
-                                                            <div class="item-img">
-                                                                <div class="item-img-info"><a href="#"
-                                                                                              title="MSK 12V Single Trumpet Air Horn with Compressor 150db Loud Sound for Trucks, Boats, SUV, Train, Lorrys, Cars"
-                                                                                              class="product-image"><img
-                                                                            src="{{asset('assets/images/best_seller4.png')}}"
-                                                                            alt="Retis lapen casen"></a>
-                                                                    <div class="actions">
-                                                                        <div class="quick-view-btn"><a href="#"
-                                                                                                       data-toggle="tooltip"
-                                                                                                       data-placement="right"
-                                                                                                       title=""
-                                                                                                       data-original-title="Quick View">
-                                                                                <span>Quick View</span></a></div>
-                                                                        <div class="link-wishlist"><a href="#"
-                                                                                                      data-toggle="tooltip"
-                                                                                                      data-placement="right"
-                                                                                                      title=""
-                                                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                                                        </div>
-                                                                        <div class="link-compare"><a href="#"
-                                                                                                     data-toggle="tooltip"
-                                                                                                     data-placement="right"
-                                                                                                     title=""
-                                                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
-                                                                        </div>
-                                                                        <div class="add_cart">
-                                                                            <button class="button btn-cart"
-                                                                                    type="button" data-toggle="tooltip"
-                                                                                    data-placement="right" title=""
-                                                                                    data-original-title="Add to Cart">
-                                                                                <span>Add to Cart</span></button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="rating">
-                                                                        <div class="ratings">
-                                                                            <div class="rating-box">
-                                                                                <div class="rating"
-                                                                                     style="width:80%"></div>
-                                                                            </div>
-                                                                            <p class="rating-links"><a href="#">1
-                                                                                    Review(s)</a> <span
-                                                                                    class="separator">|</span> <a
-                                                                                    href="#">Add Review</a></p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="item-info">
-                                                                <div class="info-inner">
-                                                                    <div class="item-title"><a href="#"
-                                                                                               title="MSK 12V Single Trumpet Air Horn with Compressor 150db Loud Sound for Trucks, Boats, SUV, Train, Lorrys, Cars">MSK
-                                                                            12V Single Trumpet Air Horn with Compressor
-                                                                            150db Loud Sound for Trucks, Boats, SUV,
-                                                                            Train, Lorrys, Cars</a></div>
-                                                                    <div class="item-content">
-                                                                        <div class="item-price">
-                                                                            <div class="price-box"><span
-                                                                                    class="regular-price"><span
-                                                                                        class="price">$60.00</span> </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                        </li>
+                                                    @endforeach
                                                 </ul>
                                             </div>
                                         </div>
@@ -1209,7 +924,8 @@
                 <div class="starSeparator"></div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s"
+                     data-wow-delay=".5s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer1.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
@@ -1225,7 +941,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s"
+                     data-wow-delay="1s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer2.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
@@ -1239,7 +956,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1s"
+                     data-wow-delay="1.5s">
                     <div class="text-center"><img src="{{asset('assets/images/buyer3.jpg')}}" alt=""
                                                   style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                     </div>
