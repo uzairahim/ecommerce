@@ -6,7 +6,8 @@
                 <div class="card">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <span class="mb-0 h3 text-uppercase text-warning">Carousel</span>
-                        <button class="float-right btn btn-primary" v-b-modal.addCarouselModal @click="addCarouselModal">
+                        <button class="float-right btn btn-primary" v-b-modal.addCarouselModal
+                                @click="addCarouselModal">
                             Add
                         </button>
                     </div>
@@ -33,8 +34,8 @@
                         <div class="row" v-if="!loaded">
                             <div class="border-box mr-2 mb-3"
                                  v-for="(carousel,index) in carousel_data" :key="index">
-                                    <h3 class="text-capitalize img-text">{{carousel['title']}}</h3>
-                                    <img :src="carousel['image']" alt="" class="img-fluid">
+                                <h3 class="text-capitalize img-text">{{carousel['title']}}</h3>
+                                <img :src="carousel['image']" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -73,7 +74,7 @@
         data() {
             return {
                 add_form: false,
-                loaded:false
+                loaded: false
             };
         },
         computed: {
@@ -91,6 +92,7 @@
             },
         },
         mounted() {
+
             this.loaded = true;
             this.getCarousels().then(res => {
                 this.loaded = false
@@ -133,7 +135,8 @@
         border-radius: 8px;
         position: relative;
     }
-    .img-fluid{
+
+    .img-fluid {
         max-width: 328px;
         height: 250px;
     }

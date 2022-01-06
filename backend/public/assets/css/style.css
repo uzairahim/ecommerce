@@ -34,6 +34,9 @@ Text Domain:  Superb
 
 
 /*----------- 1. Body --------------*/
+html{
+    scroll-behavior: smooth;
+}
 
 body {
 	font-family: 'Open Sans', sans-serif;
