@@ -490,7 +490,7 @@
                                             <!--Begin Tab Content -->
                                             <div class="thm-pdt-content wide-5">
                                                 <div class="pdt-content pdt_new_arrivals is-loaded  tab-content-actived">
-                                                    <ul class="pdt-list products-grid">
+                                                    <ul class="pdt-list products-grid" style="justify-content: center;display: flex;">
                                                         @php
                                                             $counter = 0.5;
                                                         @endphp
