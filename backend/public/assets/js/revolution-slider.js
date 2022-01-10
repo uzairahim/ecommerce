@@ -3181,7 +3181,7 @@ if (1 == window.tplogs) try {
         var o = i.attr("src");
         a.src = o, a.bgfit = a.bgfit || "cover", a.bgrepeat = a.bgrepeat || "no-repeat", a.bgposition = a.bgposition || "center center";
         var l = i.closest(".slotholder");
-        i.parent().append('<div class="tp-bgimg defaultimg" style="background-color:' + i.css("backgroundColor") + ";background-repeat:" + a.bgrepeat + ";background-image:url(" + o + ");background-size:" + a.bgfit + ";background-position:" + a.bgposition + ';width:100%;height:100%;"></div>');
+        i.parent().append('<div class="tp-bgimg defaultimg" style="background-color:' + i.css("backgroundColor") + ";background-repeat:" + a.bgrepeat + ";background-image:url(" + o + ");background-position:" + a.bgposition + ';width:100%;height:100%;"></div>');
         var d = document.createComment("Runtime Modification - Img tag is Still Available for SEO Goals in Source - " + i.get(0).outerHTML);
         i.replaceWith(d), i = l.find(".tp-bgimg"), i.data(a), i.attr("src", o), ("standard" === s.sliderType || "undefined" === s.sliderType) && i.css({
           opacity: 0

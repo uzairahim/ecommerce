@@ -56,7 +56,7 @@
         <div class="container">
             <!-- Header Logo -->
             <div class="logo"><a title="MSK" href="index.blade.php"><img alt="MSK"
-                                                                         src="{{asset('assets/images/logo.png')}}"></a>
+                                                                         src="{{asset('assets/images/logo.png')}}" class="img-fluid"></a>
             </div>
             <!-- End Header Logo -->
 
@@ -76,22 +76,22 @@
     </nav>
 
     <!-- Slider -->
-    <div id="thm-slideshow" class="thm-slideshow">
+    <div id="thm-slideshow" class="thm-slideshow" style="height: 100vh">
         <div class="container">
             <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
                  data-alias="classicslider1"
-                 style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+                 style="margin:0px auto;background-color:transparent;padding:0px;height: 100vh;margin-top:0px;margin-bottom:0px;">
                 <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
-                <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+                <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none; height: 100vh;" data-version="5.0.7">
                     <ul>
                         <!-- SLIDE  -->
                         <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
                             data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                            data-thumb="{{asset('assets/images/banner-1.png')}}" data-rotate="0"
+                            data-thumb="{{asset('assets/images/banner-1.jpeg')}}" data-rotate="0"
                             data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
                             data-saveperformance="off" data-title="Intro" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="{{asset('assets/images/banner-1.png')}}" alt="">
+                            <img style="background-size: 100% 100vh; background-position: 100% 0;" class="banner-imageee" src="{{asset('assets/images/banner-1.jpeg')}}" alt="">
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
@@ -165,29 +165,6 @@
 
                                  style="z-index: 7; white-space: nowrap;"><i class="pe-7s-refresh"></i></div>
 
-
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption NotGeneric-Icon   tp-resizeme rs-parallaxlevel-1"
-                                 id="slide-17-layer-8"
-                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                 data-y="['middle','middle','middle','middle']" data-voffset="['120','100','100','100']"
-                                 data-width="none"
-                                 data-height="none"
-                                 data-whitespace="nowrap"
-                                 data-transform_idle="o:1;"
-                                 data-style_hover="cursor:default;"
-
-                                 data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;"
-                                 data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                 data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                                 data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
-                                 data-start="2000"
-                                 data-splitin="none"
-                                 data-splitout="none"
-                                 data-responsive_offset="on"
-
-
-                                 style="z-index: 7; white-space: nowrap;"><a href="#">Learn More</a></div>
                         </li>
                         <!-- SLIDE  -->
                         <li data-index="rs-18" data-transition="zoomin" data-slotamount="7"
@@ -609,14 +586,14 @@
                                                         <li class="item item-animate wide-products wow fadeInUp"
                                                             data-wow-duration="1s" data-wow-delay="{{$counter.'s'}}">
                                                             <div class="item-inner">
-                                                                <div class="item-img">
-                                                                    <div class="item-img-info"><a href="#"
+                                                                <div class="item-img"  data-toggle="modal" data-target="#popupModal">
+                                                                    <div class="item-img-info"><a href="javascript:void(0)" onclick="openModal({{$product}})"
                                                                                                   title="{{$product->title}}"
                                                                                                   class="product-image"><img
                                                                                 src="{{url('rated_products').'/'.$product->image}}"
                                                                                 alt="Retis lapen casen"></a>
                                                                         <div class="actions">
-                                                                            <div class="quick-view-btn"><a href="#"
+                                                                            <div class="quick-view-btn"><a href=""
                                                                                                            data-toggle="tooltip"
                                                                                                            data-placement="right"
                                                                                                            title=""
@@ -628,7 +605,7 @@
                                                                                                           title=""
                                                                                                           data-original-title="Wishlist"><span>Add to Wishlist</span></a>
                                                                             </div>
-                                                                            <div class="link-compare"><a href="#"
+                                                                            <div class="link-compare"><a href=""
                                                                                                          data-toggle="tooltip"
                                                                                                          data-placement="right"
                                                                                                          title=""
@@ -677,6 +654,80 @@
                                                     @endforeach
                                                 </ul>
                                             </div>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalTitle" aria-hidden="true" style="background-color: #00000073;">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;color: red">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                            <h5 class="modal-title" id="selected_title"></h5>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div>
+                                                                <div class="text-center">
+                                                                    <img src="" alt="" id="selected_image">
+                                                                    <span></span>
+                                                                </div>
+                                                                <p class="text-left">
+                                                                    Base is made of high quality Zinc, Trumpet is made of brass, high quality chrome, loud sound, TH-18 is
+                                                                    the best quality product available around the world in this category and specifications,
+                                                                    <br>
+                                                                    <i><b>Technical specifications</b></i>
+                                                                    <br>
+                                                                    Horn type / TH-18
+                                                                    <br>
+                                                                    Length overall 375mm 445mm
+                                                                    <br>
+                                                                    Funnel diameter 110mm 110mm
+                                                                    <br>
+                                                                    Frequency 280Hz 255Hz
+                                                                    <br>
+                                                                    Volume 120dB (A) 120dB (A)
+                                                                    <br>
+                                                                    Weight 0.90kg 1.10kg
+                                                                    <br>
+                                                                    Distance between fastening points 240mm 310mm
+                                                                    <br>
+                                                                    scope of delivery
+                                                                    <br>
+                                                                    Compressed air horn JUS40 (ready for assembly)
+                                                                    <br>
+                                                                    Funnel support
+                                                                    <br>
+                                                                    Fastening material
+                                                                    <br>
+                                                                    6mm compressed air connection 90 °
+                                                                    <br>
+                                                                    A complete double horn set, including valve connection set and protective funnel cap, is also available
+                                                                    Homologation.Since these are commercial vehicle horns that are designed for installation on the roof (higher than
+                                                                    2m), there are no regulations with regard to installation. Because of the loudness (higher than 110dB)
+                                                                    the horn can only be used outside built-up areas. The factory-installed horn (or a replacement with ENo.) Must remain operational (via switch in the dashboard).
+                                                                    <b>Product name:</b> 24.5″ eTone Chrome Air Horn
+                                                                    <br>
+                                                                    <b>Part Number:</b> H09324AC<br>
+                                                                    <b>Finish:</b> Chrome<br>
+                                                                    <b>Size:</b> 24.5″<br>
+                                                                    <b>Horn Type:</b> eTone<br>
+                                                                    <b>Shield Part Number:</b> H00929B<br>
+                                                                    <b>Shield:</b> Not Included<br>
+                                                                    <b>Horn Mount Support:</b> Included<br>
+                                                                    <b>Product Description:</b><br>
+                                                                    • Chrome horn<br>
+                                                                    • Horn support<br>
+                                                                    • 1/8” NPT port standard. Call for the size you need.<br>
+                                                                    • Grover interchangeability. Call for horn supports<br>
+                                                                    **Emergency Vehicle Use Only<br>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -1226,6 +1277,17 @@
 
     var iid1 = "countbox_2";
     CountBack_slider(gsecs1, "countbox_2", 1);
+
+    function openModal(product){
+        $('.modal').on('shown.bs.modal', function (e) {
+            $("html").addClass("modal-open");
+        });
+        $('.modal').on('hide.bs.modal', function (e) {
+            $("html").removeClass("modal-open");
+        });
+        $('#selected_image').attr('src',window.location.href+'rated_products/'+product.image);
+        $('#selected_title').text(product.title)
+    }
 </script>
 
 <script type="text/javascript">
@@ -1331,4 +1393,4 @@
 </script>
 </body>
 </html>
-    
+

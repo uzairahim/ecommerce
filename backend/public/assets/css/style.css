@@ -617,7 +617,6 @@ ul.lang {
 	text-align: left;
 	display: block;
 	margin: 0;
-	padding: 0x;
 	list-style: none;
 	float: left;
 	padding: 0px;
@@ -11030,10 +11029,14 @@ ol#compare-items li a.product-name {
 
 
 }
-
 .countbox_2.timer-grid .box-time-date span {
 	display: block;
 	font-size: 20px;
 	color: #fff;
 	margin-top: 6px;
+}
+
+.tp-bgimg.defaultimg {
+    background-position: 100% 0 !important;
+    background-size: 100% 100vh !important;
 }
