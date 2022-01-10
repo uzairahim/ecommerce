@@ -116,7 +116,7 @@
 
                                  data-elementdelay="0.05"
 
-                                 style="z-index: 5; white-space: nowrap;">Product N0: RC 1100
+                                 style="z-index: 5; white-space: nowrap;color:black;">Product N0: RC 1100
                             </div>
 
                             <!-- LAYER NR. 2 -->
@@ -139,7 +139,7 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 6; white-space: nowrap;">Train Sound Air Horns for All Heavy Vehicles
+                                 style="z-index: 6; white-space: nowrap;color: black;">Train Sound Air Horns for All Heavy Vehicles
                             </div>
 
                             <!-- LAYER NR. 3 -->
@@ -292,7 +292,7 @@
 
                                  data-elementdelay="0.05"
 
-                                 style="z-index: 6; white-space: nowrap;">Hot deals
+                                 style="z-index: 6; white-space: nowrap;color: black;">Hot deals
                             </div>
 
                             <!-- LAYER NR. 3 -->
@@ -315,7 +315,7 @@
                                  data-responsive_offset="on"
 
 
-                                 style="z-index: 7; white-space: nowrap;">3 Trumpet Air Horn
+                                 style="z-index: 7; white-space: nowrap;color:black;">3 Trumpet Air Horn
                             </div>
 
                             <!-- LAYER NR. 4 -->
@@ -351,6 +351,39 @@
     </div>
 
     <!-- end Slider -->
+    <section id="about-us">
+        <div class="brand-logo">
+            <div class="container">
+                <div class="new_title center">
+                    <h1 class="text-uppercase">About Us</h1>
+                    <div class="starSeparator"></div>
+                </div>
+                <div class="slider-items-products">
+                    <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
+                        <blockquote class="blockquote">
+                            <h4><b>MSK-SwuperHorn</b></h4>
+                            Super Horn House established back in 1972 offers a premium line of automotive air horns, for
+                            virtually every conceivable application. Whether you are looking for a loud Train horn,
+                            Truck Horn,
+                            Marine Horn, SUV, Car or even for your bike, you have arrived at the right place.
+                            <br>
+                            At Super Horn House we understand the core of Air Horn Business, but we also bring something
+                            more to the table. IDEAS !! fresh way of solving problems that can help our client business.
+                            If your
+                            business has special needs or if you are simply searching for a better way you are welcome
+                            to speak
+                            with our manufacturing unit...<br> we have ideas to share. The science of auto horns, Air Horns,
+                            electric
+                            horns and even individual parts.
+                            Super Horn House aims to maximise its success by finding and processing of better resources
+                            – areas
+                            of expertise in which we have a clear competitive advantage
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="promo-section">
         <div class="container">
@@ -374,118 +407,12 @@
             </div>
             <div id="featured-slider" class="product-flexslider hidden-buttons">
                 <div class="slider-items slider-width-col4 products-grid">
-                    <div class="item">
-                        <div class="item-inner">
-                            <div class="item-img">
-                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">
-                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-1.png')}}"> </a>
-                                    <div class="new-label new-top-left">new</div>
-                                    <div class="box-timer">
-                                        <div class="countbox_2 timer-grid"></div>
-                                    </div>
-                                    <div class="actions">
-                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
-                                                                       data-placement="right" title=""
-                                                                       data-original-title="Quick View"> <span>Quick View</span></a>
-                                        </div>
-                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"
-                                                                      data-placement="right" title=""
-                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                        </div>
-                                        <div class="link-compare"><a href="#" data-toggle="tooltip"
-                                                                     data-placement="right" title=""
-                                                                     data-original-title="Compare"><span>Add to Compare</span></a>
-                                        </div>
-                                        <p data-original-title="Out of Stock" title="" data-placement="right"
-                                           data-toggle="tooltip" class="availability out-of-stock"><span
-                                                class="ava-out-of-stock">Out of stock</span></p>
-                                    </div>
-                                    <div class="rating">
-                                        <div class="ratings">
-                                            <div class="rating-box">
-                                                <div style="width:80%" class="rating"></div>
-                                            </div>
-                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>
-                                                <a href="#">Add Review</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item-info">
-                                <div class="info-inner">
-                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen
-                                            casen </a></div>
-                                    <div class="item-content">
-                                        <div class="item-price">
-                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {{--                    <!-- Item -->--}}
-                    {{--                    <div class="item">--}}
-                    {{--                        <div class="item-inner">--}}
-                    {{--                            <div class="item-img">--}}
-                    {{--                                <div class="item-img-info"><a class="product-image" title="Retis lapen casen" href="#">--}}
-                    {{--                                        <img alt="Retis lapen casen" src="{{asset('assets/images/horn-3.png')}}"> </a>--}}
-                    {{--                                    <div class="sale-label new-top-left">Sale</div>--}}
-                    {{--                                    <div class="actions">--}}
-                    {{--                                        <div class="quick-view-btn"><a href="#" data-toggle="tooltip"--}}
-                    {{--                                                                       data-placement="right" title=""--}}
-                    {{--                                                                       data-original-title="Quick View"> <span>Quick View</span></a>--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="link-wishlist"><a href="#" data-toggle="tooltip"--}}
-                    {{--                                                                      data-placement="right" title=""--}}
-                    {{--                                                                      data-original-title="Wishlist"><span>Add to Wishlist</span></a>--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="link-compare"><a href="#" data-toggle="tooltip"--}}
-                    {{--                                                                     data-placement="right" title=""--}}
-                    {{--                                                                     data-original-title="Compare"><span>Add to Compare</span></a>--}}
-                    {{--                                        </div>--}}
-                    {{--                                        <div class="add_cart">--}}
-                    {{--                                            <button class="button btn-cart" type="button" data-toggle="tooltip"--}}
-                    {{--                                                    data-placement="right" title="" data-original-title="Add to Cart">--}}
-                    {{--                                                <span>Add to Cart</span></button>--}}
-                    {{--                                        </div>--}}
-                    {{--                                    </div>--}}
-                    {{--                                    <div class="rating">--}}
-                    {{--                                        <div class="ratings">--}}
-                    {{--                                            <div class="rating-box">--}}
-                    {{--                                                <div style="width:80%" class="rating"></div>--}}
-                    {{--                                            </div>--}}
-                    {{--                                            <p class="rating-links"><a href="#">1 Review(s)</a> <span class="separator">|</span>--}}
-                    {{--                                                <a href="#">Add Review</a></p>--}}
-                    {{--                                        </div>--}}
-                    {{--                                    </div>--}}
-                    {{--                                </div>--}}
-                    {{--                            </div>--}}
-                    {{--                            <div class="item-info">--}}
-                    {{--                                <div class="info-inner">--}}
-                    {{--                                    <div class="item-title"><a title="Retis lapen casen" href="#"> Retis lapen--}}
-                    {{--                                            casen </a></div>--}}
-                    {{--                                    <div class="item-content">--}}
-                    {{--                                        <div class="item-price">--}}
-                    {{--                                            <div class="price-box"><span class="regular-price"> <span class="price">$125.00</span> </span>--}}
-                    {{--                                            </div>--}}
-                    {{--                                        </div>--}}
-                    {{--                                    </div>--}}
-                    {{--                                </div>--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                    </div>--}}
-                    {{--                    <!-- End Item -->--}}
                     @foreach($data['superb_products'] as $product)
                         <div class="item">
                             <div class="item-inner">
                                 <div class="item-img">
-                                    <div class="item-img-info"><a class="product-image" title="{{$product->title}}"
-                                                                  href="#">
-                                            <img alt="Retis lapen casen"
-                                                 src="{{url('rated_products').'/'.$product->image}}"> </a>
+                                    <div class="item-img-info" data-toggle="modal" data-target="#popupModal"><a href="javascript:void(0)" onclick="openModal({{$product}})" class="product-image" title="{{$product->title}}">
+                                            <img alt="Retis lapen casen" src="{{url('rated_products').'/'.$product->image}}"> </a>
                                         <div class="actions">
                                             <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
                                                                            data-placement="right" title=""
@@ -539,200 +466,179 @@
     </section>
     <!-- End Featured Slider -->
 
-    <!--Promotion Banner-->
-    <div class="offer-slider parallax parallax-2">
-        <div class="container">
-            <h2> Deals of the day</h2>
-            <div class="starSeparator"></div>
-            <p>Superb Men's clothing store is updated regularly with offers.</p>
-            <div class="box-timer">
-                <div class="countbox_1 timer-grid"></div>
-            </div>
-            <a href="#" class="shop-now">Shop Now</a></div>
-    </div>
-    <!--Promotion Banner End-->
-
-    <div class="container">
-        <div class="row">
-            <div class="products-grid">
-                <div class="col-md-12">
-                    <div class="std">
-                        <div class="home-tabs">
-                            <div class="producttabs">
-                                <div id="thm_producttabs1" class="thm-producttabs">
-                                    <!--<h3></h3>-->
-                                    <div class="thm-pdt-container">
-                                        <!--Begin Tab Nav -->
-                                        <div class="thm-pdt-nav">
-                                            <ul class="pdt-nav">
-                                                <li class="item-nav tab-loaded tab-nav-actived" data-type="order"
-                                                    data-catid="" data-orderby="new_arrivals"
-                                                    data-href="pdt_new_arrivals"><span
-                                                        class="title-navi">Best Seller</span></li>
-                                            </ul>
-                                        </div>
-                                        <!-- End Tab Nav -->
-                                        <!--Begin Tab Content -->
-                                        <div class="thm-pdt-content wide-5">
-                                            <div class="pdt-content pdt_new_arrivals is-loaded  tab-content-actived">
-                                                <ul class="pdt-list products-grid">
-                                                    @php
-                                                        $counter = 0.5;
-                                                    @endphp
-                                                    @foreach($data['best_seller'] as $product)
-                                                        @php
-                                                            $counter+=0.5;
-                                                        @endphp
-                                                        <li class="item item-animate wide-products wow fadeInUp"
-                                                            data-wow-duration="1s" data-wow-delay="{{$counter.'s'}}">
-                                                            <div class="item-inner">
-                                                                <div class="item-img"  data-toggle="modal" data-target="#popupModal">
-                                                                    <div class="item-img-info"><a href="javascript:void(0)" onclick="openModal({{$product}})"
-                                                                                                  title="{{$product->title}}"
-                                                                                                  class="product-image"><img
-                                                                                src="{{url('rated_products').'/'.$product->image}}"
-                                                                                alt="Retis lapen casen"></a>
-                                                                        <div class="actions">
-                                                                            <div class="quick-view-btn"><a href=""
-                                                                                                           data-toggle="tooltip"
-                                                                                                           data-placement="right"
-                                                                                                           title=""
-                                                                                                           data-original-title="Quick View">
-                                                                                    <span>Quick View</span></a></div>
-                                                                            <div class="link-wishlist"><a href="#"
-                                                                                                          data-toggle="tooltip"
-                                                                                                          data-placement="right"
-                                                                                                          title=""
-                                                                                                          data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                                                            </div>
-                                                                            <div class="link-compare"><a href=""
-                                                                                                         data-toggle="tooltip"
-                                                                                                         data-placement="right"
-                                                                                                         title=""
-                                                                                                         data-original-title="Compare"><span>Add to Compare</span></a>
-                                                                            </div>
-                                                                            <div class="add_cart">
-                                                                                <button class="button btn-cart"
-                                                                                        type="button"
-                                                                                        data-toggle="tooltip"
-                                                                                        data-placement="right" title=""
-                                                                                        data-original-title="Add to Cart">
-                                                                                    <span>Add to Cart</span></button>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="rating">
-                                                                            <div class="ratings">
-                                                                                <div class="rating-box">
-                                                                                    <div class="rating"
-                                                                                         style="width:80%"></div>
-                                                                                </div>
-                                                                                <p class="rating-links"><a href="#">1
-                                                                                        Review(s)</a> <span
-                                                                                        class="separator">|</span> <a
-                                                                                        href="#">Add Review</a></p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="item-info">
-                                                                    <div class="info-inner">
-                                                                        <div class="item-title"><a href="#"
-                                                                                                   title="{{$product->title}}">
-                                                                                {{$product->title}}</a></div>
-                                                                        <div class="item-content">
-                                                                            <div class="item-price">
-                                                                                <div class="price-box"><span
-                                                                                        class="regular-price"><span
-                                                                                            class="price">$160.00</span> </span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    @endforeach
+    <section style="background-color: #848484;">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="products-grid">
+                    <div class="col-md-12">
+                        <div class="std">
+                            <div class="home-tabs">
+                                <div class="producttabs">
+                                    <div id="thm_producttabs1" class="thm-producttabs">
+                                        <!--<h3></h3>-->
+                                        <div class="thm-pdt-container">
+                                            <!--Begin Tab Nav -->
+                                            <div class="thm-pdt-nav">
+                                                <ul class="pdt-nav">
+                                                    <li class="item-nav tab-loaded tab-nav-actived" data-type="order"
+                                                        data-catid="" data-orderby="new_arrivals"
+                                                        data-href="pdt_new_arrivals"><span
+                                                            class="title-navi" style="color: white">Best Seller</span></li>
                                                 </ul>
                                             </div>
-
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalTitle" aria-hidden="true" style="background-color: #00000073;">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;color: red">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                            <h5 class="modal-title" id="selected_title"></h5>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <div>
-                                                                <div class="text-center">
-                                                                    <img src="" alt="" id="selected_image">
-                                                                    <span></span>
+                                            <!-- End Tab Nav -->
+                                            <!--Begin Tab Content -->
+                                            <div class="thm-pdt-content wide-5">
+                                                <div class="pdt-content pdt_new_arrivals is-loaded  tab-content-actived">
+                                                    <ul class="pdt-list products-grid">
+                                                        @php
+                                                            $counter = 0.5;
+                                                        @endphp
+                                                        @foreach($data['best_seller'] as $product)
+                                                            @php
+                                                                $counter+=0.5;
+                                                            @endphp
+                                                            <li class="item item-animate wide-products wow fadeInUp"
+                                                                data-wow-duration="1s" data-wow-delay="{{$counter.'s'}}">
+                                                                <div class="item-inner">
+                                                                    <div class="item-img" data-toggle="modal" data-target="#popupModal">
+                                                                        <div class="item-img-info"><a href="javascript:void(0)" onclick="openModal({{$product}})"
+                                                                                                      title="{{$product->title}}"
+                                                                                                      class="product-image"><img
+                                                                                    src="{{url('rated_products').'/'.$product->image}}"
+                                                                                    alt="Retis lapen casen"></a>
+                                                                            <div class="actions">
+                                                                                <div class="quick-view-btn"><a href=""
+                                                                                                               data-toggle="tooltip"
+                                                                                                               data-placement="right"
+                                                                                                               title=""
+                                                                                                               data-original-title="Quick View">
+                                                                                        <span>Quick View</span></a></div>
+                                                                                <div class="link-wishlist"><a href="#"
+                                                                                                              data-toggle="tooltip"
+                                                                                                              data-placement="right"
+                                                                                                              title=""
+                                                                                                              data-original-title="Wishlist"><span>Add to Wishlist</span></a>
+                                                                                </div>
+                                                                                <div class="link-compare"><a href=""
+                                                                                                             data-toggle="tooltip"
+                                                                                                             data-placement="right"
+                                                                                                             title=""
+                                                                                                             data-original-title="Compare"><span>Add to Compare</span></a>
+                                                                                </div>
+                                                                                <div class="add_cart">
+                                                                                    <button class="button btn-cart"
+                                                                                            type="button"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-placement="right" title=""
+                                                                                            data-original-title="Add to Cart">
+                                                                                        <span>Add to Cart</span></button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="rating">
+                                                                                <div class="ratings">
+                                                                                    <div class="rating-box">
+                                                                                        <div class="rating"
+                                                                                             style="width:80%"></div>
+                                                                                    </div>
+                                                                                    <p class="rating-links"><a href="#">1
+                                                                                            Review(s)</a> <span
+                                                                                            class="separator">|</span> <a
+                                                                                            href="#">Add Review</a></p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="item-info">
+                                                                        <div class="info-inner">
+                                                                            <div class="item-title"><a href="#"
+                                                                                                       title="{{$product->title}}">
+                                                                                    {{$product->title}}</a></div>
+                                                                            <div class="item-content">
+                                                                                <div class="item-price">
+                                                                                    <div class="price-box"><span
+                                                                                            class="regular-price"><span
+                                                                                                class="price">$160.00</span> </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                <p class="text-left">
-                                                                    Base is made of high quality Zinc, Trumpet is made of brass, high quality chrome, loud sound, TH-18 is
-                                                                    the best quality product available around the world in this category and specifications,
-                                                                    <br>
-                                                                    <i><b>Technical specifications</b></i>
-                                                                    <br>
-                                                                    Horn type / TH-18
-                                                                    <br>
-                                                                    Length overall 375mm 445mm
-                                                                    <br>
-                                                                    Funnel diameter 110mm 110mm
-                                                                    <br>
-                                                                    Frequency 280Hz 255Hz
-                                                                    <br>
-                                                                    Volume 120dB (A) 120dB (A)
-                                                                    <br>
-                                                                    Weight 0.90kg 1.10kg
-                                                                    <br>
-                                                                    Distance between fastening points 240mm 310mm
-                                                                    <br>
-                                                                    scope of delivery
-                                                                    <br>
-                                                                    Compressed air horn JUS40 (ready for assembly)
-                                                                    <br>
-                                                                    Funnel support
-                                                                    <br>
-                                                                    Fastening material
-                                                                    <br>
-                                                                    6mm compressed air connection 90 °
-                                                                    <br>
-                                                                    A complete double horn set, including valve connection set and protective funnel cap, is also available
-                                                                    Homologation.Since these are commercial vehicle horns that are designed for installation on the roof (higher than
-                                                                    2m), there are no regulations with regard to installation. Because of the loudness (higher than 110dB)
-                                                                    the horn can only be used outside built-up areas. The factory-installed horn (or a replacement with ENo.) Must remain operational (via switch in the dashboard).
-                                                                    <b>Product name:</b> 24.5″ eTone Chrome Air Horn
-                                                                    <br>
-                                                                    <b>Part Number:</b> H09324AC<br>
-                                                                    <b>Finish:</b> Chrome<br>
-                                                                    <b>Size:</b> 24.5″<br>
-                                                                    <b>Horn Type:</b> eTone<br>
-                                                                    <b>Shield Part Number:</b> H00929B<br>
-                                                                    <b>Shield:</b> Not Included<br>
-                                                                    <b>Horn Mount Support:</b> Included<br>
-                                                                    <b>Product Description:</b><br>
-                                                                    • Chrome horn<br>
-                                                                    • Horn support<br>
-                                                                    • 1/8” NPT port standard. Call for the size you need.<br>
-                                                                    • Grover interchangeability. Call for horn supports<br>
-                                                                    **Emergency Vehicle Use Only<br>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                            </li>
+                                                        @endforeach
+                                                    </ul>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalTitle" aria-hidden="true" style="background-color: #00000073;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;color: red">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" style="font-weight: bold;" id="selected_title"></h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p class="ml-2 mr-2">Base is made of high quality Zinc, Trumpet is made of brass, high quality chrome, loud sound, TH-18 is
+                        the best quality product available around the world in this category and specifications,<br>
+                    </p>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <i><b>Technical specifications</b></i>
+                            <p><b>Horn type</b> / TH-18</p>
+                            <p><b>Length overall</b> 375mm 445mm</p>
+                            <p><b>Funnel diameter</b> 110mm 110mm</p>
+                            <p><b>Frequency</b> 280Hz 255Hz</p>
+                            <p><b>Volume</b> 120dB (A) 120dB (A)</p>
+                            <p><b>Weight</b> 0.90kg 1.10kg</p>
+                            <p><b>Distance between fastening points</b> 240mm 310mm</p>
+                            <p><b>scope of delivery</b></p>
+                            <p><b>Compressed air horn</b> JUS40 (ready for assembly)</p>
+                            <p><b>Funnel support</b></p>
+                            <p><b>Fastening material</b></p>
+                            <p>6mm compressed air connection 90 °</p>
+                            <p>A complete double horn set, including valve connection set and protective funnel cap, is also available
+                                Homologation.Since these are commercial vehicle horns that are designed for installation on the roof (higher than
+                                2m), there are no regulations with regard to installation. Because of the loudness (higher than 110dB)
+                                the horn can only be used outside built-up areas. The factory-installed horn (or a replacement with ENo.) Must remain operational (via switch in the dashboard).</p>
+                        </div>
+                        <div class="col-md-4">
+                            <i><b>Basic Details</b></i>
+                            <p><b>Product name:</b> 24.5″ eTone Chrome Air Horn</p>
+                            <p><b>Part Number:</b> H09324AC</p>
+                            <p><b>Finish:</b> Chrome</p>
+                            <p><b>Size:</b> 24.5″</p>
+                            <p><b>Horn Type:</b> eTone</p>
+                            <p><b>Shield Part Number:</b> H00929B</p>
+                            <p><b>Shield:</b> Not Included</p>
+                            <p><b>Horn Mount Support:</b> Included</p>
+                            <p><b>Product Description:</b></p>
+                            <ul>
+                                <li>Chrome horn</li>
+                                <li>Horn support</li>
+                                <li>1/8” NPT port standard. Call for the size you need.</li>
+                                <li>Grover interchangeability. Call for horn supports</li>
+                            </ul>
+                            <br>
+                            **Emergency Vehicle Use Only<br>
+                        </div>
+                        {{--                                                                <div class="col-md-4">--}}
+                        {{--                                                                    <img src="" alt="" style="height: 100%;width: 100%;" id="selected_image">--}}
+                        {{--                                                                    <span></span>--}}
+                        {{--                                                                </div>--}}
                     </div>
                 </div>
             </div>
@@ -860,40 +766,6 @@
             </div>
         </div>
     </div>
-
-    <section id="about-us">
-        <div class="brand-logo">
-            <div class="container">
-                <div class="new_title center">
-                    <h1 class="text-uppercase">About Us</h1>
-                    <div class="starSeparator"></div>
-                </div>
-                <div class="slider-items-products">
-                    <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
-                        <blockquote class="blockquote">
-                            <h4><b>MSK-SwuperHorn</b></h4>
-                            Super Horn House established back in 1972 offers a premium line of automotive air horns, for
-                            virtually every conceivable application. Whether you are looking for a loud Train horn,
-                            Truck Horn,
-                            Marine Horn, SUV, Car or even for your bike, you have arrived at the right place.
-                            <br>
-                            At Super Horn House we understand the core of Air Horn Business, but we also bring something
-                            more to the table. IDEAS !! fresh way of solving problems that can help our client business.
-                            If your
-                            business has special needs or if you are simply searching for a better way you are welcome
-                            to speak
-                            with our manufacturing unit...<br> we have ideas to share. The science of auto horns, Air Horns,
-                            electric
-                            horns and even individual parts.
-                            Super Horn House aims to maximise its success by finding and processing of better resources
-                            – areas
-                            of expertise in which we have a clear competitive advantage
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <div class="our-features-box">
         <div class="container">

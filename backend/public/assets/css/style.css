@@ -493,6 +493,7 @@ header .header-top-links {
 	letter-spacing:1px;
 	vertical-align:top
 }
+
 .block-language {
 	background: none;
 	box-shadow: none;
@@ -1009,7 +1010,8 @@ nav {
 
 }
 
-.index .nav > li > a {color:#fff;
+.index .nav > li > a {
+    color: #000000;
     -webkit-transition: color 200ms ease-in-out;
     transition: color 200ms ease-in-out;}
 
@@ -1017,7 +1019,7 @@ nav {
     height: 1px;
     font-size: 0;
     line-height: 0;
-    background: #fff;
+    background: #000000;
     position: absolute;
     left: 0;
     width: 100%;
@@ -1029,6 +1031,7 @@ nav {
 }
 .index .nav > li > a:hover:after {
     opacity: 1;
+    background-color: black;
     -webkit-transform: translateY(-3px);
     -ms-transform: translateY(-3px);
     transform: translateY(-3px);
