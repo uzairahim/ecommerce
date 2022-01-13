@@ -129,7 +129,7 @@
                 <div class="slider-items-products">
                     <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
                         <blockquote class="blockquote">
-                            <h4><b>MSK-SwuperHorn</b></h4>
+                            <h4><b>MSK-SuperHorn</b></h4>
                             Super Horn House established back in 1972 offers a premium line of automotive air horns, for
                             virtually every conceivable application. Whether you are looking for a loud Train horn,
                             Truck Horn,
