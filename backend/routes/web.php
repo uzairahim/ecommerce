@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','web\landingPageController@getRatedProductImages');
+
+Route::view('/composition','music_horn_composition');
