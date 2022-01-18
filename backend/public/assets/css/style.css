@@ -95,7 +95,7 @@ button {
 }
 
 /* list/grid toolbar*/
-.toolbar span.button-active.button-grid, {
+.toolbar span.button-active.button-grid {
 background-color:#C2A476!important;
 }
 .toolbar a.button-grid {
@@ -838,8 +838,12 @@ ul#cart-sidebar {
 
 }
 .top-cart-content .product-details .btn-edit:hover {
-	color: #339bold;
 }
+
+.top-cart-content .product-details .btn-edit:hover {
+    color: #339bold;
+}
+
 .top-cart-content .actions {
 	padding: 25px;
 	margin: 0px 0 0;
@@ -945,8 +949,7 @@ background:#f6f6f6
 /*----------- 4. Navigation -------------*/
 
 nav {
-    position: absolute;
-	margin: auto;
+    position: absolute;margin: auto;
 	width: 100%;
 	height: 100px;
 
@@ -3371,16 +3374,14 @@ color: #000;
 	top: 30%;
 }
 .cat-img-title.cat-box {
-	margin: 0;
-	width: 300px;
+    width: 300px;
 	text-align: center;
 	left: 50%;
 	top: 50%;
 	background: #C2A476;
-	margin-left: -380px;
-	height: 250px;
+    height: 250px;
 	padding: 25px 20px;
-	margin-top: -125px
+    margin: -125px 0 0 -380px;
 }
 .category-description .small-tag {
 	font-size: 12px;
