@@ -20,7 +20,8 @@ website:   	http://www.themepunch.com
 	font-style: normal;
 }
 #thm-slideshow{
-    margin:auto; margin-top:-140px; position: relative;
+    margin:auto;
+    margin-top:-140px; position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 94%, 50% 100%, 50% 100%, 0 94%);
 }
 
