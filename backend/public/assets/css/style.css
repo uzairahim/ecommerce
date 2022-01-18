@@ -945,6 +945,7 @@ background:#f6f6f6
 /*----------- 4. Navigation -------------*/
 
 nav {
+    position: absolute;
 	margin: auto;
 	width: 100%;
 	height: 100px;

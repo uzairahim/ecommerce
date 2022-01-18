@@ -2,7 +2,7 @@
 @section('content')
     <div id="page">
         @component('layout.head')@endcomponent
-        <div style="background-color: #f1f1f1;padding-bottom:50px;">
+        <div style="background-color: #f1f1f1;padding-bottom:140px;">
             @component('layout.navbar')@endcomponent
         </div>
         <section>

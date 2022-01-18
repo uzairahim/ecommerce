@@ -1,95 +1,81 @@
 @extends('layout.header')
 @section('content')
+
+    <style>
+        .slideshow {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            margin: 0px auto;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 46% 100%, 54% 100%, 0 90%);
+        }
+        .slideshow * {
+            outline: none;
+        }
+        .slideshow .slider-track {
+            -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+            transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+        }
+        .slideshow .item {
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        /*slick-slide slick-current slick-active*/
+        .slideshow .item img {
+            width: 100%;
+            height: 550px;
+            -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+            transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+            /*-webkit-transform: scale(1.3);*/
+            /*transform: scale(1.3);*/
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        /*.slideshow .slick-current .item img{*/
+        /*    -webkit-animation: cssAnimation 15s forwards;*/
+        /*    animation: cssAnimation 15s forwards;*/
+        /*}*/
+        @keyframes cssAnimation {
+            from {
+                -webkit-transform: scale(1.3) translate(0px);
+            }
+            to {
+                -webkit-transform: scale(1) translate(0px);
+            }
+        }
+        @-webkit-keyframes cssAnimation {
+            from {
+                -webkit-transform: scale(1.3) translate(0px);
+            }
+            to {
+                -webkit-transform: scale(1) translate(0px);
+            }
+        }
+    </style>
+
+
     <div id="page">
         @component('layout.head')@endcomponent
         @component('layout.navbar')@endcomponent
 
-        <!-- Slider -->
-        <div id="thm-slideshow" class="thm-slideshow" style="height: 100vh">
-            <div class="container">
-                <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
-                     data-alias="classicslider1"
-                     style="margin:0px auto;background-color:transparent;padding:0px;height: 100vh;margin-top:0px;margin-bottom:0px;">
-                    <!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
-                    <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none; height: 100vh;"
-                         data-version="5.0.7">
-                        <ul>
-                            <!-- SLIDE  -->
-                            <li data-index="rs-16" data-transition="zoomout" data-slotamount="default"
-                                data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                                data-rotate="0"
-                                data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7"
-                                data-saveperformance="off" data-title="Intro" data-description="">
-                                <!-- MAIN IMAGE -->
-                                <img style="background-size: 100% 100vh; background-position: 100% 0;"
-                                     class="banner-imageee" src="{{asset('assets/images/banner-1.jpeg')}}" alt="">
-                            </li>
-                            <!-- SLIDE  -->
-                            <li data-index="rs-18" data-transition="zoomin" data-slotamount="7"
-                                data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                                data-thumb="{{asset('assets/images/banner-2.png')}}" data-rotate="0"
-                                data-saveperformance="off" data-title="Ken Burns" data-description="">
-                                <!-- MAIN IMAGE -->
-                                <img src="{{asset('assets/images/banner-2.png')}}" alt="">
-                            </li>
-                            <!-- SLIDE  -->
-                            <li data-index="rs-19" data-transition="zoomout" data-slotamount="default"
-                                data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                                data-thumb="{{asset('assets/images/banner-3.png')}}" data-rotate="0"
-                                data-saveperformance="off" data-title="" data-description="">
-                                <!-- MAIN IMAGE -->
-                                <img src="{{asset('assets/images/banner-3.png')}}" alt="">
-                            </li>
-                            <!-- SLIDE  -->
-                        </ul>
-                        <div class="tp-static-layers"></div>
-                        <div class="tp-bannertimer"
-                             style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
+{{--        <div id="thm-slideshow" class="thm-slideshow" style="height: 100vh">--}}
+            <div class="slideshow">
+                <div class="slider">
+                    <div class="item">
+                        <img src="{{asset('assets/images/banner-1.jpeg')}}"/>
+                    </div>
+                    <div class="item">
+                        <img src="{{asset('assets/images/banner-2.png')}}"/>
+                    </div>
+                    <div class="item">
+                        <img src="{{asset('assets/images/banner-3.png')}}"/>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- end Slider -->
-        <section id="about-us">
-            <div class="brand-logo">
-                <div class="container">
-                    <div class="new_title center">
-                        <h1 class="text-uppercase">About Us</h1>
-                        <div class="starSeparator"></div>
-                    </div>
-                    <div class="slider-items-products">
-                        <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
-                            <blockquote class="blockquote">
-                                <h4><b>MSK-SuperHorn</b></h4>
-                                Super Horn House established back in 1972 offers a premium line of automotive air horns,
-                                for
-                                virtually every conceivable application. Whether you are looking for a loud Train horn,
-                                Truck Horn,
-                                Marine Horn, SUV, Car or even for your bike, you have arrived at the right place.
-                                <br>
-                                At Super Horn House we understand the core of Air Horn Business, but we also bring
-                                something
-                                more to the table. IDEAS !! fresh way of solving problems that can help our client
-                                business.
-                                If your
-                                business has special needs or if you are simply searching for a better way you are
-                                welcome
-                                to speak
-                                with our manufacturing unit...<br> we have ideas to share. The science of auto horns,
-                                Air Horns,
-                                electric
-                                horns and even individual parts.
-                                Super Horn House aims to maximise its success by finding and processing of better
-                                resources
-                                – areas
-                                of expertise in which we have a clear competitive advantage
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+{{--        </div>--}}
+        @component('about-us')@endcomponent
 
         <div class="promo-section">
             <div class="container">
@@ -125,7 +111,8 @@
                                             <div class="actions">
                                                 <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
                                                                                data-placement="right" title=""
-                                                                               data-original-title="Quick View"> <span>Quick View</span></a>
+                                                                               data-original-title="Quick View">
+                                                        <span>Quick View</span></a>
                                                 </div>
                                                 <div class="link-wishlist"><a href="#" data-toggle="tooltip"
                                                                               data-placement="right" title=""
@@ -136,7 +123,8 @@
                                                                              data-original-title="Compare"><span>Add to Compare</span></a>
                                                 </div>
                                                 <div class="add_cart">
-                                                    <button class="button btn-cart" type="button" data-toggle="tooltip"
+                                                    <button class="button btn-cart" type="button"
+                                                            data-toggle="tooltip"
                                                             data-placement="right" title=""
                                                             data-original-title="Add to Cart">
                                                         <span>Add to Cart</span></button>
@@ -241,19 +229,21 @@
                                                                                             title=""
                                                                                             data-original-title="Wishlist"><span>Add to Wishlist</span></a>
                                                                                     </div>
-                                                                                    <div class="link-compare"><a href=""
-                                                                                                                 data-toggle="tooltip"
-                                                                                                                 data-placement="right"
-                                                                                                                 title=""
-                                                                                                                 data-original-title="Compare"><span>Add to Compare</span></a>
+                                                                                    <div class="link-compare"><a
+                                                                                            href=""
+                                                                                            data-toggle="tooltip"
+                                                                                            data-placement="right"
+                                                                                            title=""
+                                                                                            data-original-title="Compare"><span>Add to Compare</span></a>
                                                                                     </div>
                                                                                     <div class="add_cart">
-                                                                                        <button class="button btn-cart"
-                                                                                                type="button"
-                                                                                                data-toggle="tooltip"
-                                                                                                data-placement="right"
-                                                                                                title=""
-                                                                                                data-original-title="Add to Cart">
+                                                                                        <button
+                                                                                            class="button btn-cart"
+                                                                                            type="button"
+                                                                                            data-toggle="tooltip"
+                                                                                            data-placement="right"
+                                                                                            title=""
+                                                                                            data-original-title="Add to Cart">
                                                                                             <span>Add to Cart</span>
                                                                                         </button>
                                                                                     </div>
@@ -269,7 +259,8 @@
                                                                                                 Review(s)</a> <span
                                                                                                 class="separator">|</span>
                                                                                             <a
-                                                                                                href="#">Add Review</a>
+                                                                                                href="#">Add
+                                                                                                Review</a>
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -279,7 +270,8 @@
                                                                             <div class="info-inner">
                                                                                 <div class="item-title"><a href="#"
                                                                                                            title="{{$product->title}}">
-                                                                                        {{$product->title}}</a></div>
+                                                                                        {{$product->title}}</a>
+                                                                                </div>
                                                                                 <div class="item-content">
                                                                                     <div class="item-price">
                                                                                         <div class="price-box"><span
@@ -320,7 +312,8 @@
                         <h4 class="modal-title" style="font-weight: bold;" id="selected_title"></h4>
                     </div>
                     <div class="modal-body text-left">
-                        <p class="ml-2 mr-2">Base is made of high quality Zinc, Trumpet is made of brass, high quality
+                        <p class="ml-2 mr-2">Base is made of high quality Zinc, Trumpet is made of brass, high
+                            quality
                             chrome, loud sound, TH-18 is
                             the best quality product available around the world in this category and specifications,<br>
                         </p>
@@ -339,14 +332,18 @@
                                 <p><b>Funnel support</b></p>
                                 <p><b>Fastening material</b></p>
                                 <p>6mm compressed air connection 90 °</p>
-                                <p>A complete double horn set, including valve connection set and protective funnel cap,
+                                <p>A complete double horn set, including valve connection set and protective funnel
+                                    cap,
                                     is also available
                                     Homologation.Since these are commercial vehicle horns that are designed for
                                     installation on the roof (higher than
-                                    2m), there are no regulations with regard to installation. Because of the loudness
+                                    2m), there are no regulations with regard to installation. Because of the
+                                    loudness
                                     (higher than 110dB)
-                                    the horn can only be used outside built-up areas. The factory-installed horn (or a
-                                    replacement with ENo.) Must remain operational (via switch in the dashboard).</p>
+                                    the horn can only be used outside built-up areas. The factory-installed horn (or
+                                    a
+                                    replacement with ENo.) Must remain operational (via switch in the
+                                    dashboard).</p>
                             </div>
                             <div class="col-md-4">
                                 <i><b>Basic Details</b></i>
@@ -394,7 +391,8 @@
                         </div>
                         <div class="">
                             <em>Super Air Horns
-                                Great horn with simple setup to stock wiring of my vehicle. it is as loud as expected.
+                                Great horn with simple setup to stock wiring of my vehicle. it is as loud as
+                                expected.
                                 its
                                 150db +
                                 &nbsp;</em>
@@ -411,9 +409,11 @@
                                                       style="height:100px;width:100px;border: 5px solid #b69139;border-radius: 50%;">
                         </div>
                         <div><em>Super Air Horns
-                                Super Air Horn electric air horns does what it says. Loud, Musical type sound. Hooking
+                                Super Air Horn electric air horns does what it says. Loud, Musical type sound.
+                                Hooking
                                 it
-                                up? Wasn't that easy. i ordered 1000 pieces, delivered on time, amazing service, very
+                                up? Wasn't that easy. i ordered 1000 pieces, delivered on time, amazing service,
+                                very
                                 good
                                 quality</em>
                             <div class="text-center">
@@ -430,7 +430,8 @@
                         </div>
                         <div><em>Super Air Horns
 
-                                MH-6800 This horn is great, it sounds great. Love the attention it demands when someone
+                                MH-6800 This horn is great, it sounds great. Love the attention it demands when
+                                someone
                                 is
                                 not paying attention and drifts into my lane. I did not receive a discount on this
                                 purchase</em>
@@ -460,42 +461,50 @@
                         <div class="slider-items slider-width-col6">
 
                             <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo3')}}.png" alt="Image"></a>
+                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo3')}}.png"
+                                                               alt="Image"></a>
                             </div>
                             <!-- End Item -->
 
                             <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo2')}}.png" alt="Image"></a>
+                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo2')}}.png"
+                                                               alt="Image"></a>
                             </div>
                             <!-- End Item -->
 
                             <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png" alt="Image"></a>
+                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png"
+                                                               alt="Image"></a>
                             </div>
                             <!-- End Item -->
 
                             <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png" alt="Image"></a>
+                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png"
+                                                               alt="Image"></a>
                             </div>
                             <!-- End Item -->
 
                             <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo5')}}.png" alt="Image"></a>
+                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo5')}}.png"
+                                                               alt="Image"></a>
                             </div>
                             <!-- End Item -->
 
                             <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo6')}}.png" alt="Image"></a>
+                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo6')}}.png"
+                                                               alt="Image"></a>
                             </div>
                             <!-- End Item -->
 
                             <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png" alt="Image"></a>
+                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png"
+                                                               alt="Image"></a>
                             </div>
                             <!-- End Item -->
 
                             <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png" alt="Image"></a>
+                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png"
+                                                               alt="Image"></a>
                             </div>
                             <!-- End Item -->
 

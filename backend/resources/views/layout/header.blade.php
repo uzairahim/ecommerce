@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/revslider.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/animate.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/style.css')}}" media="all">
-
+    <link rel="stylesheet" href="{{asset('assets/js/slick-slider/slick/slick.css')}}">
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
           type='text/css'>
@@ -145,7 +145,22 @@
 <script type="text/javascript" src="{{asset('assets/js/revolution-slider.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/wow.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/revolution.extension.js')}}"></script>
+<script type="text/javascript" src="{{asset('assets/js/slick-slider/slick/slick.js')}}"></script>
 <script type="text/javascript">
+{{--slick sider --}}
+    $('.slider').slick({
+        draggable: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+        dots: false,
+        fade: true,
+        speed: 2000,
+        infinite: true,
+        cssEase: 'ease-in-out',
+        touchThreshold: 100
+    })
+
     var dthen1 = new Date("12/25/17 11:59:00 PM");
     start = "05/03/15 03:02:11 AM";
     start_date = Date.parse(start);
