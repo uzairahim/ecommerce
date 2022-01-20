@@ -18,7 +18,7 @@ class landingPageController extends Controller
     {
             $rateProducts['best_seller'] = $this->productRepository->RatedProductQuery('best_seller');
             $rateProducts['superb_products'] = $this->productRepository->RatedProductQuery('superb_products');
-            return view('index')->with('data',$rateProducts);
+            return view('home.index')->with('data',$rateProducts);
     }
 
 }

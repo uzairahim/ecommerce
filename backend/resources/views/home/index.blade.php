@@ -1,81 +1,17 @@
 @extends('layout.header')
 @section('content')
 
-    <style>
-        .slideshow {
-            position: relative;
-            z-index: 1;
-            height: 100%;
-            width: 100%;
-            margin: 0px auto;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 46% 100%, 54% 100%, 0 90%);
-        }
-        .slideshow * {
-            outline: none;
-        }
-        .slideshow .slider-track {
-            -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-            transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-        }
-        .slideshow .item {
-            height: 100%;
-            position: relative;
-            z-index: 1;
-        }
-        /*slick-slide slick-current slick-active*/
-        .slideshow .item img {
-            width: 100%;
-            height: 550px;
-            -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-            transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
-            /*-webkit-transform: scale(1.3);*/
-            /*transform: scale(1.3);*/
-            -webkit-transform: scale(1);
-            transform: scale(1);
-        }
-        /*.slideshow .slick-current .item img{*/
-        /*    -webkit-animation: cssAnimation 15s forwards;*/
-        /*    animation: cssAnimation 15s forwards;*/
-        /*}*/
-        @keyframes cssAnimation {
-            from {
-                -webkit-transform: scale(1.3) translate(0px);
-            }
-            to {
-                -webkit-transform: scale(1) translate(0px);
-            }
-        }
-        @-webkit-keyframes cssAnimation {
-            from {
-                -webkit-transform: scale(1.3) translate(0px);
-            }
-            to {
-                -webkit-transform: scale(1) translate(0px);
-            }
-        }
-    </style>
-
-
     <div id="page">
-        @component('layout.head')@endcomponent
-        @component('layout.navbar')@endcomponent
+    @component('layout.head')@endcomponent
+    @component('layout.navbar')@endcomponent
 
-{{--        <div id="thm-slideshow" class="thm-slideshow" style="height: 100vh">--}}
-            <div class="slideshow">
-                <div class="slider">
-                    <div class="item">
-                        <img src="{{asset('assets/images/banner-1.jpeg')}}"/>
-                    </div>
-                    <div class="item">
-                        <img src="{{asset('assets/images/banner-2.png')}}"/>
-                    </div>
-                    <div class="item">
-                        <img src="{{asset('assets/images/banner-3.png')}}"/>
-                    </div>
-                </div>
-            </div>
-{{--        </div>--}}
-        @component('about-us')@endcomponent
+    <!-- Slider -->
+    @component('home.carousel')@endcomponent
+    <!-- End Slider -->
+
+        <!-- About Us -->
+    @component('home.about-us')@endcomponent
+    <!-- End About Us -->
 
         <div class="promo-section">
             <div class="container">
@@ -91,213 +27,12 @@
         </div>
 
         <!-- Featured Slider -->
-        <section class="featured-pro container wow bounceInUp animated">
-            <div class="slider-items-products container">
-                <div class="new_title center">
-                    <h2>Superb Products</h2>
-                    <div class="starSeparator"></div>
-                </div>
-                <div id="featured-slider" class="product-flexslider hidden-buttons">
-                    <div class="slider-items slider-width-col4 products-grid">
-                        @foreach($data['superb_products'] as $product)
-                            <div class="item">
-                                <div class="item-inner">
-                                    <div class="item-img">
-                                        <div class="item-img-info" data-toggle="modal" data-target="#popupModal"><a
-                                                href="javascript:void(0)" onclick="openModal({{$product}})"
-                                                class="product-image" title="{{$product->title}}">
-                                                <img alt="Retis lapen casen"
-                                                     src="{{url('rated_products').'/'.$product->image}}"> </a>
-                                            <div class="actions">
-                                                <div class="quick-view-btn"><a href="#" data-toggle="tooltip"
-                                                                               data-placement="right" title=""
-                                                                               data-original-title="Quick View">
-                                                        <span>Quick View</span></a>
-                                                </div>
-                                                <div class="link-wishlist"><a href="#" data-toggle="tooltip"
-                                                                              data-placement="right" title=""
-                                                                              data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                                </div>
-                                                <div class="link-compare"><a href="#" data-toggle="tooltip"
-                                                                             data-placement="right" title=""
-                                                                             data-original-title="Compare"><span>Add to Compare</span></a>
-                                                </div>
-                                                <div class="add_cart">
-                                                    <button class="button btn-cart" type="button"
-                                                            data-toggle="tooltip"
-                                                            data-placement="right" title=""
-                                                            data-original-title="Add to Cart">
-                                                        <span>Add to Cart</span></button>
-                                                </div>
-                                            </div>
-                                            <div class="rating">
-                                                <div class="ratings">
-                                                    <div class="rating-box">
-                                                        <div style="width:80%" class="rating"></div>
-                                                    </div>
-                                                    <p class="rating-links"><a href="#">1 Review(s)</a> <span
-                                                            class="separator">|</span>
-                                                        <a href="#">Add Review</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item-info">
-                                        <div class="info-inner">
-                                            <div class="item-title"><a title="{{$product->title}}"
-                                                                       href="#">{{$product->title}}</a></div>
-                                            <div class="item-content">
-                                                <div class="item-price">
-                                                    <div class="price-box"><span class="regular-price"> <span
-                                                                class="price">$125.00</span> </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Featured Slider -->
+    @component('home.feature-products',['superb_products'=>$data['superb_products']])@endcomponent
+    <!-- End Featured Slider -->
 
-        <section style="background-color: #848484;">
-            <div class="container pb-5">
-                <div class="row">
-                    <div class="products-grid">
-                        <div class="col-md-12">
-                            <div class="std">
-                                <div class="home-tabs">
-                                    <div class="producttabs">
-                                        <div id="thm_producttabs1" class="thm-producttabs">
-                                            <!--<h3></h3>-->
-                                            <div class="thm-pdt-container">
-                                                <!--Begin Tab Nav -->
-                                                <div class="thm-pdt-nav">
-                                                    <ul class="pdt-nav">
-                                                        <li class="item-nav tab-loaded tab-nav-actived"
-                                                            data-type="order"
-                                                            data-catid="" data-orderby="new_arrivals"
-                                                            data-href="pdt_new_arrivals"><span
-                                                                class="title-navi"
-                                                                style="color: white">Best Seller</span></li>
-                                                    </ul>
-                                                </div>
-                                                <!-- End Tab Nav -->
-                                                <!--Begin Tab Content -->
-                                                <div class="thm-pdt-content wide-5">
-                                                    <div
-                                                        class="pdt-content pdt_new_arrivals is-loaded  tab-content-actived">
-                                                        <ul class="pdt-list products-grid"
-                                                            style="justify-content: center;display: flex;">
-                                                            @php
-                                                                $counter = 0.5;
-                                                            @endphp
-                                                            @foreach($data['best_seller'] as $product)
-                                                                @php
-                                                                    $counter+=0.5;
-                                                                @endphp
-                                                                <li class="item item-animate wide-products wow fadeInUp"
-                                                                    data-wow-duration="1s"
-                                                                    data-wow-delay="{{$counter.'s'}}">
-                                                                    <div class="item-inner">
-                                                                        <div class="item-img" data-toggle="modal"
-                                                                             data-target="#popupModal">
-                                                                            <div class="item-img-info"><a
-                                                                                    href="javascript:void(0)"
-                                                                                    onclick="openModal({{$product}})"
-                                                                                    title="{{$product->title}}"
-                                                                                    class="product-image"><img
-                                                                                        src="{{url('rated_products').'/'.$product->image}}"
-                                                                                        alt="Retis lapen casen"></a>
-                                                                                <div class="actions">
-                                                                                    <div class="quick-view-btn"><a
-                                                                                            href=""
-                                                                                            data-toggle="tooltip"
-                                                                                            data-placement="right"
-                                                                                            title=""
-                                                                                            data-original-title="Quick View">
-                                                                                            <span>Quick View</span></a>
-                                                                                    </div>
-                                                                                    <div class="link-wishlist"><a
-                                                                                            href="#"
-                                                                                            data-toggle="tooltip"
-                                                                                            data-placement="right"
-                                                                                            title=""
-                                                                                            data-original-title="Wishlist"><span>Add to Wishlist</span></a>
-                                                                                    </div>
-                                                                                    <div class="link-compare"><a
-                                                                                            href=""
-                                                                                            data-toggle="tooltip"
-                                                                                            data-placement="right"
-                                                                                            title=""
-                                                                                            data-original-title="Compare"><span>Add to Compare</span></a>
-                                                                                    </div>
-                                                                                    <div class="add_cart">
-                                                                                        <button
-                                                                                            class="button btn-cart"
-                                                                                            type="button"
-                                                                                            data-toggle="tooltip"
-                                                                                            data-placement="right"
-                                                                                            title=""
-                                                                                            data-original-title="Add to Cart">
-                                                                                            <span>Add to Cart</span>
-                                                                                        </button>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="rating">
-                                                                                    <div class="ratings">
-                                                                                        <div class="rating-box">
-                                                                                            <div class="rating"
-                                                                                                 style="width:80%"></div>
-                                                                                        </div>
-                                                                                        <p class="rating-links"><a
-                                                                                                href="#">1
-                                                                                                Review(s)</a> <span
-                                                                                                class="separator">|</span>
-                                                                                            <a
-                                                                                                href="#">Add
-                                                                                                Review</a>
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="item-info">
-                                                                            <div class="info-inner">
-                                                                                <div class="item-title"><a href="#"
-                                                                                                           title="{{$product->title}}">
-                                                                                        {{$product->title}}</a>
-                                                                                </div>
-                                                                                <div class="item-content">
-                                                                                    <div class="item-price">
-                                                                                        <div class="price-box"><span
-                                                                                                class="regular-price"><span
-                                                                                                    class="price">$160.00</span> </span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-                                                            @endforeach
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Best Seller -->
+    @component('home.best-seller',['best_seller'=>$data['best_seller']])@endcomponent
+    <!-- End Best Seller -->
 
         <!-- Modal -->
         <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalTitle"
@@ -449,6 +184,11 @@
             </div>
         </section>
         <!-- End Latest Blog -->
+        <br><br>
+        <!--   Weekly Sale    -->
+    @component('home.weekly-sale')@endcomponent
+    <!--  End Weekly Sale    -->
+
 
         <div class="brand-logo">
             <div class="container">
@@ -564,27 +304,27 @@
             </li>
             <li><a href="#">Pages</a>
                 <ul>
-                    <li><a href="grid.html">Grid</a></li>
-                    <li><a href="list.html">List</a></li>
-                    <li><a href="product_detail.html">Product Detail</a></li>
-                    <li><a href="shopping_cart.html">Shopping Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a>
+                    <li><a href="../grid.html">Grid</a></li>
+                    <li><a href="../list.html">List</a></li>
+                    <li><a href="../product_detail.html">Product Detail</a></li>
+                    <li><a href="../shopping_cart.html">Shopping Cart</a></li>
+                    <li><a href="../checkout.html">Checkout</a>
                         <ul>
-                            <li><a href="checkout_method.html">Checkout Method</a></li>
-                            <li><a href="checkout_billing_info.html">Checkout Billing Info</a></li>
+                            <li><a href="../checkout_method.html">Checkout Method</a></li>
+                            <li><a href="../checkout_billing_info.html">Checkout Billing Info</a></li>
                         </ul>
                     </li>
-                    <li><a href="wishlist.html">Wishlist</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="multiple_addresses.html">Multiple Addresses</a></li>
-                    <li><a href="about_us.html">About us</a></li>
-                    <li><a href="blog.html">Blog</a>
+                    <li><a href="../wishlist.html">Wishlist</a></li>
+                    <li><a href="../dashboard.html">Dashboard</a></li>
+                    <li><a href="../multiple_addresses.html">Multiple Addresses</a></li>
+                    <li><a href="../about_us.html">About us</a></li>
+                    <li><a href="../blog.html">Blog</a>
                         <ul>
                             <li><a href="blog-detail.html">Blog Detail</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact_us.html">Contact us</a></li>
-                    <li><a href="404error.html">404 Error Page</a></li>
+                    <li><a href="../contact_us.html">Contact us</a></li>
+                    <li><a href="../404error.html">404 Error Page</a></li>
                 </ul>
             </li>
             <li><a href="#">Women</a>
