@@ -3,7 +3,7 @@
         background-color: #ecfdff;
     }
     .offer_text{
-        margin-top: 18%;
+        margin-top: 15%;
     }
     .offer_text h1{
         font-size: 30px;
@@ -12,7 +12,7 @@
         text-align: center;
     }
     .section_padding {
-        padding: 80px 0;
+        padding: 100px 0;
     }
     .circles{
         height: 100px;
