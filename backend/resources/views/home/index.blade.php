@@ -110,6 +110,8 @@
         <!--   Weekly Sale    -->
     @component('home.sections.safety_horn')@endcomponent
     @component('home.sections.road_master')@endcomponent
+    @component('home.sections.section_3')@endcomponent
+    @component('home.sections.section_4')@endcomponent
         <!--  /Weekly Sale    -->
 
         <!-- TESTIMONIALS -->
