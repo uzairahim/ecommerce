@@ -17,21 +17,26 @@
                                 <div class="product-img-box col-sm-4 col-xs-12">
                                     <div class="new-label new-top-left"> New</div>
                                     <div class="product-image">
-                                        <div class="large-image"><a href="{{url($data['main_image'])}}" class="cloud-zoom" id="zoom1"> <img
+                                        <div class="large-image"><a href="{{url($data['main_image'])}}"
+                                                                    class="cloud-zoom" id="zoom1"> <img
                                                     src="{{url($data['main_image'])}}" alt="product image"> </a></div>
                                         <div class="flexslider flexslider-thumb">
                                             <ul class="previews-list slides">
                                                 <li>
-                                                    <a href="{{asset($data['main_image'])}}" class='cloud-zoom-gallery' rel="useZoom: 'zoom1', smallImage: '{{asset($data['main_image'])}}' ">
+                                                    <a href="{{asset($data['main_image'])}}" class='cloud-zoom-gallery'
+                                                       rel="useZoom: 'zoom1', smallImage: '{{asset($data['main_image'])}}' ">
                                                         <img src="{{asset($data['main_image'])}}" alt="Thumbnail 1"/>
                                                     </a>
                                                 </li>
-
-                                                <li>
-                                                    <a href="{{asset('assets/images/best_seller3.png')}}" class='cloud-zoom-gallery' rel="useZoom: 'zoom1', smallImage: '{{asset('assets/images/best_seller3.png')}}' ">
-                                                        <img src="{{asset('assets/images/best_seller3.png')}}" alt="Thumbnail 1"/>
-                                                    </a>
-                                                </li>
+                                                @foreach($data['side_images'] as $side_image)
+                                                    <li>
+                                                        <a href="{{asset($side_image)}}" class='cloud-zoom-gallery'
+                                                           rel="useZoom: 'zoom1', smallImage: '{{asset($side_image)}}' ">
+                                                            <img src="{{asset($side_image)}}" style="height: 63px;"
+                                                                 alt="Thumbnail 1"/>
+                                                        </a>
+                                                    </li>
+                                                @endforeach
                                             </ul>
                                         </div>
                                     </div>
@@ -87,13 +92,16 @@
                 <div class="product-collateral col-lg-12 col-sm-12 col-xs-12 bounceInUp animated">
                     <div class="add_info">
                         <ul id="product-detail-tab" class="nav nav-tabs product-tabs">
-                            <li class="active"> <a href="#product_tabs_description" data-toggle="tab"> Product Specifications </a> </li>
+                            <li class="active"><a href="#product_tabs_description" data-toggle="tab"> Product
+                                    Specifications </a></li>
                         </ul>
                         <div id="productTabContent" class="tab-content">
                             <div class="tab-pane fade in active" id="product_tabs_description">
                                 <div class="row">
                                     @foreach($data['specifications'] as $key => $specifications)
-                                        <div class="col-sm-4"><li><b>{{$key}}</b>{{': '.$specifications}}</li></div>
+                                        <div class="col-sm-4">
+                                            <li><b>{{$key}}</b>{{': '.$specifications}}</li>
+                                        </div>
                                     @endforeach
                                 </div>
                             </div>
@@ -105,8 +113,10 @@
         <br>
         <br>
     </div>
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/font-awesome.css')}}" media="all">
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/flexslider.css')}}">
+    
     <script type="text/javascript" src="{{asset('/assets/js/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('/assets/js/jquery.flexslider.js')}}"></script>
     <script type="text/javascript" src="{{asset('/assets/js/cloud-zoom.js')}}"></script>
-
 @endsection

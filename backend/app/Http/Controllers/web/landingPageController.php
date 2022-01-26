@@ -60,9 +60,17 @@ class landingPageController extends Controller
             'Wwight' => '1.9KG',
             'Pitch' => 'High/Low'
         ];
+        $side_images = [
+            'safety_horn_1' => 'assets/images/safety_horn_1.JPG',
+            'safety_horn_2' => 'assets/images/safety_horn_2.JPG',
+            'safety_horn_3' => 'assets/images/safety_horn_3.JPG',
+            'safety_horn_4' => 'assets/images/safety_horn_4.JPG',
+            'safety_horn_5' => 'assets/images/safety_horn_5.JPG',
+        ];
         $data = [
             'title' => $title,
             'main_image' => 'assets/images/safety_horn.jpeg',
+            'side_images' => $side_images,
             'description' => $description,
             'footer' => $footer,
             'specifications' => $specifications
