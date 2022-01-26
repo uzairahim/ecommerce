@@ -40,7 +40,7 @@
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-6 col-md-6">
                 <div class="offer_img">
-                    <img src="{{asset('assets/images/safety_horn.jpeg')}}" alt="" style="height: 400px;border-radius: 5px;">
+                    <img src="{{asset('assets/images/safety_horn.JPG')}}" alt="" style="height: 400px;border-radius: 5px;">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 text-center">

@@ -14,24 +14,21 @@
                                     class="product-prev" href="#"><span></span></a></div>
                             <div class="product-essential">
                                 <input name="form_key" value="6UbXroakyQlbfQzK" type="hidden">
-                                <div class="product-img-box col-sm-4 col-xs-12">
+                                <div class="product-img-box col-sm-6 col-xs-12">
                                     <div class="new-label new-top-left"> New</div>
                                     <div class="product-image">
-                                        <div class="large-image"><a href="{{url($data['main_image'])}}"
-                                                                    class="cloud-zoom" id="zoom1"> <img
-                                                    src="{{url($data['main_image'])}}" alt="product image"> </a></div>
+                                        <div class="large-image"><a href="{{asset($data['main_image'])}}"> <img
+                                                    src="{{asset($data['main_image'])}}" alt="product image" id="main_product"> </a></div>
                                         <div class="flexslider flexslider-thumb">
                                             <ul class="previews-list slides">
                                                 <li>
-                                                    <a href="{{asset($data['main_image'])}}" class='cloud-zoom-gallery'
-                                                       rel="useZoom: 'zoom1', smallImage: '{{asset($data['main_image'])}}' ">
-                                                        <img src="{{asset($data['main_image'])}}" alt="Thumbnail 1"/>
+                                                    <a href="javascript:void(0);" class='cloud-zoom-gallery'  onclick="loadImage('{{asset($data['main_image'])}}')">
+                                                        <img src="{{asset($data['main_image'])}}" style="height: 63px;" alt="Thumbnail 1"/>
                                                     </a>
                                                 </li>
                                                 @foreach($data['side_images'] as $side_image)
                                                     <li>
-                                                        <a href="{{asset($side_image)}}" class='cloud-zoom-gallery'
-                                                           rel="useZoom: 'zoom1', smallImage: '{{asset($side_image)}}' ">
+                                                        <a href="javascript:void(0);" class='cloud-zoom-gallery' onclick="loadImage('{{asset($side_image)}}')">
                                                             <img src="{{asset($side_image)}}" style="height: 63px;"
                                                                  alt="Thumbnail 1"/>
                                                         </a>
@@ -42,7 +39,7 @@
                                     </div>
                                     <!-- end: more-images -->
                                 </div>
-                                <div class="product-shop col-sm-8 col-xs-12">
+                                <div class="product-shop col-sm-6 col-xs-12">
                                     <div class="product-name">
                                         <h1>{{$data['title']}}</h1>
                                     </div>
@@ -99,10 +96,15 @@
         <br>
         <br>
     </div>
-    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/font-awesome.css')}}" media="all">
-    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/flexslider.css')}}">
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/font-awesome.css')}}" media="all">--}}
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/flexslider.css')}}">--}}
 
-    <script type="text/javascript" src="{{asset('/assets/js/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/js/jquery.flexslider.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/assets/js/cloud-zoom.js')}}"></script>
+{{--    <script type="text/javascript" src="{{asset('/assets/js/jquery.min.js')}}"></script>--}}
+{{--    <script type="text/javascript" src="{{asset('/assets/js/jquery.flexslider.js')}}"></script>--}}
+{{--    <script type="text/javascript" src="{{asset('/assets/js/cloud-zoom.js')}}"></script>--}}
+    <script>
+        function loadImage(src) {
+            document.getElementById("main_product").src = src;
+        }
+    </script>
 @endsection
