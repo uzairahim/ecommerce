@@ -46,20 +46,6 @@
                                     <div class="product-name">
                                         <h1>{{$data['title']}}</h1>
                                     </div>
-                                    <div class="ratings">
-                                        <div class="rating-box">
-                                            <div style="width:60%" class="rating"></div>
-                                        </div>
-                                    </div>
-                                    <div class="price-block">
-                                        <div class="price-box">
-                                            <p class="special-price"><span class="price-label">Special Price</span>
-                                                <span id="product-price-48" class="price"> $309.99 </span></p>
-                                            <p class="old-price"><span class="price-label">Regular Price:</span> <span
-                                                    class="price"> $315.99 </span></p>
-                                        </div>
-                                        <p class="availability in-stock pull-right"><span>In Stock</span></p>
-                                    </div>
                                     <div class="short-description">
                                         <h2>Descripton</h2>
                                         <p>{{$data['description']}}</p>
@@ -115,7 +101,7 @@
     </div>
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/font-awesome.css')}}" media="all">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/flexslider.css')}}">
-    
+
     <script type="text/javascript" src="{{asset('/assets/js/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('/assets/js/jquery.flexslider.js')}}"></script>
     <script type="text/javascript" src="{{asset('/assets/js/cloud-zoom.js')}}"></script>
