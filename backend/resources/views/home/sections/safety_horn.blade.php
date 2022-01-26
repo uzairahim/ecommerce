@@ -58,11 +58,9 @@
 {{--                        <div class="countbox_1 timer-grid"></div>--}}
 {{--                    </div>--}}
                     <br>
-{{--                    <div class="input-group">--}}
-{{--                        <input type="text" class="form-control" placeholder="enter email address"--}}
-{{--                               aria-label="Recipient's username" aria-describedby="basic-addon2">--}}
-{{--                        <button class="btn btn-success" style="padding: 0px 25px 0px 25px;">BOOK NOW</button>--}}
-{{--                    </div>--}}
+                    <div class="input-group" style="padding-left: 43%;">
+                        <a class="btn btn-success" href="{{url('/safety_horn')}}">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
