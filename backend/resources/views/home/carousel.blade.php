@@ -54,13 +54,16 @@
 <div class="slideshow">
     <div class="slider">
         <div class="item">
-            <img src="{{asset('assets/images/banner-1.jpeg')}}"/>
+            <img src="{{asset('assets/images/slider/slider-1.jpeg')}}"/>
         </div>
         <div class="item">
-            <img src="{{asset('assets/images/banner-2.png')}}"/>
+            <img src="{{asset('assets/images/slider/slider-2.jpeg')}}"/>
         </div>
         <div class="item">
-            <img src="{{asset('assets/images/banner-3.png')}}"/>
+            <img src="{{asset('assets/images/slider/slider-3.png')}}"/>
+        </div>
+        <div class="item">
+            <img src="{{asset('assets/images/slider/slider-4.png')}}"/>
         </div>
     </div>
 </div>
