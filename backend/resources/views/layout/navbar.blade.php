@@ -2,7 +2,7 @@
 <nav>
     <div class="container">
         <!-- Header Logo -->
-        <div class="logo"><a title="MSK" href="/"><img alt="MSK" src="{{asset('assets/images/logo.png')}}"
+        <div class="logo"><a title="MSK" href="{{url('/')}}"><img alt="MSK" src="{{asset('assets/images/logo.png')}}"
                                                        class="img-fluid"></a>
         </div>
         <!-- End Header Logo -->
