@@ -21,11 +21,6 @@
                                                     src="{{asset($data['main_image'])}}" alt="product image" id="main_product"> </a></div>
                                         <div class="flexslider flexslider-thumb">
                                             <ul class="previews-list slides">
-                                                <li>
-                                                    <a href="javascript:void(0);" class='cloud-zoom-gallery'  onclick="loadImage('{{asset($data['main_image'])}}')">
-                                                        <img src="{{asset($data['main_image'])}}" style="height: 63px;" alt="Thumbnail 1"/>
-                                                    </a>
-                                                </li>
                                                 @foreach($data['side_images'] as $side_image)
                                                     <li>
                                                         <a href="javascript:void(0);" class='cloud-zoom-gallery' onclick="loadImage('{{asset($side_image)}}')">
@@ -96,12 +91,12 @@
         <br>
         <br>
     </div>
-{{--    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/font-awesome.css')}}" media="all">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/flexslider.css')}}">--}}
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/font-awesome.css')}}" media="all">
+    <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/flexslider.css')}}">
 
-{{--    <script type="text/javascript" src="{{asset('/assets/js/jquery.min.js')}}"></script>--}}
-{{--    <script type="text/javascript" src="{{asset('/assets/js/jquery.flexslider.js')}}"></script>--}}
-{{--    <script type="text/javascript" src="{{asset('/assets/js/cloud-zoom.js')}}"></script>--}}
+    <script type="text/javascript" src="{{asset('/assets/js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('/assets/js/jquery.flexslider.js')}}"></script>
+    <script type="text/javascript" src="{{asset('/assets/js/cloud-zoom.js')}}"></script>
     <script>
         function loadImage(src) {
             document.getElementById("main_product").src = src;

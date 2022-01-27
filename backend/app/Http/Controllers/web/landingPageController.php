@@ -61,15 +61,19 @@ class landingPageController extends Controller
             'Pitch' => 'High/Low'
         ];
         $side_images = [
-            'safety_horn_1' => 'assets/images/safety_horn_1.JPG',
-            'safety_horn_2' => 'assets/images/safety_horn_2.JPG',
-            'safety_horn_3' => 'assets/images/safety_horn_3.JPG',
-            'safety_horn_4' => 'assets/images/safety_horn_4.jpeg',
-            'safety_horn_5' => 'assets/images/safety_horn_5.JPG',
+            'safety_horn' => 'assets/images/safety_horn/safety_horn.png',
+            'safety_horn_1' => 'assets/images/safety_horn/safety_horn_1.png',
+            'safety_horn_2' => 'assets/images/safety_horn/safety_horn_2.png',
+            'safety_horn_3' => 'assets/images/safety_horn/safety_horn_3.png',
+            'safety_horn_4' => 'assets/images/safety_horn/safety_horn_4.png',
+            'safety_horn_5' => 'assets/images/safety_horn/safety_horn_5.png',
+            'safety_horn_6' => 'assets/images/safety_horn/safety_horn_6.png',
+            'safety_horn_7' => 'assets/images/safety_horn/safety_horn_7.png',
+            'safety_horn_8' => 'assets/images/safety_horn/safety_horn_8.png',
         ];
         $data = [
             'title' => $title,
-            'main_image' => 'assets/images/safety_horn.JPG',
+            'main_image' => 'assets/images/safety_horn/safety_horn.png',
             'side_images' => $side_images,
             'description' => $description,
             'footer' => $footer,
