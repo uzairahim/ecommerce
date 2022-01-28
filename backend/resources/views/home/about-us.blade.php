@@ -1,4 +1,4 @@
-<section id="about-us">
+<section id="about-us" style="margin-top: -35px;">
     <div class="brand-logo">
         <div class="container">
             <div class="new_title center">
