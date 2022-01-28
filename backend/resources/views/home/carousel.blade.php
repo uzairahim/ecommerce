@@ -5,7 +5,7 @@
         height: 100%;
         width: 100%;
         margin: 0px auto;
-        clip-path: polygon(0 0, 100% 0, 100% 90%, 46% 100%, 54% 100%, 0 90%);
+        /*clip-path: polygon(0 0, 100% 0, 100% 90%, 46% 100%, 54% 100%, 0 90%);*/
     }
     .slideshow * {
         outline: none;
@@ -22,7 +22,7 @@
     /*slick-slide slick-current slick-active*/
     .slideshow .item img {
         width: 100%;
-        height: 550px;
+        height: auto;
         -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
         transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
         /*-webkit-transform: scale(1.3);*/

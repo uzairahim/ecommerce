@@ -265,8 +265,8 @@ header {height:40px}
 
 .logo {
     position: absolute;
-    left: 50%;
-    margin:25px 0 0 -90px;
+    left: 10%;
+    margin:25px 0 0 0;
 	z-index:100
 
 }
@@ -967,7 +967,7 @@ nav {
 }
 
 .menu-item-left {
-    padding-right: 70px;
+    padding-right: 100px;
 	text-align: right;
 }
 
