@@ -26,8 +26,10 @@
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/jquery.mobile-menu.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/revslider.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/animate.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/all.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/style.css')}}" media="all">
-    <link rel="stylesheet" href="{{asset('assets/js/slick-slider/slick/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/js/slick-slider/slick/slick.scss')}}">
+    <link rel="stylesheet" href="{{asset('assets/js/slick-slider/slick/slick-theme.css')}}">
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet'
           type='text/css'>
@@ -149,13 +151,15 @@
 <script type="text/javascript">
 {{--slick sider --}}
     $('.slider').slick({
-        draggable: true,
+    draggable: true,
         autoplay: true,
         autoplaySpeed: 4000,
-        arrows: false,
-        dots: false,
+        arrows: true,
+        dots: true,
         fade: true,
         speed: 2000,
+        nextArrow: '<i class="fas fa-angle-right"></i></i>',
+        prevArrow: '<i class="fas fa-angle-left"></i>',
         infinite: true,
         cssEase: 'ease-in-out',
         touchThreshold: 100

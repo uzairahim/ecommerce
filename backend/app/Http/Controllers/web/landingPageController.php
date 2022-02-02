@@ -36,7 +36,7 @@ class landingPageController extends Controller
     public function safety_horn()
     {
         $title = 'SAFETY HORN (SF 110)';
-        $description = "Safty horn is specially designed for vehicles without air compressor, loading vehicles, passengers vehicles, SUVs, pickups and all other mid level vehicles require special signaling instrument according to their size and weight, we categories horns into three layers, lower layer is Bike/Cars for which many models of disk horn and small snail horns are available, upper layer is Buses, Trucks, all kind of heavy vehicles with air compressor on board, many loud air horns of different types and models are available for the vehicle with air compressor on board, we do not see much verity for mid layer like loading vehicles, passengers vehicles, SUV's, mini trucks ie, Safty horn is best applicable for mid layer, although can be used for all 3 layers.";
+        $description = "Safty horn is specially designed for vehicles without air compressor, loading vehicles, passengers vehicles, SUVs, pickups and all other mid level vehicles require special signaling instrument according to their size and weight, we categories horns into three layers, lower layer is Bike/Cars for which many models of disk horn and small snail horns are available, upper layer is Buses, Trucks,\n All kind of heavy vehicles with air compressor on board, many loud air horns of different types and models are available for the vehicle with air compressor on board, we do not see much verity for mid layer like loading vehicles, passengers vehicles, SUV's, mini trucks ie, Safty horn is best applicable for mid layer, although can be used for all 3 layers.";
         $footer = "SF-110 is available for 12V or 24V, SF-110 is the best product available in this category around the world, we focus on quality of every single part used, solenoid coils are of cooper winding ";
         $specifications = [
             'Voltage' => '12 or 24',
@@ -64,12 +64,12 @@ class landingPageController extends Controller
             'safety_horn' => 'assets/images/safety_horn/safety_horn.png',
             'safety_horn_1' => 'assets/images/safety_horn/safety_horn_1.png',
             'safety_horn_2' => 'assets/images/safety_horn/safety_horn_2.png',
-            'safety_horn_3' => 'assets/images/safety_horn/safety_horn_3.png',
+//            'safety_horn_3' => 'assets/images/safety_horn/safety_horn_3.png',
             'safety_horn_4' => 'assets/images/safety_horn/safety_horn_4.png',
-            'safety_horn_5' => 'assets/images/safety_horn/safety_horn_5.png',
-            'safety_horn_6' => 'assets/images/safety_horn/safety_horn_6.png',
-            'safety_horn_7' => 'assets/images/safety_horn/safety_horn_7.png',
-            'safety_horn_8' => 'assets/images/safety_horn/safety_horn_8.png',
+//            'safety_horn_5' => 'assets/images/safety_horn/safety_horn_5.png',
+//            'safety_horn_6' => 'assets/images/safety_horn/safety_horn_6.png',
+//            'safety_horn_7' => 'assets/images/safety_horn/safety_horn_7.png',
+//            'safety_horn_8' => 'assets/images/safety_horn/safety_horn_8.png',
         ];
         $data = [
             'title' => $title,

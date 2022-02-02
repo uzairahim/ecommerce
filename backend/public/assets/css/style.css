@@ -59,6 +59,39 @@ small {
 	text-transform: lowercase;
 	color: #999999;
 }
+.fa-angle-left.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    font-size: 20px;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.fa-angle-right.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    font-size: 20px;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.fa-angle-left::before,
+.fa-angle-right::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
 /* Fonts Style */
 
 nav, footer, .mini-cart .dropdown-toggle, #thm-slideshow, .top-banner-section,  .latest-blog, .brand-logo, .top-categories, .button, .checkout-progress, .data-table th,  .dashboard .welcome-msg strong, .product-details h3, .product-details dt,  .multiple-checkout h3, .one-page-checkout .step-title .number, div.mgkosc-frametitle, .header-top, .mini-cart .actions .btn-checkout,.mini-cart .view-cart {
@@ -6363,7 +6396,7 @@ ol#compare-items li.last {
 
 }
 .product-view .short-description h2 {
-	font-size: 16px;
+	font-size: 25px;
 	color: #333;
 	margin: 0px;
 	margin-bottom: 5px;
@@ -6371,7 +6404,7 @@ ol#compare-items li.last {
 	letter-spacing:1px
 }
 .product-view .short-description p {
-	font-size: 13px;
+	font-size: 16px;
 	margin: 0px;
 	color: #777
 }

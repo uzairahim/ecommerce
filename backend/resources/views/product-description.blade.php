@@ -40,7 +40,7 @@
                                     </div>
                                     <div class="short-description">
                                         <h2>Descripton</h2>
-                                        <p>{{$data['description']}}</p>
+                                        <p>{!! nl2br($data['description']) !!}</p>
                                         <p>{{$data['footer']}}</p>
                                     </div>
                                     {{--                                            <div class="add-to-box">--}}

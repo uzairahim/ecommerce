@@ -57,9 +57,6 @@
             <img src="{{asset('assets/images/slider/slider-1.jpeg')}}"/>
         </div>
         <div class="item">
-            <img src="{{asset('assets/images/slider/slider-2.jpeg')}}"/>
-        </div>
-        <div class="item">
             <img src="{{asset('assets/images/slider/slider-3.png')}}"/>
         </div>
         <div class="item">
