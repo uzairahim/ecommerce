@@ -9,12 +9,12 @@
             <div class="brand-logo">
                 <div class="container">
                     <div class="new_title center">
-                        <h1 class="text-uppercase">MUSIC HORN COMPOSITION</h1>
+                        <h1 class="text-uppercase global-font-size">MUSIC HORN COMPOSITION</h1>
                         <div class="starSeparator"></div>
                     </div>
                     <div class="slider-items-products">
                         <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
-                            <blockquote class="blockquote">
+                            <blockquote class="blockquote" style="padding: 30px 20px;">
                                 <i><b>“There is no success if you don’t change”</b> World is changing, so are we. We are changing
                                 Air Horn
                                     from <b>Traditional</b> to <b>Musical</b>.</i><br> For those looking for a horn sound that’s unlike anything

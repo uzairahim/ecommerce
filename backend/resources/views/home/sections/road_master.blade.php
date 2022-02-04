@@ -15,7 +15,7 @@
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-6 col-md-6">
                 <div class="offer_img">
-                    <img src="{{asset('assets/images/road_master.jpeg')}}" alt="" style="height: 400px;">
+                    <img src="{{asset('assets/images/road_master.jpeg')}}" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 text-center">

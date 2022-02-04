@@ -1,13 +1,13 @@
-<section id="about-us" style="margin-top: -35px;">
+<section id="about-us">
     <div class="brand-logo">
         <div class="container">
             <div class="new_title center">
-                <h1 class="text-uppercase">About Us</h1>
+                <h1 class="text-uppercase global-font-size">About Us</h1>
                 <div class="starSeparator"></div>
             </div>
             <div class="slider-items-products">
                 <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
-                    <blockquote class="blockquote">
+                    <blockquote class="blockquote blockquote-font-size" style="padding: 30px 20px;">
                         <h4><b>MSK-SuperHorn</b></h4>
                         Super Horn House established back in 1972 offers a premium line of automotive air horns,
                         for

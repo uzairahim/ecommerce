@@ -11,6 +11,9 @@
     .offer_img{
         text-align: center;
     }
+    .offer_img img{
+        width: 100%;
+    }
     .section_padding {
         padding: 100px 0;
     }
@@ -40,7 +43,7 @@
         <div class="row align-items-center justify-content-between">
             <div class="col-lg-6 col-md-6">
                 <div class="offer_img">
-                    <img src="{{asset('assets/images/safety_horn/safety_horn.png')}}" alt="" style="height: 400px;border-radius: 5px;">
+                    <img src="{{asset('assets/images/safety_horn/safety_horn.png')}}" alt="" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 text-center">
@@ -58,7 +61,7 @@
 {{--                        <div class="countbox_1 timer-grid"></div>--}}
 {{--                    </div>--}}
                     <br>
-                    <div class="input-group" style="padding-left: 43%;">
+                    <div>
                         <a class="btn btn-success" href="{{url('/safety_horn')}}">Read More</a>
                     </div>
                 </div>

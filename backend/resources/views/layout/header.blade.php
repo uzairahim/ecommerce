@@ -43,6 +43,14 @@
 
 @yield('content')
 
+<div id="mobile-menu">
+    <ul>
+        <li><a title="MSK" href="{{url('/')}}"><img alt="MSK" src="{{asset('assets/images/logo.png')}}" class="img-fluid" style="width: 50%;margin: 0% 0% 0% 20%;"></a></li>
+        <li><a href="{{url('/')}}">Home</a></li>
+        <li><a href="{{url('/composition')}}">Music Horn Composition</a></li>
+        <li><a href="{{Request::is('/') ? '#about-us':url('/#about-us')}}">About Us</a></li>
+    </ul>
+</div>
 <footer>
     <div class="footer-inner">
         <div class="container">
