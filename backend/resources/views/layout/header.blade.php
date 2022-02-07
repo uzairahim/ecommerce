@@ -172,6 +172,14 @@
         cssEase: 'ease-in-out',
         touchThreshold: 100
     })
+    $('.logo-slider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        draggable: true,
+        arrows: true,
+        nextArrow: '<i class="fas fa-angle-right"></i></i>',
+        prevArrow: '<i class="fas fa-angle-left"></i>',
+    })
 
     var dthen1 = new Date("12/25/17 11:59:00 PM");
     start = "05/03/15 03:02:11 AM";

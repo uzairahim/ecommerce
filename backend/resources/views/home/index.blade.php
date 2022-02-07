@@ -16,103 +16,111 @@
         <div class="promo-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img alt="promotion banner"
-                                                                           src="{{asset('assets/images/feature-product-1.png')}}">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="overlay-text overlay-text-img-1">
+                            <h1 style="color: black;font-weight: bold;">Baby shark</h1>
+                            <h3 style="color: black;font-weight: bold;margin-top: 0px">20 sounds</h3>
+                        </div>
+                        <img alt="promotion banner" src="{{asset('assets/images/road_master.jpeg')}}">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img alt="promotion banner"
-                                                                           src="{{asset('assets/images/feature-product-2.png')}}">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="overlay-text overlay-text-img-2">
+                            <h1 style="color: white;font-weight: bold;">Whistle Horn</h1>
+                            <h3 style="color: white;font-weight: bold;margin-top: 0px">3 sounds</h3>
+                        </div>
+                        <img alt="promotion banner" src="{{asset('assets/images/whistle_horn.png')}}">
                     </div>
                 </div>
             </div>
         </div>
         <br>
         <!-- Featured Slider -->
-{{--    @component('home.feature-products',['superb_products'=>$data['superb_products']])@endcomponent--}}
+    {{--    @component('home.feature-products',['superb_products'=>$data['superb_products']])@endcomponent--}}
     <!-- End Featured Slider -->
 
         <!-- Best Seller -->
-{{--    @component('home.best-seller',['best_seller'=>$data['best_seller']])@endcomponent--}}
+    {{--    @component('home.best-seller',['best_seller'=>$data['best_seller']])@endcomponent--}}
     <!-- End Best Seller -->
 
         <!-- Modal -->
-{{--        <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalTitle"--}}
-{{--             aria-hidden="true" style="background-color: #00000073;">--}}
-{{--            <div class="modal-dialog modal-lg" role="document">--}}
-{{--                <div class="modal-content">--}}
-{{--                    <div class="modal-header">--}}
-{{--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"--}}
-{{--                                style="float: right;color: red">--}}
-{{--                            <span aria-hidden="true">&times;</span>--}}
-{{--                        </button>--}}
-{{--                        <h4 class="modal-title" style="font-weight: bold;" id="selected_title"></h4>--}}
-{{--                    </div>--}}
-{{--                    <div class="modal-body text-left">--}}
-{{--                        <p class="ml-2 mr-2">Base is made of high quality Zinc, Trumpet is made of brass, high--}}
-{{--                            quality--}}
-{{--                            chrome, loud sound, TH-18 is--}}
-{{--                            the best quality product available around the world in this category and specifications,<br>--}}
-{{--                        </p>--}}
-{{--                        <div class="row">--}}
-{{--                            <div class="col-md-8">--}}
-{{--                                <i><b>Technical specifications</b></i>--}}
-{{--                                <p><b>Horn type</b> / TH-18</p>--}}
-{{--                                <p><b>Length overall</b> 375mm 445mm</p>--}}
-{{--                                <p><b>Funnel diameter</b> 110mm 110mm</p>--}}
-{{--                                <p><b>Frequency</b> 280Hz 255Hz</p>--}}
-{{--                                <p><b>Volume</b> 120dB (A) 120dB (A)</p>--}}
-{{--                                <p><b>Weight</b> 0.90kg 1.10kg</p>--}}
-{{--                                <p><b>Distance between fastening points</b> 240mm 310mm</p>--}}
-{{--                                <p><b>scope of delivery</b></p>--}}
-{{--                                <p><b>Compressed air horn</b> JUS40 (ready for assembly)</p>--}}
-{{--                                <p><b>Funnel support</b></p>--}}
-{{--                                <p><b>Fastening material</b></p>--}}
-{{--                                <p>6mm compressed air connection 90 °</p>--}}
-{{--                                <p>A complete double horn set, including valve connection set and protective funnel--}}
-{{--                                    cap,--}}
-{{--                                    is also available--}}
-{{--                                    Homologation.Since these are commercial vehicle horns that are designed for--}}
-{{--                                    installation on the roof (higher than--}}
-{{--                                    2m), there are no regulations with regard to installation. Because of the--}}
-{{--                                    loudness--}}
-{{--                                    (higher than 110dB)--}}
-{{--                                    the horn can only be used outside built-up areas. The factory-installed horn (or--}}
-{{--                                    a--}}
-{{--                                    replacement with ENo.) Must remain operational (via switch in the--}}
-{{--                                    dashboard).</p>--}}
-{{--                            </div>--}}
-{{--                            <div class="col-md-4">--}}
-{{--                                <i><b>Basic Details</b></i>--}}
-{{--                                <p><b>Product name:</b> 24.5″ eTone Chrome Air Horn</p>--}}
-{{--                                <p><b>Part Number:</b> H09324AC</p>--}}
-{{--                                <p><b>Finish:</b> Chrome</p>--}}
-{{--                                <p><b>Size:</b> 24.5″</p>--}}
-{{--                                <p><b>Horn Type:</b> eTone</p>--}}
-{{--                                <p><b>Shield Part Number:</b> H00929B</p>--}}
-{{--                                <p><b>Shield:</b> Not Included</p>--}}
-{{--                                <p><b>Horn Mount Support:</b> Included</p>--}}
-{{--                                <p><b>Product Description:</b></p>--}}
-{{--                                <ul>--}}
-{{--                                    <li>Chrome horn</li>--}}
-{{--                                    <li>Horn support</li>--}}
-{{--                                    <li>1/8” NPT port standard. Call for the size you need.</li>--}}
-{{--                                    <li>Grover interchangeability. Call for horn supports</li>--}}
-{{--                                </ul>--}}
-{{--                                <br>--}}
-{{--                                **Emergency Vehicle Use Only<br>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-        <!-- /Modal -->
+    {{--        <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalTitle"--}}
+    {{--             aria-hidden="true" style="background-color: #00000073;">--}}
+    {{--            <div class="modal-dialog modal-lg" role="document">--}}
+    {{--                <div class="modal-content">--}}
+    {{--                    <div class="modal-header">--}}
+    {{--                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"--}}
+    {{--                                style="float: right;color: red">--}}
+    {{--                            <span aria-hidden="true">&times;</span>--}}
+    {{--                        </button>--}}
+    {{--                        <h4 class="modal-title" style="font-weight: bold;" id="selected_title"></h4>--}}
+    {{--                    </div>--}}
+    {{--                    <div class="modal-body text-left">--}}
+    {{--                        <p class="ml-2 mr-2">Base is made of high quality Zinc, Trumpet is made of brass, high--}}
+    {{--                            quality--}}
+    {{--                            chrome, loud sound, TH-18 is--}}
+    {{--                            the best quality product available around the world in this category and specifications,<br>--}}
+    {{--                        </p>--}}
+    {{--                        <div class="row">--}}
+    {{--                            <div class="col-md-8">--}}
+    {{--                                <i><b>Technical specifications</b></i>--}}
+    {{--                                <p><b>Horn type</b> / TH-18</p>--}}
+    {{--                                <p><b>Length overall</b> 375mm 445mm</p>--}}
+    {{--                                <p><b>Funnel diameter</b> 110mm 110mm</p>--}}
+    {{--                                <p><b>Frequency</b> 280Hz 255Hz</p>--}}
+    {{--                                <p><b>Volume</b> 120dB (A) 120dB (A)</p>--}}
+    {{--                                <p><b>Weight</b> 0.90kg 1.10kg</p>--}}
+    {{--                                <p><b>Distance between fastening points</b> 240mm 310mm</p>--}}
+    {{--                                <p><b>scope of delivery</b></p>--}}
+    {{--                                <p><b>Compressed air horn</b> JUS40 (ready for assembly)</p>--}}
+    {{--                                <p><b>Funnel support</b></p>--}}
+    {{--                                <p><b>Fastening material</b></p>--}}
+    {{--                                <p>6mm compressed air connection 90 °</p>--}}
+    {{--                                <p>A complete double horn set, including valve connection set and protective funnel--}}
+    {{--                                    cap,--}}
+    {{--                                    is also available--}}
+    {{--                                    Homologation.Since these are commercial vehicle horns that are designed for--}}
+    {{--                                    installation on the roof (higher than--}}
+    {{--                                    2m), there are no regulations with regard to installation. Because of the--}}
+    {{--                                    loudness--}}
+    {{--                                    (higher than 110dB)--}}
+    {{--                                    the horn can only be used outside built-up areas. The factory-installed horn (or--}}
+    {{--                                    a--}}
+    {{--                                    replacement with ENo.) Must remain operational (via switch in the--}}
+    {{--                                    dashboard).</p>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="col-md-4">--}}
+    {{--                                <i><b>Basic Details</b></i>--}}
+    {{--                                <p><b>Product name:</b> 24.5″ eTone Chrome Air Horn</p>--}}
+    {{--                                <p><b>Part Number:</b> H09324AC</p>--}}
+    {{--                                <p><b>Finish:</b> Chrome</p>--}}
+    {{--                                <p><b>Size:</b> 24.5″</p>--}}
+    {{--                                <p><b>Horn Type:</b> eTone</p>--}}
+    {{--                                <p><b>Shield Part Number:</b> H00929B</p>--}}
+    {{--                                <p><b>Shield:</b> Not Included</p>--}}
+    {{--                                <p><b>Horn Mount Support:</b> Included</p>--}}
+    {{--                                <p><b>Product Description:</b></p>--}}
+    {{--                                <ul>--}}
+    {{--                                    <li>Chrome horn</li>--}}
+    {{--                                    <li>Horn support</li>--}}
+    {{--                                    <li>1/8” NPT port standard. Call for the size you need.</li>--}}
+    {{--                                    <li>Grover interchangeability. Call for horn supports</li>--}}
+    {{--                                </ul>--}}
+    {{--                                <br>--}}
+    {{--                                **Emergency Vehicle Use Only<br>--}}
+    {{--                            </div>--}}
+    {{--                        </div>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
+    <!-- /Modal -->
 
         <!--   Weekly Sale    -->
     @component('home.sections.safety_horn')@endcomponent
     @component('home.sections.road_master')@endcomponent
     @component('home.sections.section_3')@endcomponent
     @component('home.sections.section_4')@endcomponent
-        <!--  /Weekly Sale    -->
+    <!--  /Weekly Sale    -->
 
         <!-- TESTIMONIALS -->
         <section class="latest-blog">
@@ -188,69 +196,6 @@
         </section>
         <!-- /TESTIMONIALS -->
         <br>
-        <div class="brand-logo">
-            <div class="container">
-                <div class="new_title center">
-                    <h1 class="text-uppercase">Our Partners</h1>
-                    <div class="starSeparator"></div>
-                </div>
-                <div class="slider-items-products">
-                    <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
-                        <div class="slider-items slider-width-col6">
-
-                            <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo3')}}.png"
-                                                               alt="Image"></a>
-                            </div>
-                            <!-- End Item -->
-
-                            <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo2')}}.png"
-                                                               alt="Image"></a>
-                            </div>
-                            <!-- End Item -->
-
-                            <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png"
-                                                               alt="Image"></a>
-                            </div>
-                            <!-- End Item -->
-
-                            <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png"
-                                                               alt="Image"></a>
-                            </div>
-                            <!-- End Item -->
-
-                            <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo5')}}.png"
-                                                               alt="Image"></a>
-                            </div>
-                            <!-- End Item -->
-
-                            <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo6')}}.png"
-                                                               alt="Image"></a>
-                            </div>
-                            <!-- End Item -->
-
-                            <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo1')}}.png"
-                                                               alt="Image"></a>
-                            </div>
-                            <!-- End Item -->
-
-                            <!-- Item -->
-                            <div class="item"><a href="#"><img src="{{asset('assets/images/b-logo4')}}.png"
-                                                               alt="Image"></a>
-                            </div>
-                            <!-- End Item -->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        @component('home.our-brands')@endcomponent
     </div>
 @endsection

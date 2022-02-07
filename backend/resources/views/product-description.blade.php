@@ -43,25 +43,6 @@
                                         <p>{!! nl2br($data['description']) !!}</p>
                                         <p>{{$data['footer']}}</p>
                                     </div>
-                                    {{--                                            <div class="add-to-box">--}}
-                                    {{--                                                <div class="add-to-cart">--}}
-                                    {{--                                                    <div class="pull-left">--}}
-                                    {{--                                                        <div class="custom pull-left">--}}
-                                    {{--                                                            <button onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 0 ) result.value--;return false;" class="reduced items-count" type="button"><i class="fa fa-minus">&nbsp;</i></button>--}}
-                                    {{--                                                            <input type="text" class="input-text qty" title="Qty" value="1" maxlength="12" id="qty" name="qty">--}}
-                                    {{--                                                            <button onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button"><i class="fa fa-plus">&nbsp;</i></button>--}}
-                                    {{--                                                        </div>--}}
-                                    {{--                                                    </div>--}}
-                                    {{--                                                    <button onClick="productAddToCartForm.submit(this)" class="button btn-cart" title="Add to Cart" type="button"><span>Add to Cart</span></button>--}}
-                                    {{--                                                </div>--}}
-                                    {{--                                                <div class="email-addto-box">--}}
-                                    {{--                                                    <p class="email-friend"><a href="#" class=""><span>Email to a Friend</span></a></p>--}}
-                                    {{--                                                    <ul class="add-to-links">--}}
-                                    {{--                                                        <li> <a class="link-wishlist" href="#"><span>Add to Wishlist</span></a></li>--}}
-                                    {{--                                                        <li><span class="separator">|</span> <a class="link-compare" href="#"><span>Add to Compare</span></a></li>--}}
-                                    {{--                                                    </ul>--}}
-                                    {{--                                                </div>--}}
-                                    {{--                                            </div>--}}
                                 </div>
                             </div>
                         </div>
@@ -70,7 +51,7 @@
                 <div class="product-collateral col-lg-12 col-sm-12 col-xs-12 bounceInUp animated">
                     <div class="add_info">
                         <ul id="product-detail-tab" class="nav nav-tabs product-tabs">
-                            <li class="active"><a href="#product_tabs_description" data-toggle="tab"> Product
+                            <li class="active"><a href="#product_tabs_description" data-toggle="tab" style="font-size: 20px"> Product
                                     Specifications </a></li>
                         </ul>
                         <div id="productTabContent" class="tab-content">
@@ -78,7 +59,7 @@
                                 <div class="row">
                                     @foreach($data['specifications'] as $key => $specifications)
                                         <div class="col-sm-4">
-                                            <li><b>{{$key}}</b>{{': '.$specifications}}</li>
+                                            <li style="font-size: 14px;"><b>{{$key}}</b>{{': '.$specifications}}</li>
                                         </div>
                                     @endforeach
                                 </div>
