@@ -29,7 +29,7 @@ class landingPageController extends Controller
         if ($product_name == 'safety_horn'){
             $data = $this->safety_horn();
         }
-        return view('product-description')->with(['data'=>$data]);
+        return view('products.description.product-description')->with(['data'=>$data]);
     }
 
     public function safety_horn()

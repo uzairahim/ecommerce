@@ -37,3 +37,34 @@
         </div>
     </div>
 </section>
+
+
+
+{{--<div class="promo-section">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">--}}
+{{--                <div class="row" style="background-color: #f7f7f7;margin: auto;">--}}
+{{--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 about-us-images">--}}
+{{--                        <h1>Baby shark</h1>--}}
+{{--                        <h3>20 sounds</h3>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">--}}
+{{--                        <img alt="promotion banner" src="{{asset('assets/images/road_master.jpeg')}}">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">--}}
+{{--                <div class="row" style="background-color: #f7f7f7;margin: auto;">--}}
+{{--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 about-us-images">--}}
+{{--                        <h1>Whistle Horn</h1>--}}
+{{--                        <h3>3 sounds</h3>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">--}}
+{{--                        <img alt="promotion banner" src="{{asset('assets/images/whistle_horn.png')}}">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}

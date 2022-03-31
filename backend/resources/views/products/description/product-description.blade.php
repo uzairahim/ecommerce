@@ -71,15 +71,7 @@
         </section>
         <br>
         <br>
-            <section class="main-container col1-layout wow bounceInUp animated">
-                <div class="main container">
-                    <div class="col-main">
-                        <div class="row">
-                            <img src="{{asset('assets/images/safety_horn/reference_image.jpeg')}}" alt="">
-                        </div>
-                    </div>
-                </div>
-        </section>
+    @component('products.description.related-products')@endcomponent
     </div>
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/font-awesome.css')}}" media="all">
     <link rel="stylesheet" type="text/css" href="{{asset('/assets/css/flexslider.css')}}">
